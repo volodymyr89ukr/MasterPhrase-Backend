@@ -75,7 +75,7 @@ app.use("/api/words", wordRoutes);
 app.use("/api/exercises", exerciseRoutes);
 app.use("/api/phrases", phraseRoutes);
 app.use("/api/translations", translationRoutes);
-app.use("/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/texts", textRoutes);
 app.use("/api/word-set-exercises", wordSetExerciseRoutes);
