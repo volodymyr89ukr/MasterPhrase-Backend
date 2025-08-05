@@ -11,6 +11,7 @@ const {
   Translation,
   Text,
   Thousand,
+  WordTranslation,
 } = db;
 
 // Отримати всі набори слів з урахуванням мови через тисячу
@@ -44,14 +45,26 @@ export const getAllWordSets = async (req: Request, res: Response) => {
 };
 
 // Отримати всі слова для конкретного word set
+// Отримати всі слова для конкретного word set з перекладами
 export const getWordsBySet = async (req: Request, res: Response) => {
   try {
     const setId = req.params.id;
+    const interfaceLanguage = (req.query.interface_language as string) || "uk";
+
     const set = await WordSet.findByPk(setId, {
       include: [
         {
           model: Word,
           attributes: ["id", "word", "created_at"],
+          include: [
+            {
+              model: WordTranslation,
+              as: "translations",
+              required: false,
+              where: { language_code: interfaceLanguage },
+              attributes: ["translated_text"],
+            },
+          ],
         },
       ],
       attributes: ["id", "word_set"],
@@ -62,10 +75,21 @@ export const getWordsBySet = async (req: Request, res: Response) => {
         .status(404)
         .json({ success: false, error: "Word set not found" });
 
+    // Формуємо масив слів з перекладами
+    const words = (set as any).Words.map((w: any) => ({
+      id: w.id,
+      word: w.word,
+      created_at: w.created_at,
+      translation:
+        w.translations && w.translations.length > 0
+          ? w.translations[0].translated_text
+          : null,
+    }));
+
     res.json({
       success: true,
       wordSet: set.word_set,
-      words: (set as any).Words,
+      words,
     });
   } catch (error: any) {
     res.status(500).json({ success: false, error: error.message });

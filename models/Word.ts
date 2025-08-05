@@ -43,6 +43,10 @@ export default (sequelize: Sequelize, dataTypes: typeof DataTypes) => {
     Word.belongsTo(models.WordSet, { foreignKey: "word_set_id" });
     Word.hasMany(models.Phrase, { foreignKey: "word_id" });
     Word.hasMany(models.Mistake, { foreignKey: "word_id" });
+    Word.hasMany(models.WordTranslation, {
+      foreignKey: "word_id",
+      as: "translations",
+    });
   };
 
   return Word;
