@@ -6,6 +6,7 @@ module.exports = {
       "exercises",
       [
         {
+          id: 1,
           exercise_name: "Основний порядок слів у реченні",
           exercise_type: "general",
           theory: `Порядок слів у простому розповідному реченні: у німецькому твердженні присудок (відмінювана форма дієслова) завжди стоїть на другому місці. Найтиповіший порядок – підмет (той, хто виконує дію) на першому місці, присудок – на другому, а далі – інші члени речення (додатки, обставини тощо).
@@ -25,6 +26,7 @@ module.exports = {
           language_id: 1,
         },
         {
+          id: 2,
           exercise_name: "Питальні слова (W-Wörter)",
           exercise_type: "general",
           theory: `У німецькій мові є ряд питальних слів (W-Wörter), що використовуються для утворення питальних речень. Ось основні з них:
@@ -43,6 +45,7 @@ module.exports = {
           language_id: 1,
         },
         {
+          id: 3,
           exercise_name: "Числівники",
           exercise_type: "general",
           theory: `Кількісні числівники (кардинальні): в німецькій мові “0” – null, “1” – eins, “2” – zwei, “3” – drei, “4” – vier, “5” – fünf, “6” – sechs, “7” – sieben, “8” – acht, “9” – neun, “10” – zehn, “11” – elf, “12” – zwölf. Числа від 13 до 19 утворюються додаванням “-zehn” (10) до меншого числа: 13 = dreizehn, 14 = vierzehn тощо. Зверніть увагу на особливі форми: 16 = sechzehn (зникає -s- у sechs), 17 = siebzehn (зникає -en- у sieben).
@@ -70,6 +73,7 @@ module.exports = {
           language_id: 1,
         },
         {
+          id: 4,
           exercise_name:
             "Особові займенники та відмінювання дієслів у Präsens ",
           exercise_type: "verbs",
@@ -108,6 +112,7 @@ module.exports = {
           language_id: 1,
         },
         {
+          id: 5,
           exercise_name: "Присвійні займенники",
           exercise_type: "general",
           theory: `Присвійні займенники (Possessivpronomen) вказують на належність і відповідають на питання “чий?”. Вони узгоджуються з іменником у роді та числі і вживаються переважно перед іменником (подібно до артиклів). В німецькій мові присвійні займенники утворюються від особових займенників:
@@ -156,18 +161,21 @@ module.exports = {
           language_id: 1,
         },
         {
+          id: 6,
           exercise_name: "English Present Simple",
           exercise_type: "general",
           theory: `Теорія про English Present Simple`,
           language_id: 2,
         },
         {
+          id: 7,
           exercise_name: "English Past Simple",
           exercise_type: "general",
           theory: `Теорія про English Past Simple`,
           language_id: 2,
         },
         {
+          id: 8,
           exercise_name: "English Future Simple",
           exercise_type: "general",
           theory: `Теорія про English Future Simple`,
