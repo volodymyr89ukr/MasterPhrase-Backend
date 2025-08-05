@@ -6,6 +6,7 @@ module.exports = {
       "phrases",
       [
         {
+          id: 1,
           word_id: 1,
           exercise_id: 1,
           phrase: "Das Brot ist gut.",
@@ -16,6 +17,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 2,
           word_id: 2,
           exercise_id: 1,
           phrase: "Das Auto fährt langsam.",
@@ -26,6 +28,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 3,
           word_id: 3,
           exercise_id: 1,
           phrase: "Das Haus ist neu.",
@@ -36,6 +39,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 4,
           word_id: 4,
           exercise_id: 1,
           phrase: "Der Apfel ist rot.",
@@ -46,6 +50,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 5,
           word_id: 5,
           exercise_id: 1,
           phrase: "Der Text ist zu kurz.",
@@ -56,6 +61,7 @@ module.exports = {
           writing_exercise: 5,
         },
         {
+          id: 6,
           word_id: 6,
           exercise_id: 1,
           phrase: "Der Weg ist weit.",
@@ -66,6 +72,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 7,
           word_id: 7,
           exercise_id: 1,
           phrase: "Wir essen Brot.",
@@ -76,6 +83,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 8,
           word_id: 8,
           exercise_id: 1,
           phrase: "Ich fahre nach Hause.",
@@ -86,6 +94,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 9,
           word_id: 9,
           exercise_id: 1,
           phrase: "Er kauft einen Apfel.",
@@ -96,6 +105,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 10,
           word_id: 10,
           exercise_id: 1,
           phrase: "Sie verkauft Brot.",
@@ -106,6 +116,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 11,
           word_id: 11,
           exercise_id: 1,
           phrase: "Er zahlt das Produkt.",
@@ -117,6 +128,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 12,
           word_id: 12,
           exercise_id: 1,
           phrase: "Ich mache einen Plan.",
@@ -127,6 +139,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 13,
           word_id: 13,
           exercise_id: 1,
           phrase: "Sie sagt Hallo.",
@@ -137,6 +150,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 14,
           word_id: 14,
           exercise_id: 1,
           phrase: "Wir spielen Fußball.",
@@ -147,6 +161,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 15,
           word_id: 15,
           exercise_id: 1,
           phrase: "Ich trinke Wasser.",
@@ -157,6 +172,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 16,
           word_id: 16,
           exercise_id: 1,
           phrase: "Wir wohnen in Wien.",
@@ -167,6 +183,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 17,
           word_id: 17,
           exercise_id: 1,
           phrase: "Der Abend ist lang.",
@@ -177,6 +194,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 18,
           word_id: 18,
           exercise_id: 1,
           phrase: "Ich habe ein Auto.",
@@ -187,6 +205,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 19,
           word_id: 19,
           exercise_id: 1,
           phrase: "Ich trinke Bier.",
@@ -197,6 +216,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 20,
           word_id: 20,
           exercise_id: 1,
           phrase: "Ich esse gern Brot.",
@@ -207,6 +227,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 21,
           word_id: 21,
           exercise_id: 1,
           phrase: "Mein Bruder heißt Max.",
@@ -217,6 +238,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 22,
           word_id: 22,
           exercise_id: 1,
           phrase: "Meine Eltern sind in Berlin.",
@@ -227,6 +249,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 23,
           word_id: 23,
           exercise_id: 1,
           phrase: "Das Essen ist lecker.",
@@ -237,6 +260,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 24,
           word_id: 24,
           exercise_id: 1,
           phrase: "Meine Frau ist Lehrerin.",
@@ -247,6 +271,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 25,
           word_id: 25,
           exercise_id: 1,
           phrase: "Mein Freund ist nett.",
@@ -257,6 +282,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 26,
           word_id: 26,
           exercise_id: 1,
           phrase: "Das Haus ist groß.",
@@ -267,6 +293,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 27,
           word_id: 27,
           exercise_id: 1,
           phrase: "Das Kind ist süß.",
@@ -277,6 +304,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 28,
           word_id: 28,
           exercise_id: 1,
           phrase: "Der Mann arbeitet.",
@@ -287,6 +315,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 29,
           word_id: 29,
           exercise_id: 1,
           phrase: "Ich trinke Milch.",
@@ -297,6 +326,7 @@ module.exports = {
           writing_exercise: 3,
         },
         {
+          id: 30,
           word_id: 30,
           exercise_id: 1,
           phrase: "Meine Mutter heißt Anna.",
@@ -307,6 +337,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 31,
           word_id: 31,
           exercise_id: 1,
           phrase: "Wie ist dein Name?",
@@ -317,6 +348,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 32,
           word_id: 32,
           exercise_id: 1,
           phrase: "Wo ist die Schule?",
@@ -327,6 +359,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 33,
           word_id: 33,
           exercise_id: 1,
           phrase: "Wohnst du in der Stadt?",
@@ -337,6 +370,7 @@ module.exports = {
           writing_exercise: 5,
         },
         {
+          id: 34,
           word_id: 34,
           exercise_id: 1,
           phrase: "Ist heute ein Tag?",
@@ -347,6 +381,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 35,
           word_id: 35,
           exercise_id: 1,
           phrase: "Trinkst du gern Tee?",
@@ -357,6 +392,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 36,
           word_id: 36,
           exercise_id: 1,
           phrase: "Ist das Wasser kalt?",
@@ -367,6 +403,7 @@ module.exports = {
           writing_exercise: 3,
         },
         {
+          id: 37,
           word_id: 37,
           exercise_id: 1,
           phrase: "Wie viele Tage hat die Woche?",
@@ -378,6 +415,7 @@ module.exports = {
           writing_exercise: 6,
         },
         {
+          id: 38,
           word_id: 38,
           exercise_id: 1,
           phrase: "Hast du heute Zeit?",
@@ -388,6 +426,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 39,
           word_id: 39,
           exercise_id: 1,
           phrase: "Ist dein Zimmer groß?",
@@ -398,6 +437,7 @@ module.exports = {
           writing_exercise: 3,
         },
         {
+          id: 40,
           word_id: 40,
           exercise_id: 1,
           phrase: "Hast du einen Apfel?",
@@ -408,6 +448,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 41,
           word_id: 41,
           exercise_id: 1,
           phrase: "Gehst du zur Arbeit?",
@@ -418,6 +459,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 42,
           word_id: 42,
           exercise_id: 1,
           phrase: "Ist das ein Buch?",
@@ -428,6 +470,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 43,
           word_id: 43,
           exercise_id: 1,
           phrase: "Hast du Geld?",
@@ -438,6 +481,7 @@ module.exports = {
           writing_exercise: 3,
         },
         {
+          id: 44,
           word_id: 44,
           exercise_id: 1,
           phrase: "Ist das eine Pflanze?",
@@ -448,6 +492,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 45,
           word_id: 45,
           exercise_id: 1,
           phrase: "Hast du einen Plan?",
@@ -458,6 +503,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 46,
           word_id: 46,
           exercise_id: 1,
           phrase: "Wie hoch ist der Preis?",
@@ -468,6 +514,7 @@ module.exports = {
           writing_exercise: 5,
         },
         {
+          id: 47,
           word_id: 47,
           exercise_id: 1,
           phrase: "Hast du ein Problem?",
@@ -478,6 +525,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 48,
           word_id: 48,
           exercise_id: 1,
           phrase: "Ist das ein Produkt?",
@@ -488,6 +536,7 @@ module.exports = {
           writing_exercise: 4,
         },
         {
+          id: 49,
           word_id: 49,
           exercise_id: 1,
           phrase: "Möchtest du Saft?",
@@ -498,6 +547,7 @@ module.exports = {
           writing_exercise: 3,
         },
         {
+          id: 50,
           word_id: 50,
           exercise_id: 1,
           phrase: "Magst du Salat?",
@@ -508,6 +558,7 @@ module.exports = {
           writing_exercise: 3,
         },
         {
+          id: 51,
           word_id: 501,
           exercise_id: 6,
           phrase: "I eat apples every day.",
@@ -519,6 +570,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 52,
           word_id: 502,
           exercise_id: 6,
           phrase: "She reads a book every evening.",
@@ -529,6 +581,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 53,
           word_id: 503,
           exercise_id: 6,
           phrase: "The cat sleeps on the sofa.",
@@ -539,6 +592,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 54,
           word_id: 504,
           exercise_id: 6,
           phrase: "Dogs bark loudly.",
@@ -549,6 +603,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 55,
           word_id: 505,
           exercise_id: 6,
           phrase: "We live in a big house.",
@@ -559,6 +614,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 56,
           word_id: 506,
           exercise_id: 6,
           phrase: "He drinks water every morning.",
@@ -569,6 +625,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 57,
           word_id: 507,
           exercise_id: 6,
           phrase: "They buy food at the café.",
@@ -579,6 +636,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 58,
           word_id: 508,
           exercise_id: 6,
           phrase: "The sun rises in the east.",
@@ -589,6 +647,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 59,
           word_id: 509,
           exercise_id: 6,
           phrase: "Trees grow in spring.",
@@ -599,6 +658,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 60,
           word_id: 510,
           exercise_id: 6,
           phrase: "My father drives a red car.",
@@ -609,6 +669,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 61,
           word_id: 511,
           exercise_id: 6,
           phrase: "Children go to school every day.",
@@ -619,6 +680,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 62,
           word_id: 512,
           exercise_id: 6,
           phrase: "My friend watches TV in the evening.",
@@ -630,6 +692,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 63,
           word_id: 513,
           exercise_id: 6,
           phrase: "Mothers love their children.",
@@ -640,6 +703,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 64,
           word_id: 514,
           exercise_id: 6,
           phrase: "A child likes toys.",
@@ -650,6 +714,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 65,
           word_id: 515,
           exercise_id: 6,
           phrase: "The table has four legs.",
@@ -660,6 +725,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 66,
           word_id: 516,
           exercise_id: 6,
           phrase: "She closes the door quietly.",
@@ -670,6 +736,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 67,
           word_id: 517,
           exercise_id: 6,
           phrase: "I look out of the window every morning.",
@@ -680,6 +747,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 68,
           word_id: 518,
           exercise_id: 6,
           phrase: "He writes with a pen.",
@@ -690,6 +758,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 69,
           word_id: 519,
           exercise_id: 6,
           phrase: "They draw on paper.",
@@ -700,6 +769,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 70,
           word_id: 520,
           exercise_id: 6,
           phrase: "She checks her phone every hour.",
@@ -710,6 +780,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 71,
           word_id: 521,
           exercise_id: 6,
           phrase: "I sleep in my bed at night.",
@@ -720,6 +791,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 72,
           word_id: 522,
           exercise_id: 6,
           phrase: "The sky is blue in daytime.",
@@ -730,6 +802,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 73,
           word_id: 523,
           exercise_id: 6,
           phrase: "It snows in winter.",
@@ -740,6 +813,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 74,
           word_id: 524,
           exercise_id: 6,
           phrase: "They feel happy when they win.",
@@ -750,6 +824,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 75,
           word_id: 525,
           exercise_id: 6,
           phrase: "She gets sad when it rains.",
@@ -760,6 +835,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 76,
           word_id: 526,
           exercise_id: 6,
           phrase: "This box is very big.",
@@ -770,6 +846,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 77,
           word_id: 527,
           exercise_id: 6,
           phrase: "These apples are small.",
@@ -780,6 +857,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 78,
           word_id: 528,
           exercise_id: 6,
           phrase: "The tea is very hot.",
@@ -790,6 +868,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 79,
           word_id: 529,
           exercise_id: 6,
           phrase: "Days are longer in summer.",
@@ -800,6 +879,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 80,
           word_id: 530,
           exercise_id: 6,
           phrase: "Night starts at 9 pm in winter.",
@@ -810,6 +890,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 81,
           word_id: 531,
           exercise_id: 6,
           phrase: "I wake up early in the morning.",
@@ -820,6 +901,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 82,
           word_id: 532,
           exercise_id: 6,
           phrase: "The evening is peaceful here.",
@@ -831,6 +913,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 83,
           word_id: 533,
           exercise_id: 6,
           phrase: "Red roses are beautiful.",
@@ -841,6 +924,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 84,
           word_id: 534,
           exercise_id: 6,
           phrase: "The blue car goes fast.",
@@ -851,6 +935,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 85,
           word_id: 535,
           exercise_id: 6,
           phrase: "Green apples are sour.",
@@ -861,6 +946,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 86,
           word_id: 536,
           exercise_id: 6,
           phrase: "Yellow bananas are sweet.",
@@ -871,6 +957,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 87,
           word_id: 537,
           exercise_id: 6,
           phrase: "One apple is enough for me.",
@@ -881,6 +968,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 88,
           word_id: 538,
           exercise_id: 6,
           phrase: "Two books are on the table.",
@@ -891,6 +979,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 89,
           word_id: 539,
           exercise_id: 6,
           phrase: "Three cats play in the garden.",
@@ -901,6 +990,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 90,
           word_id: 540,
           exercise_id: 6,
           phrase: "Four chairs stand around the table.",
@@ -911,6 +1001,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 91,
           word_id: 541,
           exercise_id: 6,
           phrase: "Five children run in the park.",
@@ -922,6 +1013,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 92,
           word_id: 542,
           exercise_id: 6,
           phrase: "I walk to work every morning.",
@@ -932,6 +1024,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 93,
           word_id: 543,
           exercise_id: 6,
           phrase: "She eats breakfast at 7 am.",
@@ -942,6 +1035,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 94,
           word_id: 544,
           exercise_id: 6,
           phrase: "We drink coffee in the morning.",
@@ -952,6 +1046,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 95,
           word_id: 545,
           exercise_id: 6,
           phrase: "He reads newspapers every day.",
@@ -962,6 +1057,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 96,
           word_id: 546,
           exercise_id: 6,
           phrase: "They write letters to friends.",
@@ -972,6 +1068,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 97,
           word_id: 547,
           exercise_id: 6,
           phrase: "My dog runs in the park.",
@@ -982,6 +1079,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 98,
           word_id: 548,
           exercise_id: 6,
           phrase: "Cats chase mice.",
@@ -992,6 +1090,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 99,
           word_id: 549,
           exercise_id: 6,
           phrase: "The sun sets in the west.",
@@ -1002,6 +1101,7 @@ module.exports = {
           writing_exercise: 2,
         },
         {
+          id: 100,
           word_id: 550,
           exercise_id: 6,
           phrase: "Trees lose their leaves in autumn.",
