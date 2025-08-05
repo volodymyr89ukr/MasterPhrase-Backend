@@ -65,7 +65,12 @@ interface AuthedRequest extends Request {
 // });
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://masterphrase.pro"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 // app.use("/api/", limiter, minuteLimiter);
 app.use("/api/languages", languageRoutes);
