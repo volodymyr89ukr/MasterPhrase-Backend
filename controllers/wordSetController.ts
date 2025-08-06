@@ -46,36 +46,36 @@ export const getAllWordSets = async (req: Request, res: Response) => {
 
 // Отримати всі слова для конкретного word set
 // Отримати всі слова для конкретного word set
-export const getWordsBySet = async (req: Request, res: Response) => {
-  try {
-    const setId = req.params.id;
-    const set = await WordSet.findByPk(setId, {
-      include: [
-        {
-          model: Word,
-          attributes: ["id", "word", "created_at"],
-        },
-      ],
-      attributes: ["id", "word_set"],
-    });
+// export const getWordsBySet = async (req: Request, res: Response) => {
+//   try {
+//     const setId = req.params.id;
+//     const set = await WordSet.findByPk(setId, {
+//       include: [
+//         {
+//           model: Word,
+//           attributes: ["id", "word", "created_at"],
+//         },
+//       ],
+//       attributes: ["id", "word_set"],
+//     });
 
-    if (!set)
-      return res
-        .status(404)
-        .json({ success: false, error: "Word set not found" });
+//     if (!set)
+//       return res
+//         .status(404)
+//         .json({ success: false, error: "Word set not found" });
 
-    res.json({
-      success: true,
-      wordSet: set.word_set,
-      words: (set as any).Words,
-    });
-  } catch (error: any) {
-    res.status(500).json({ success: false, error: error.message });
-  }
-};
+//     res.json({
+//       success: true,
+//       wordSet: set.word_set,
+//       words: (set as any).Words,
+//     });
+//   } catch (error: any) {
+//     res.status(500).json({ success: false, error: error.message });
+//   }
+// };
 
 // Отримати всі слова для конкретного word set з перекладами
-export const getWordsBySet_2 = async (req: Request, res: Response) => {
+export const getWordsBySet = async (req: Request, res: Response) => {
   try {
     const setId = req.params.id;
     const interfaceLanguage = (req.query.interface_language as string) || "uk";
