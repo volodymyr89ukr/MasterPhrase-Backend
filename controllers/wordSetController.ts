@@ -88,7 +88,7 @@ export const getWordsBySet = async (req: Request, res: Response) => {
           include: [
             {
               model: WordTranslation,
-              as: "translations",
+              as: "wordTranslations",
               required: false,
               where: { language_code: interfaceLanguage },
               attributes: ["translated_text"],
@@ -110,8 +110,8 @@ export const getWordsBySet = async (req: Request, res: Response) => {
       word: w.word,
       created_at: w.created_at,
       translation:
-        w.translations && w.translations.length > 0
-          ? w.translations[0].translated_text
+        w.wordTranslations && w.wordTranslations.length > 0
+          ? w.wordTranslations[0].translated_text
           : null,
     }));
 
