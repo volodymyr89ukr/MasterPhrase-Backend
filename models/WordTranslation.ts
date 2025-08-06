@@ -27,6 +27,7 @@ export default (sequelize: Sequelize, dataTypes: typeof DataTypes) => {
         type: dataTypes.INTEGER,
         allowNull: false,
         references: { model: "words", key: "id" },
+        onDelete: "CASCADE",
       },
       language_code: {
         type: dataTypes.STRING(10),
@@ -44,7 +45,10 @@ export default (sequelize: Sequelize, dataTypes: typeof DataTypes) => {
   );
 
   (WordTranslation as any).associate = (models: any) => {
-    WordTranslation.belongsTo(models.Word, { foreignKey: "word_id" });
+    WordTranslation.belongsTo(models.Word, {
+      foreignKey: "word_id",
+      onDelete: "CASCADE",
+    });
   };
 
   return WordTranslation;
