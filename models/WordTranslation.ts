@@ -51,5 +51,7 @@ export default (sequelize: Sequelize, dataTypes: typeof DataTypes) => {
     });
   };
 
+  console.log("WordTranslation modelName:", WordTranslation.name);
+
   return WordTranslation;
 };

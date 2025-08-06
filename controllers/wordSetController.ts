@@ -14,6 +14,11 @@ const {
   WordTranslation,
 } = db;
 
+console.log("Word associations:", Word.associations);
+console.log("Exercise associations:", Exercise.associations);
+console.log("WordSet associations:", WordSet.associations);
+console.log("WordTranslation associations:", WordTranslation.associations);
+
 // Отримати всі набори слів з урахуванням мови через тисячу
 export const getAllWordSets = async (req: Request, res: Response) => {
   try {

@@ -49,6 +49,16 @@ fs.readdirSync(__dirname)
         : modelModule;
     db[model.name] = model;
   });
+if (db.Word && db.WordTranslation) {
+  db.Word.hasMany(db.WordTranslation, {
+    foreignKey: "word_id",
+    as: "wordTranslations",
+  });
+  db.WordTranslation.belongsTo(db.Word, {
+    foreignKey: "word_id",
+    onDelete: "CASCADE",
+  });
+}
 
 // Встановлення асоціацій, якщо вони прописані у моделях
 Object.keys(db).forEach((modelName) => {
@@ -56,6 +66,9 @@ Object.keys(db).forEach((modelName) => {
     db[modelName].associate(db);
   }
 });
+console.log("Word associations:", db.Word?.associations);
+console.log("WordSet associations:", db.WordSet?.associations);
+console.log("WordTranslation associations:", db.WordTranslation?.associations);
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
