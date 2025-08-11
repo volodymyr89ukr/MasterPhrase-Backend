@@ -24977,6 +24977,7 @@ module.exports = {
         {
           id: 3568,
           phrase_id: 357,
+          field: "phrase",
           language_code: "ar",
           translated_text: "ما هو الشيء الصحيح؟",
         },
