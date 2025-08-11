@@ -3725,6 +3725,7 @@ module.exports = {
         {
           id: 532,
           phrase_id: 54,
+          field: "phrase",
           language_code: "uk",
           translated_text: "Що таке маленька булочка?",
         },
