@@ -4690,6 +4690,7 @@ module.exports = {
         },
         {
           id: 424,
+          word_id: 424,
           exercise_id: 1,
           phrase: "Was sammelst du?",
           options: JSON.stringify(["Was", "Wer", "Wo", "Wann"]),
