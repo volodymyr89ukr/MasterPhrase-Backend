@@ -14,7 +14,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Питання про якість (яке?) використовуємо 'Wie'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 7,
         },
         {
           id: 2,
@@ -25,7 +25,7 @@ module.exports = {
           answer: "Warum",
           explanation: "Питання про причину (чому?) використовуємо 'Warum'.",
           matching_exercise: 1,
-          writing_exercise: 4,
+          writing_exercise: 5,
         },
         {
           id: 3,
@@ -36,7 +36,7 @@ module.exports = {
           answer: "Welches",
           explanation: "Вибір з ряду, середній рід 'Haus', тому 'Welches'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 5,
         },
         {
           id: 4,
@@ -47,7 +47,7 @@ module.exports = {
           answer: "Welche",
           explanation: "Питання про вибір, жіночий рід 'Farbe', тому 'Welche'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 3,
         },
         {
           id: 5,
@@ -125,7 +125,7 @@ module.exports = {
           answer: "Wie viel",
           explanation: "Питання про кількість, використовуємо 'Wie viel'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 12,
@@ -208,11 +208,10 @@ module.exports = {
           id: 19,
           word_id: 19,
           exercise_id: 1,
-          phrase: "Trinkst du Bier?",
-          options: JSON.stringify(["Was", "Wer", "Wie", "Ja"]),
-          answer: "Was",
-          explanation:
-            "Початок речення. Якщо це питальне речення, але без питального слова, то дієслово має бути на першому місці.",
+          phrase: "Welches Bier Trinkst du ?",
+          options: JSON.stringify(["Was", "Welche", "Wie", "Welches"]),
+          answer: "Welches",
+          explanation: "Welches для середнього роду.",
           matching_exercise: 1,
           writing_exercise: 2,
         },
@@ -225,7 +224,7 @@ module.exports = {
           answer: "Was",
           explanation: "Питання про предмет (що?), використовуємо 'Was'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 21,
@@ -236,7 +235,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Питання про особу (хто?), використовуємо 'Wer'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 22,
@@ -259,7 +258,7 @@ module.exports = {
           answer: "Was",
           explanation: "Питання про предмет (що?), використовуємо 'Was'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 24,
@@ -270,7 +269,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Питання про особу (хто?), використовуємо 'Wer'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 25,
@@ -281,7 +280,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Питання про особу (хто?), використовуємо 'Wer'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 26,
@@ -292,7 +291,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Питання про місце (де?), використовуємо 'Wo'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 27,
@@ -314,7 +313,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Питання про особу (хто?), використовуємо 'Wer'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 29,
@@ -336,7 +335,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Питання про особу (хто?), використовуємо 'Wer'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 31,
@@ -347,7 +346,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Питання 'Як твоє ім'я?' - 'Wie ist dein Name?'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 32,
@@ -369,7 +368,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Питання про місце (де?), використовуємо 'Wo'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 34,
@@ -380,7 +379,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Питання про час (коли?), використовуємо 'Wann'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 6,
         },
         {
           id: 35,
@@ -391,7 +390,7 @@ module.exports = {
           answer: "Was",
           explanation: "Питання про предмет (що?), використовуємо 'Was'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 36,
@@ -424,7 +423,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Питання про час (коли?), використовуємо 'Wann'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 39,
@@ -435,7 +434,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Питання про місце (де?), використовуємо 'Wo'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 40,
@@ -446,7 +445,7 @@ module.exports = {
           answer: "Was",
           explanation: "Питання про предмет (що?), використовуємо 'Was'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 5,
         },
         {
           id: 41,
@@ -457,7 +456,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Питання про місце (де?), використовуємо 'Wo'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 42,
@@ -479,7 +478,7 @@ module.exports = {
           answer: "Wie viel",
           explanation: "Питання про кількість, використовуємо 'Wie viel'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 3,
         },
         {
           id: 44,
@@ -490,7 +489,7 @@ module.exports = {
           answer: "Was",
           explanation: "Питання про тип об'єкта, 'Was für eine...'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 6,
         },
         {
           id: 45,
@@ -512,7 +511,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Питання про характеристику, 'Wie' (який).",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 47,
@@ -523,7 +522,7 @@ module.exports = {
           answer: "Was",
           explanation: "Питання про предмет, річ (що?), використовуємо 'Was'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 48,
@@ -545,7 +544,7 @@ module.exports = {
           answer: "Was",
           explanation: "Питання про тип об'єкта, 'Was für ein...'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 6,
         },
         {
           id: 50,
@@ -556,7 +555,7 @@ module.exports = {
           answer: "Was",
           explanation: "Питання про предмет, річ (що?), використовуємо 'Was'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 51,
@@ -578,7 +577,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Запитуємо про час, коли ти вільний.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 53,
@@ -589,7 +588,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місцезнаходження будинку.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 5,
         },
         {
           id: 54,
@@ -600,7 +599,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо, що це за маленький хлібець.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 5,
         },
         {
           id: 55,
@@ -611,7 +610,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Запитуємо про особу, хто хворий.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 3,
         },
         {
           id: 56,
@@ -633,7 +632,7 @@ module.exports = {
           answer: "Ist",
           explanation: "Це питальне речення, що починається з дієслова.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 58,
@@ -644,7 +643,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Запитуємо про особу, хто такий молодий.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 59,
@@ -798,7 +797,7 @@ module.exports = {
           answer: "Woher",
           explanation: "Запитуємо про походження листа.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 5,
         },
         {
           id: 73,
@@ -809,7 +808,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місце, де хлібець.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 74,
@@ -820,7 +819,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Запитуємо про особу, у кого є комп'ютер.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 75,
@@ -831,7 +830,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Запитуємо, яка твоя сім'я.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 76,
@@ -842,7 +841,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Запитуємо про час, коли телебачення.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 77,
@@ -853,7 +852,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо, що це за вогонь.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 78,
@@ -875,7 +874,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Запитуємо про час, коли футбол.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 80,
@@ -886,7 +885,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місце, де твій сад.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 81,
@@ -897,7 +896,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Запитуємо про особу, хто гість.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 82,
@@ -908,7 +907,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Запитуємо про час, коли магазин відкритий.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 83,
@@ -919,7 +918,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Запитуємо, як твоє здоров'я.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 84,
@@ -930,7 +929,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо, що має собака.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 85,
@@ -996,7 +995,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Запитуємо, яке життя в Німеччині.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 91,
@@ -1007,7 +1006,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Запитуємо про особу, хто вчитель.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 92,
@@ -1018,7 +1017,7 @@ module.exports = {
           answer: "Ist",
           explanation: "Це питальне речення, що починається з дієслова.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 3,
         },
         {
           id: 93,
@@ -1029,7 +1028,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Запитуємо, яке повітря.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 94,
@@ -1040,7 +1039,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місце, де сіль.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 95,
@@ -1051,7 +1050,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Запитуємо про час, коли субота.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 96,
@@ -1062,7 +1061,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місце, де ключ.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 97,
@@ -1096,7 +1095,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місце, де рюкзак.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 100,
@@ -1108,7 +1107,7 @@ module.exports = {
           explanation:
             "Запитуємо про поштовий індекс, 'Wie' у значенні 'який'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 101,
@@ -1207,7 +1206,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Wie? — як? (характеристика).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 2,
         },
         {
           id: 110,
@@ -1218,7 +1217,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Wann? — коли? (час).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 2,
         },
         {
           id: 111,
@@ -1383,7 +1382,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Wo? — де? (місце).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 126,
@@ -1394,7 +1393,7 @@ module.exports = {
           answer: "Was",
           explanation: "Was? — що? (питання про предмет).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 127,
@@ -1405,7 +1404,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Wo? — де? (місце).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 128,
@@ -1427,7 +1426,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Wo? — де? (місце).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 130,
@@ -1449,7 +1448,7 @@ module.exports = {
           answer: "Wem",
           explanation: "Wem? — кому? (кому належить, Dativ).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 132,
@@ -1471,7 +1470,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Wo? — де? (місце).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 134,
@@ -1482,7 +1481,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Wann? — коли? (час).",
           matching_exercise: 1,
-          writing_exercise: 4,
+          writing_exercise: 5,
         },
         {
           id: 135,
@@ -1493,7 +1492,7 @@ module.exports = {
           answer: "Wem",
           explanation: "Wem? — кому? (кому належить, Dativ).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 136,
@@ -1515,7 +1514,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Wann? — коли? (час).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 138,
@@ -1548,7 +1547,7 @@ module.exports = {
           answer: "Was",
           explanation: "Was? — що? (питання про предмет).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 141,
@@ -1559,7 +1558,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Wer? — хто? (питання про особу).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 142,
@@ -1570,7 +1569,7 @@ module.exports = {
           answer: "Wem",
           explanation: "Wem? — кому? (кому належить, Dativ).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 143,
@@ -1592,7 +1591,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Wo? — де? (місце).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 145,
@@ -1603,7 +1602,7 @@ module.exports = {
           answer: "Was",
           explanation: "Was? — що? (питання про предмет).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 146,
@@ -1614,7 +1613,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Wie? — як? (характеристика).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 147,
@@ -1647,7 +1646,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Wo? — де? (місце).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 150,
@@ -1680,7 +1679,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо про предмет, тому використовуємо Was.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 153,
@@ -1702,7 +1701,7 @@ module.exports = {
           answer: "Warum",
           explanation: "Запитуємо про причину, тому використовуємо Warum.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 155,
@@ -1735,7 +1734,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Запитуємо про характеристику, тому використовуємо Wie.",
           matching_exercise: 1,
-          writing_exercise: 5,
+          writing_exercise: 4,
         },
         {
           id: 158,
@@ -1768,7 +1767,7 @@ module.exports = {
           answer: "Warum",
           explanation: "Запитуємо про причину, тому використовуємо Warum.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 2,
         },
         {
           id: 161,
@@ -1779,7 +1778,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Запитуємо про час прибуття, тому використовуємо Wann.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 2,
         },
         {
           id: 162,
@@ -1801,7 +1800,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Запитуємо про кількість, тому використовуємо Wie viel.",
           matching_exercise: 1,
-          writing_exercise: 5,
+          writing_exercise: 6,
         },
         {
           id: 164,
@@ -1812,7 +1811,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місце, тому використовуємо Wo.",
           matching_exercise: 1,
-          writing_exercise: 4,
+          writing_exercise: 2,
         },
         {
           id: 165,
@@ -1900,7 +1899,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо про предмет, тому використовуємо Was.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 2,
         },
         {
           id: 173,
@@ -1923,7 +1922,7 @@ module.exports = {
           explanation:
             "Запитуємо про тему, тому використовуємо Worüber. (A2-B1)",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 2,
         },
         {
           id: 175,
@@ -1945,7 +1944,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Запитуємо про характеристику, тому використовуємо Wie.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 177,
@@ -1957,7 +1956,7 @@ module.exports = {
           explanation:
             "Запитуємо про місцезнаходження, тому використовуємо Wo.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 178,
@@ -1968,7 +1967,7 @@ module.exports = {
           answer: "Welches",
           explanation: "Welches узгоджується з 'das Blatt' (середній рід).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 2,
         },
         {
           id: 179,
@@ -1979,7 +1978,7 @@ module.exports = {
           answer: "Welche",
           explanation: "Welche узгоджується з 'die Briefmarke' (жіночий рід).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 2,
         },
         {
           id: 180,
@@ -1991,7 +1990,7 @@ module.exports = {
           explanation:
             "Запитуємо про місцезнаходження, тому використовуємо Wo.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 181,
@@ -2002,7 +2001,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Запитуємо про особу, тому використовуємо Wer.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 182,
@@ -2013,7 +2012,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Запитуємо про час, тому використовуємо Wann.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 183,
@@ -2024,7 +2023,7 @@ module.exports = {
           answer: "Welches",
           explanation: "Welches узгоджується з 'das Dokument' (середній рід).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 2,
         },
         {
           id: 184,
@@ -2047,7 +2046,7 @@ module.exports = {
           explanation:
             "Запитуємо про місцезнаходження, тому використовуємо Wo.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 186,
@@ -2058,7 +2057,7 @@ module.exports = {
           answer: "Warum",
           explanation: "Запитуємо про причину, тому використовуємо Warum.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 187,
@@ -2070,7 +2069,7 @@ module.exports = {
           explanation:
             "Запитуємо про місцезнаходження, тому використовуємо Wo.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 188,
@@ -2081,7 +2080,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Запитуємо про особу, тому використовуємо Wer.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 189,
@@ -2093,7 +2092,7 @@ module.exports = {
           explanation:
             "Запитуємо про місцезнаходження, тому використовуємо Wo.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 190,
@@ -2104,7 +2103,7 @@ module.exports = {
           answer: "Warum",
           explanation: "Запитуємо про причину, тому використовуємо Warum.",
           matching_exercise: 1,
-          writing_exercise: 4,
+          writing_exercise: 5,
         },
         {
           id: 191,
@@ -2116,7 +2115,7 @@ module.exports = {
           explanation:
             "Запитуємо про місцезнаходження, тому використовуємо Wo.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 192,
@@ -2127,7 +2126,7 @@ module.exports = {
           answer: "Wann",
           explanation: "Запитуємо про час, тому використовуємо Wann.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 193,
@@ -2138,7 +2137,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Запитуємо про особу, тому використовуємо Wer.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 194,
@@ -2149,7 +2148,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Запитуємо про спосіб, тому використовуємо Wie.",
           matching_exercise: 1,
-          writing_exercise: 5,
+          writing_exercise: 4,
         },
         {
           id: 195,
@@ -2161,7 +2160,7 @@ module.exports = {
           explanation:
             "Запитуємо про місцезнаходження, тому використовуємо Wo.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 196,
@@ -2172,7 +2171,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо про предмет, тому використовуємо Was.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 197,
@@ -2183,7 +2182,7 @@ module.exports = {
           answer: "Warum",
           explanation: "Запитуємо про причину, тому використовуємо Warum.",
           matching_exercise: 1,
-          writing_exercise: 4,
+          writing_exercise: 5,
         },
         {
           id: 198,
@@ -2194,7 +2193,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Запитуємо про особу, тому використовуємо Wer.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 199,
@@ -2206,7 +2205,7 @@ module.exports = {
           explanation:
             "Запитуємо про місцезнаходження, тому використовуємо Wo.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 200,
@@ -2217,7 +2216,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Запитуємо про характеристику, тому використовуємо Wie.",
           matching_exercise: 1,
-          writing_exercise: 4,
+          writing_exercise: 5,
         },
         {
           id: 201,
@@ -2229,7 +2228,7 @@ module.exports = {
           explanation:
             "Використовується 'Welche', оскільки 'Straße' — іменник жіночого роду (die).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 202,
@@ -2529,7 +2528,7 @@ module.exports = {
           answer: "Wer",
           explanation: "'Wer' запитує про особу, що має 'Fehler'.",
           matching_exercise: 1,
-          writing_exercise: 2,
+          writing_exercise: 4,
         },
         {
           id: 229,
@@ -2551,7 +2550,7 @@ module.exports = {
           answer: "Wer",
           explanation: "'Wer' запитує про особу, 'Fenster' — іменник.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 231,
@@ -2562,7 +2561,7 @@ module.exports = {
           answer: "Wie lange",
           explanation: "'Wie lange' запитує про тривалість 'Ferien'.",
           matching_exercise: 1,
-          writing_exercise: 4,
+          writing_exercise: 5,
         },
         {
           id: 232,
@@ -2595,7 +2594,7 @@ module.exports = {
           answer: "Welche",
           explanation: "'Welche' узгоджується з 'die Flasche' (жіночий рід).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 2,
         },
         {
           id: 235,
@@ -2607,7 +2606,7 @@ module.exports = {
           explanation:
             "Використання 'Wie' з прикметником 'breit' для запиту про характеристику.",
           matching_exercise: 1,
-          writing_exercise: 4,
+          writing_exercise: 5,
         },
         {
           id: 236,
@@ -2739,7 +2738,7 @@ module.exports = {
           answer: "Wie",
           explanation: "'Wie' запитує про характеристику 'groß' (розмір).",
           matching_exercise: 1,
-          writing_exercise: 4,
+          writing_exercise: 5,
         },
         {
           id: 248,
@@ -2794,7 +2793,7 @@ module.exports = {
           answer: "Warum",
           explanation: "Запитуємо про причину: 'чому'.",
           matching_exercise: 1,
-          writing_exercise: 5,
+          writing_exercise: 6,
         },
         {
           id: 253,
@@ -2817,7 +2816,7 @@ module.exports = {
           explanation:
             "Welche узгоджується з іменником 'Gegend' жіночого роду.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 255,
@@ -2840,7 +2839,7 @@ module.exports = {
           explanation:
             "Welches узгоджується з іменником 'Gewicht' середнього роду.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 257,
@@ -3073,7 +3072,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо про предмет: 'що'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 278,
@@ -3084,7 +3083,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місцезнаходження: 'де'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 279,
@@ -3118,7 +3117,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо про предмет: 'що'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 282,
@@ -3129,7 +3128,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Запитуємо про властивість: 'як' (яке).",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 283,
@@ -3140,7 +3139,7 @@ module.exports = {
           answer: "Wie",
           explanation: "Запитуємо про спосіб / властивість: 'як'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 284,
@@ -3151,7 +3150,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо про предмет: 'що'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 285,
@@ -3163,7 +3162,7 @@ module.exports = {
           explanation:
             "Запитуємо про предмет, який знаходиться в склянці: 'що'.",
           matching_exercise: 1,
-          writing_exercise: 4,
+          writing_exercise: 5,
         },
         {
           id: 286,
@@ -3174,7 +3173,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо про поняття: 'що'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 287,
@@ -3196,7 +3195,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місцезнаходження: 'де'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 289,
@@ -3218,7 +3217,7 @@ module.exports = {
           answer: "Wer",
           explanation: "Запитуємо про особу: 'хто'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 291,
@@ -3229,7 +3228,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо про предмет: 'що'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 292,
@@ -3251,7 +3250,7 @@ module.exports = {
           answer: "Was",
           explanation: "Запитуємо про предмет: 'що'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 294,
@@ -3262,7 +3261,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місцезнаходження: 'де'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 295,
@@ -3273,7 +3272,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місцезнаходження: 'де'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 296,
@@ -3307,7 +3306,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місцезнаходження: 'де'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 299,
@@ -3330,7 +3329,7 @@ module.exports = {
           answer: "Wo",
           explanation: "Запитуємо про місцезнаходження: 'де'.",
           matching_exercise: 1,
-          writing_exercise: 3,
+          writing_exercise: 4,
         },
         {
           id: 301,
