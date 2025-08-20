@@ -67,8 +67,12 @@ export const getPhrases = async (req: Request, res: Response) => {
         p.ExplanationTranslation[0]
           ? p.ExplanationTranslation[0].translated_text
           : null,
-      matching_exercise: p.matching_exercise,
-      writing_exercise: p.writing_exercise,
+      matching_exercise: Array.isArray(p.matching_exercise)
+        ? p.matching_exercise
+        : [], // Зміна: гарантуємо масив
+      writing_exercise: Array.isArray(p.writing_exercise)
+        ? p.writing_exercise
+        : [], // Зміна: гарантуємо масив
     }));
 
     res.json({ success: true, data });

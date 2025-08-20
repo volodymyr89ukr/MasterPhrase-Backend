@@ -73,8 +73,12 @@ export const getTasksForWordSetExercise = async (
         phrase.ExplanationTranslation[0]
           ? phrase.ExplanationTranslation[0].translated_text
           : "",
-      matching_exercise: phrase.matching_exercise,
-      writing_exercise: phrase.writing_exercise,
+      matching_exercise: Array.isArray(phrase.matching_exercise)
+        ? phrase.matching_exercise
+        : [], // Зміна: гарантуємо масив
+      writing_exercise: Array.isArray(phrase.writing_exercise)
+        ? phrase.writing_exercise
+        : [], // Зміна: гарантуємо масив
     }));
 
     res.json({ success: true, data: result });

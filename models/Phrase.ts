@@ -8,8 +8,8 @@ interface PhraseAttributes {
   options: object;
   answer?: string;
   explanation?: string;
-  matching_exercise?: number;
-  writing_exercise?: number;
+  matching_exercise?: number[]; // Змінено з number на масив чисел
+  writing_exercise?: number[]; // Змінено з number на масив чисел
 }
 
 type PhraseCreationAttributes = Optional<
@@ -55,11 +55,11 @@ export default (sequelize: Sequelize, dataTypes: typeof DataTypes) => {
         allowNull: true,
       },
       matching_exercise: {
-        type: dataTypes.INTEGER,
+        type: dataTypes.ARRAY(dataTypes.INTEGER), // Змінено тип
         allowNull: true,
       },
       writing_exercise: {
-        type: dataTypes.INTEGER,
+        type: dataTypes.ARRAY(dataTypes.INTEGER), // Змінено тип
         allowNull: true,
       },
     },

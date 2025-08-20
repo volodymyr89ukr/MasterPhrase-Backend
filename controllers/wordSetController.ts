@@ -49,36 +49,6 @@ export const getAllWordSets = async (req: Request, res: Response) => {
   }
 };
 
-// Отримати всі слова для конкретного word set
-// Отримати всі слова для конкретного word set
-// export const getWordsBySet = async (req: Request, res: Response) => {
-//   try {
-//     const setId = req.params.id;
-//     const set = await WordSet.findByPk(setId, {
-//       include: [
-//         {
-//           model: Word,
-//           attributes: ["id", "word", "created_at"],
-//         },
-//       ],
-//       attributes: ["id", "word_set"],
-//     });
-
-//     if (!set)
-//       return res
-//         .status(404)
-//         .json({ success: false, error: "Word set not found" });
-
-//     res.json({
-//       success: true,
-//       wordSet: set.word_set,
-//       words: (set as any).Words,
-//     });
-//   } catch (error: any) {
-//     res.status(500).json({ success: false, error: error.message });
-//   }
-// };
-
 // Отримати всі слова для конкретного word set з перекладами
 export const getWordsBySet = async (req: Request, res: Response) => {
   try {
@@ -281,8 +251,12 @@ export const getExerciseDetailForWordSet = async (
         p.ExplanationTranslation[0]
           ? p.ExplanationTranslation[0].translated_text
           : null,
-      matching_exercise: p.matching_exercise,
-      writing_exercise: p.writing_exercise,
+      matching_exercise: Array.isArray(p.matching_exercise)
+        ? p.matching_exercise
+        : [], // Зміна: гарантуємо масив
+      writing_exercise: Array.isArray(p.writing_exercise)
+        ? p.writing_exercise
+        : [], // Зміна: гарантуємо масив
     }));
 
     res.json({
