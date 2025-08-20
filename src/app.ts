@@ -51,8 +51,8 @@ function customKey(req: Request, _res: Response): string {
 
 // Ліміт: 5 запитів/секунда
 const perSecondLimiter = rateLimit({
-  windowMs: 2000,
-  limit: 1, // v8: 'limit' (не 'max')
+  windowMs: 1000,
+  limit: 8, // v8: 'limit' (не 'max')
   message: { error: "Забагато запитів. Спробуйте ще раз через секунду." },
   keyGenerator: customKey,
 });
