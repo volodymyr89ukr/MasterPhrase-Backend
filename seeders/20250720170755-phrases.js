@@ -6116,7 +6116,7 @@ module.exports = {
         exercise_id: 2,
         phrase: "Wohnst du den ganzen Tag im Haus?",
         options: ["Wohnst du", "Wohnt du", "Wohnen dir", "Wohn dem"],
-        answer: "Wohnst",
+        answer: "Wohnst du",
         explanation:
           "У питальному реченні дієслово 'wohnen' ставиться на перше місце.",
         matching_exercise: [1, 2],
@@ -6142,7 +6142,7 @@ module.exports = {
         answer: "Geld zahlen",
         explanation:
           "Після модального дієслова дієслово вживається в інфінітиві.",
-        matching_exercise: [4, 5],
+        matching_exercise: [5, 6],
         writing_exercise: [4, 5],
       },
       {
