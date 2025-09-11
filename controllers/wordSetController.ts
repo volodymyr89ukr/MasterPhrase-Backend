@@ -19,7 +19,6 @@ console.log("Exercise associations:", Exercise.associations);
 console.log("WordSet associations:", WordSet.associations);
 console.log("WordTranslation associations:", WordTranslation.associations);
 
-// Отримати всі набори слів з урахуванням мови через тисячу
 export const getAllWordSets = async (req: Request, res: Response) => {
   try {
     const languageId = req.query.language_id
@@ -28,7 +27,6 @@ export const getAllWordSets = async (req: Request, res: Response) => {
 
     const whereThousand = languageId ? { language_id: languageId } : {};
 
-    // Знайти комплекти через JOIN тисячі з фільтром по мові
     const sets = await WordSet.findAll({
       include: [
         {
@@ -49,7 +47,6 @@ export const getAllWordSets = async (req: Request, res: Response) => {
   }
 };
 
-// Отримати всі слова для конкретного word set з перекладами
 export const getWordsBySet = async (req: Request, res: Response) => {
   try {
     const setId = req.params.id;
@@ -79,7 +76,6 @@ export const getWordsBySet = async (req: Request, res: Response) => {
         .status(404)
         .json({ success: false, error: "Word set not found" });
 
-    // Формуємо масив слів з перекладами
     const words = (set as any).Words.map((w: any) => ({
       id: w.id,
       word: w.word,
@@ -100,13 +96,10 @@ export const getWordsBySet = async (req: Request, res: Response) => {
   }
 };
 
-// Отримати перелік вправ для комплекту (з урахуванням мови вправ)
 export const getExercisesByWordSet = async (req: Request, res: Response) => {
   try {
     const setId = req.params.id;
 
-    // Знайти всі вправи для комплекту, що відповідають мові комплекту через тисячу
-    // Спершу отримуємо тисячу і її мову
     const wordSet = await WordSet.findByPk(setId, {
       include: [{ model: Thousand }],
     });
@@ -117,7 +110,6 @@ export const getExercisesByWordSet = async (req: Request, res: Response) => {
 
     const languageId = (wordSet as any).Thousand?.language_id;
 
-    // Знаходимо вправи, пов’язані з комплектом і фільтруємо по мові вправ
     const exercises = await WordSetExercise.findAll({
       where: { word_set_id: setId },
       include: [
@@ -146,7 +138,7 @@ export const getExercisesByWordSet = async (req: Request, res: Response) => {
   }
 };
 
-// Отримати theory і data (phrases) для конкретної вправи у комплекті, з перекладами phrase + explanation та перекладом теорії з урахуванням мови інтерфейсу
+// ОПТИМІЗОВАНО: тепер без вибірки всіх words, напряму по word_set_id + exercise_id
 export const getExerciseDetailForWordSet = async (
   req: Request,
   res: Response
@@ -161,13 +153,12 @@ export const getExerciseDetailForWordSet = async (
         .json({ success: false, error: "Missing set_id or exercise_id" });
     }
 
-    // Отримуємо вправу разом з перекладом теорії
     const exercise = await Exercise.findByPk(exercise_id, {
       attributes: ["id", "exercise_name", "theory"],
       include: [
         {
           model: ExerciseTranslation,
-          as: "translations", // обов’язково псевдонім!
+          as: "translations",
           required: false,
           where: { language_code: interfaceLanguage, field: "theory" },
           attributes: ["translated_text"],
@@ -185,26 +176,9 @@ export const getExerciseDetailForWordSet = async (
         ? exercise.translations[0].translated_text
         : null;
 
-    // Отримуємо слова комплекту
-    const words = await Word.findAll({
-      where: { word_set_id: set_id },
-      attributes: ["id"],
-    });
-    const wordIds = words.map((w: any) => w.id);
-
-    if (wordIds.length === 0) {
-      return res.json({
-        success: true,
-        theory: theoryOriginal,
-        theory_translation: theoryTranslation,
-        data: [],
-      });
-    }
-
-    // Отримуємо фрази для вправи і комплекту
     const phrases = await Phrase.findAll({
       where: {
-        word_id: wordIds,
+        word_set_id: set_id, // використання нового поля
         exercise_id: exercise_id,
       },
       attributes: [
@@ -253,10 +227,10 @@ export const getExerciseDetailForWordSet = async (
           : null,
       matching_exercise: Array.isArray(p.matching_exercise)
         ? p.matching_exercise
-        : [], // Зміна: гарантуємо масив
+        : [],
       writing_exercise: Array.isArray(p.writing_exercise)
         ? p.writing_exercise
-        : [], // Зміна: гарантуємо масив
+        : [],
     }));
 
     res.json({
@@ -270,7 +244,6 @@ export const getExerciseDetailForWordSet = async (
   }
 };
 
-// Отримати всі тексти для конкретного word set (комплекту)
 export const getTextsByWordSet = async (req: Request, res: Response) => {
   try {
     const setId = req.params.id;

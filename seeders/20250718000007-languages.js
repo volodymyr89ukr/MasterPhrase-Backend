@@ -14,6 +14,7 @@ module.exports = {
       { id: 9, code: "ar", name: "Арабська" },
       { id: 10, code: "tr", name: "Турецька" },
       { id: 11, code: "pt", name: "Португальська" },
+      { id: 12, code: "hu", name: "Угорська" },
     ]);
   },
 

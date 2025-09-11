@@ -3,13 +3,14 @@ import { Sequelize, DataTypes, Model, Optional } from "sequelize";
 interface PhraseAttributes {
   id: number;
   word_id: number;
+  word_set_id: number; // ДОДАНО
   exercise_id: number;
   phrase: string;
-  options: object;
+  options: string[]; // масив варіантів
   answer?: string;
   explanation?: string;
-  matching_exercise?: number[]; // Змінено з number на масив чисел
-  writing_exercise?: number[]; // Змінено з number на масив чисел
+  matching_exercise?: number[];
+  writing_exercise?: number[];
 }
 
 type PhraseCreationAttributes = Optional<
@@ -33,6 +34,11 @@ export default (sequelize: Sequelize, dataTypes: typeof DataTypes) => {
         allowNull: false,
         references: { model: "words", key: "id" },
       },
+      word_set_id: {
+        type: dataTypes.INTEGER,
+        allowNull: false,
+        references: { model: "word_sets", key: "id" }, // ДОДАНО
+      },
       exercise_id: {
         type: dataTypes.INTEGER,
         allowNull: false,
@@ -55,37 +61,38 @@ export default (sequelize: Sequelize, dataTypes: typeof DataTypes) => {
         allowNull: true,
       },
       matching_exercise: {
-        type: dataTypes.ARRAY(dataTypes.INTEGER), // Змінено тип
+        type: dataTypes.ARRAY(dataTypes.INTEGER),
         allowNull: true,
       },
       writing_exercise: {
-        type: dataTypes.ARRAY(dataTypes.INTEGER), // Змінено тип
+        type: dataTypes.ARRAY(dataTypes.INTEGER),
         allowNull: true,
       },
     },
     {
       tableName: "phrases",
       timestamps: false,
+      indexes: [
+        { fields: ["word_set_id"] },
+        { fields: ["exercise_id"] },
+        { fields: ["word_set_id", "exercise_id"] }, // для швидкого пошуку
+      ],
     }
   );
 
   (Phrase as any).associate = (models: any) => {
     Phrase.belongsTo(models.Word, { foreignKey: "word_id" });
+    Phrase.belongsTo(models.WordSet, { foreignKey: "word_set_id" }); // ДОДАНО
     Phrase.belongsTo(models.Exercise, { foreignKey: "exercise_id" });
 
-    // Для перекладу фрази (field = "phrase")
     Phrase.hasMany(models.Translation, {
       foreignKey: "phrase_id",
       as: "PhraseTranslation",
     });
-
-    // Для перекладу explanation (field = "explanation")
     Phrase.hasMany(models.Translation, {
       foreignKey: "phrase_id",
       as: "ExplanationTranslation",
     });
-
-    // Стара асоціація для сумісності
     Phrase.hasMany(models.Translation, {
       foreignKey: "phrase_id",
       as: "Translations",

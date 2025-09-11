@@ -55,17 +55,6 @@ module.exports = {
         { word_set_id: 10, exercise_id: 3 },
         { word_set_id: 10, exercise_id: 4 },
         { word_set_id: 10, exercise_id: 5 },
-        { word_set_id: 11, exercise_id: 6 },
-        { word_set_id: 11, exercise_id: 7 },
-        { word_set_id: 11, exercise_id: 8 },
-        { word_set_id: 12, exercise_id: 6 },
-        { word_set_id: 12, exercise_id: 7 },
-        { word_set_id: 12, exercise_id: 8 },
-        { word_set_id: 13, exercise_id: 6 },
-        { word_set_id: 13, exercise_id: 7 },
-        { word_set_id: 13, exercise_id: 8 },
-        { word_set_id: 14, exercise_id: 6 },
-        { word_set_id: 14, exercise_id: 7 },
       ],
       {}
     );
