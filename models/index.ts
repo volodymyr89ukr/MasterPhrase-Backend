@@ -7,7 +7,6 @@ dotenv.config();
 
 const basename = path.basename(__filename);
 
-// Підключення до БД (дані беруться з .env)
 const sequelize = new Sequelize(
   process.env.DB_NAME as string,
   process.env.DB_USER as string,
@@ -20,55 +19,43 @@ const sequelize = new Sequelize(
   }
 );
 
-// Тип для db (універсальний, щоб уникнути помилок)
 interface DB {
   [key: string]: any;
   sequelize: Sequelize;
   Sequelize: typeof Sequelize;
 }
 
-// Імпорт усіх моделей із цієї папки
 const db: DB = {} as DB;
 
+// ✅ підхоплюємо або .ts у dev, або .js у dist
+const runningTs = basename.endsWith(".ts");
+
 fs.readdirSync(__dirname)
-  .filter(
-    (file) =>
-      file.indexOf(".") !== 0 &&
-      file !== basename &&
-      (file.slice(-3) === ".js" || file.slice(-3) === ".ts")
-  )
+  .filter((file) => {
+    const isModelFile = runningTs ? file.endsWith(".ts") : file.endsWith(".js");
+    return file.indexOf(".") !== 0 && file !== basename && isModelFile;
+  })
   .forEach((file) => {
-    // Динамічно імпортуємо і ініціалізуємо модель
-    // @ts-ignore
     const modelModule = require(path.join(__dirname, file));
-    const model =
+    const factory =
       typeof modelModule === "function"
-        ? modelModule(sequelize, DataTypes)
+        ? modelModule
         : modelModule.default
-        ? modelModule.default(sequelize, DataTypes)
-        : modelModule;
+        ? modelModule.default
+        : null;
+    if (!factory) return;
+    const model = factory(sequelize, DataTypes);
     db[model.name] = model;
   });
-if (db.Word && db.WordTranslation) {
-  db.Word.hasMany(db.WordTranslation, {
-    foreignKey: "word_id",
-    as: "wordTranslations",
-  });
-  db.WordTranslation.belongsTo(db.Word, {
-    foreignKey: "word_id",
-    onDelete: "CASCADE",
-  });
-}
 
-// Встановлення асоціацій, якщо вони прописані у моделях
+// ❌ видалили ручні асоціації тут
+
+// ✅ Встановлюємо асоціації лише через .associate з кожної моделі
 Object.keys(db).forEach((modelName) => {
-  if (db[modelName].associate) {
+  if (typeof db[modelName].associate === "function") {
     db[modelName].associate(db);
   }
 });
-console.log("Word associations:", db.Word?.associations);
-console.log("WordSet associations:", db.WordSet?.associations);
-console.log("WordTranslation associations:", db.WordTranslation?.associations);
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
