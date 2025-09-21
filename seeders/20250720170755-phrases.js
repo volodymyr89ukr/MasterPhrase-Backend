@@ -29065,8 +29065,8 @@ module.exports = {
         answer: "gewesen",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 2226,
@@ -30661,8 +30661,8 @@ module.exports = {
         answer: "hat",
         explanation:
           '"beginnen" (починати) — це не рух, тому Perfekt утворюється з "haben".',
-        matching_exercise: 3,
-        writing_exercise: 2,
+        matching_exercise: [3],
+        writing_exercise: [2],
       },
       {
         id: 2349,
