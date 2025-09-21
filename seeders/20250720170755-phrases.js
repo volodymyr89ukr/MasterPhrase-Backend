@@ -27919,7 +27919,7 @@ module.exports = {
         answer: "verstanden",
         explanation:
           "verstehen - дієслово з невідокремлюваним префіксом ver-. Partizip II утворюється без ge-.",
-        matching_exercise: 6,
+        matching_exercise: 6],
         writing_exercise: 1,
       },
       {
@@ -27932,8 +27932,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "'wohnen' (жити) утворює Perfekt з 'haben', бо це не дієслово руху або зміни стану.",
-        matching_exercise: 2,
-        writing_exercise: 4,
+        matching_exercise: [2],
+        writing_exercise: [4],
       },
       {
         id: 2139,
@@ -27984,8 +27984,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "sich waschen - зворотна дія, що не означає рух, тому Perfekt утворюється з haben.",
-        matching_exercise: 2,
-        writing_exercise: 5,
+        matching_exercise: [2],
+        writing_exercise: [5],
       },
       {
         id: 2143,
@@ -28049,8 +28049,8 @@ module.exports = {
         answer: "gekommen",
         explanation:
           "kommen - сильне дієслово руху. Його форма Partizip II — gekommen. Треба запам'ятати.",
-        matching_exercise: 7,
-        writing_exercise: 1,
+        matching_exercise: [7],
+        writing_exercise: [1],
       },
       {
         id: 2148,
@@ -28140,8 +28140,8 @@ module.exports = {
         answer: "hast",
         explanation:
           'Дієслово "fehlen" не позначає рух чи зміну стану, тому використовується "haben".',
-        matching_exercise: 2,
-        writing_exercise: 5,
+        matching_exercise: [2],
+        writing_exercise: [5],
       },
       {
         id: 2155,
@@ -28205,8 +28205,8 @@ module.exports = {
         answer: "geheißen",
         explanation:
           '"heißen" — сильне дієслово. Його Partizip II — "geheißen". Це потрібно запам\'ятати.',
-        matching_exercise: 5,
-        writing_exercise: 4,
+        matching_exercise: [5],
+        writing_exercise: [4],
       },
       {
         id: 2160,
@@ -28309,8 +28309,8 @@ module.exports = {
         answer: "getroffen",
         explanation:
           "'treffen' — сильне дієслово, його 3-тя форма 'getroffen'. Її потрібно запам'ятати.",
-        matching_exercise: 6,
-        writing_exercise: 4,
+        matching_exercise: [6],
+        writing_exercise: [4],
       },
       {
         id: 2168,
@@ -28322,8 +28322,8 @@ module.exports = {
         answer: "haben",
         explanation:
           "'machen'утворює минулий час (Perfekt) із допоміжним дієсловом 'haben', бо воно не означає ані руху, ані зміни стану.",
-        matching_exercise: 2,
-        writing_exercise: 4,
+        matching_exercise: [2],
+        writing_exercise: [4],
       },
       {
         id: 2169,
@@ -28335,8 +28335,8 @@ module.exports = {
         answer: "überquert",
         explanation:
           "überqueren - дієслово з невідокремлюваним префіксом über-. Partizip II утворюється без ge-.",
-        matching_exercise: 5,
-        writing_exercise: 1,
+        matching_exercise: [5],
+        writing_exercise: [1],
       },
       {
         id: 2170,
@@ -28387,8 +28387,8 @@ module.exports = {
         answer: "ausprobiert",
         explanation:
           "ausprobieren - дієслово на -ieren. Partizip II утворюється без ge- і закінчується на -t.",
-        matching_exercise: 5,
-        writing_exercise: 4,
+        matching_exercise: [5],
+        writing_exercise: [4],
       },
       {
         id: 2174,
@@ -28543,8 +28543,8 @@ module.exports = {
         answer: "aufgemacht",
         explanation:
           "aufmachen - слабке дієслово з відокремлюваним префіксом. Partizip II: auf-ge-mach-t.",
-        matching_exercise: 5,
-        writing_exercise: 5,
+        matching_exercise: [5],
+        writing_exercise: [5],
       },
       {
         id: 2186,
@@ -28587,8 +28587,8 @@ module.exports = {
         answer: "habe",
         explanation:
           "probieren - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 2,
-        writing_exercise: 6,
+        matching_exercise: [2],
+        writing_exercise: [6],
       },
       {
         id: 2189,
@@ -28626,8 +28626,8 @@ module.exports = {
         answer: "gemacht",
         explanation:
           "machen - слабке дієслово. Partizip II утворюється за стандартною схемою: ge-mach-t.",
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 2192,
@@ -28665,8 +28665,8 @@ module.exports = {
         answer: "habe",
         explanation:
           "sich fühlen - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 4,
-        writing_exercise: 7,
+        matching_exercise: [4],
+        writing_exercise: [7],
       },
       {
         id: 2195,
@@ -28704,8 +28704,8 @@ module.exports = {
         answer: "geändert",
         explanation:
           'Дієслова на -ern, як "ändern", утворюють Partizip II за моделлю: ge- + корінь + -t.',
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 2198,
@@ -28717,8 +28717,8 @@ module.exports = {
         answer: "habe",
         explanation:
           "suchen - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 2,
-        writing_exercise: 4,
+        matching_exercise: [2],
+        writing_exercise: [4],
       },
       {
         id: 2199,
@@ -28794,8 +28794,8 @@ module.exports = {
         answer: "habe",
         explanation:
           "Дієслова на '-ieren' (trainieren) завжди утворюють Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 5,
+        matching_exercise: [2],
+        writing_exercise: [5],
       },
       {
         id: 2205,
@@ -28974,8 +28974,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "putzen - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 2,
-        writing_exercise: 8,
+        matching_exercise: [2],
+        writing_exercise: [8],
       },
       {
         id: 2219,
@@ -29117,8 +29117,8 @@ module.exports = {
         answer: "gesagt",
         explanation:
           "sagen - слабке дієслово. Partizip II утворюється за стандартною схемою: ge-sag-t.",
-        matching_exercise: 7,
-        writing_exercise: 6,
+        matching_exercise: [7],
+        writing_exercise: [6],
       },
       {
         id: 2230,
@@ -29438,8 +29438,8 @@ module.exports = {
         answer: "bin",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 2,
-        writing_exercise: 6,
+        matching_exercise: [2],
+        writing_exercise: [6],
       },
       {
         id: 2255,
@@ -29464,8 +29464,8 @@ module.exports = {
         answer: "haben",
         explanation:
           "'kennenlernen' утворює Perfekt з 'haben', оскільки не позначає рух чи зміну стану.",
-        matching_exercise: 2,
-        writing_exercise: 5,
+        matching_exercise: [2],
+        writing_exercise: [5],
       },
       {
         id: 2257,
@@ -29529,8 +29529,8 @@ module.exports = {
         answer: "gefeiert",
         explanation:
           "feiern - слабке дієслово. Partizip II утворюється за стандартною схемою: ge-feier-t.",
-        matching_exercise: 7,
-        writing_exercise: 6,
+        matching_exercise: [7],
+        writing_exercise: [6],
       },
       {
         id: 2262,
@@ -29750,8 +29750,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "scheinen - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 3,
-        writing_exercise: 7,
+        matching_exercise: [3],
+        writing_exercise: [7],
       },
       {
         id: 2279,
@@ -29763,8 +29763,8 @@ module.exports = {
         answer: "vorgestellt",
         explanation:
           "vorstellen - слабке дієслово з відокремлюваним префіксом. Partizip II: vor-ge-stell-t.",
-        matching_exercise: 5,
-        writing_exercise: 5,
+        matching_exercise: [5],
+        writing_exercise: [5],
       },
       {
         id: 2280,
@@ -29776,8 +29776,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "zeigen - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 2,
-        writing_exercise: 7,
+        matching_exercise: [2],
+        writing_exercise: [7],
       },
       {
         id: 2281,
@@ -29828,8 +29828,8 @@ module.exports = {
         answer: "ist",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 3,
-        writing_exercise: 6,
+        matching_exercise: [3],
+        writing_exercise: [6],
       },
       {
         id: 2285,
@@ -29854,8 +29854,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "helfen - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 5,
-        writing_exercise: 1,
+        matching_exercise: [5],
+        writing_exercise: [1],
       },
       {
         id: 2287,
@@ -29867,8 +29867,8 @@ module.exports = {
         answer: "gratuliert",
         explanation:
           "gratulieren - дієслово на -ieren. Partizip II утворюється без ge- і закінчується на -t.",
-        matching_exercise: 6,
-        writing_exercise: 1,
+        matching_exercise: [6],
+        writing_exercise: [1],
       },
       {
         id: 2288,
@@ -29880,8 +29880,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "beginnen - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 3,
-        writing_exercise: 5,
+        matching_exercise: [3],
+        writing_exercise: [5],
       },
       {
         id: 2289,
@@ -30022,8 +30022,8 @@ module.exports = {
         answer: "gemacht",
         explanation:
           "machen - слабке дієслово. Partizip II утворюється за стандартною схемою: ge-mach-t.",
-        matching_exercise: 7,
-        writing_exercise: 6,
+        matching_exercise: [7],
+        writing_exercise: [6],
       },
       {
         id: 2300,
@@ -30085,8 +30085,8 @@ module.exports = {
         answer: "habe",
         explanation:
           "anmelden - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 2,
-        writing_exercise: 7,
+        matching_exercise: [2],
+        writing_exercise: [7],
       },
       {
         id: 2305,
@@ -30124,8 +30124,8 @@ module.exports = {
         answer: "erlaubt",
         explanation:
           "erlauben - дієслово з невідокремлюваним префіксом er-. Partizip II утворюється без ge-.",
-        matching_exercise: 6,
-        writing_exercise: 6,
+        matching_exercise: [6],
+        writing_exercise: [6],
       },
       {
         id: 2308,
@@ -30137,8 +30137,8 @@ module.exports = {
         answer: "ist",
         explanation:
           "geboren werden - зміна стану (народження), тому Perfekt утворюється з sein.",
-        matching_exercise: 3,
-        writing_exercise: 6,
+        matching_exercise: [3],
+        writing_exercise: [6],
       },
       {
         id: 2309,
@@ -30175,8 +30175,8 @@ module.exports = {
         answer: "gegessen",
         explanation:
           "'essen' — сильне дієслово. Його форма Partizip II — 'gegessen'. Її потрібно запам'ятати.",
-        matching_exercise: 7,
-        writing_exercise: 6,
+        matching_exercise: [7],
+        writing_exercise: [6],
       },
       {
         id: 2312,
@@ -30214,8 +30214,8 @@ module.exports = {
         answer: "ist",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 3,
-        writing_exercise: 6,
+        matching_exercise: [3],
+        writing_exercise: [6],
       },
       {
         id: 2315,
@@ -30240,8 +30240,8 @@ module.exports = {
         answer: "habe",
         explanation:
           "treffen - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 2,
-        writing_exercise: 5,
+        matching_exercise: [2],
+        writing_exercise: [5],
       },
       {
         id: 2317,
@@ -30318,8 +30318,8 @@ module.exports = {
         answer: "habe",
         explanation:
           'Дієслово "haben" (мати) утворює Perfekt із самим собою як допоміжним дієсловом.',
-        matching_exercise: 2,
-        writing_exercise: 4,
+        matching_exercise: [2],
+        writing_exercise: [4],
       },
       {
         id: 2323,
@@ -30557,8 +30557,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "unterschreiben - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 3,
-        writing_exercise: 7,
+        matching_exercise: [3],
+        writing_exercise: [7],
       },
       {
         id: 2341,
@@ -30570,8 +30570,8 @@ module.exports = {
         answer: "gewesen",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 7,
-        writing_exercise: 6,
+        matching_exercise: [7],
+        writing_exercise: [6],
       },
       {
         id: 2342,
@@ -30583,8 +30583,8 @@ module.exports = {
         answer: "ist",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 3,
-        writing_exercise: 5,
+        matching_exercise: [3],
+        writing_exercise: [5],
       },
       {
         id: 2343,
@@ -30596,8 +30596,8 @@ module.exports = {
         answer: "gewesen",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 7,
-        writing_exercise: 6,
+        matching_exercise: [7],
+        writing_exercise: [6],
       },
       {
         id: 2344,
@@ -30960,8 +30960,8 @@ module.exports = {
         answer: "gewesen",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 2372,
@@ -30999,8 +30999,8 @@ module.exports = {
         answer: "ist",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 3,
-        writing_exercise: 5,
+        matching_exercise: [3],
+        writing_exercise: [5],
       },
       {
         id: 2375,
@@ -31012,8 +31012,8 @@ module.exports = {
         answer: "gewesen",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 2376,
@@ -31051,8 +31051,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "organisieren - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 4,
-        writing_exercise: 3,
+        matching_exercise: [4],
+        writing_exercise: [3],
       },
       {
         id: 2379,
@@ -31298,8 +31298,8 @@ module.exports = {
         answer: "gewesen",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 2398,
