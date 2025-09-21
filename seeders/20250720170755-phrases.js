@@ -23568,8 +23568,8 @@ module.exports = {
         answer: "geschrieben",
         explanation:
           "schreiben - сильне дієслово. Perfekt: haben + geschrieben. Форму слід запам'ятати.",
-        matching_exercise: 7,
-        writing_exercise: 6,
+        matching_exercise: [7],
+        writing_exercise: [6],
       },
       {
         id: 1804,
@@ -23594,8 +23594,8 @@ module.exports = {
         answer: "gekauft",
         explanation:
           "kaufen - слабке дієслово. Perfekt: haben + ge + kauf + t = gekauft.",
-        matching_exercise: 6,
-        writing_exercise: 4,
+        matching_exercise: [6],
+        writing_exercise: [4],
       },
       {
         id: 1806,
@@ -23620,8 +23620,8 @@ module.exports = {
         answer: "bekommen",
         explanation:
           "bekommen — сильне дієслово. Partizip II не має префікса ge-, оскільки дієслово невідокремлюване.",
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 1808,
@@ -23646,8 +23646,8 @@ module.exports = {
         answer: "bekommen",
         explanation:
           "bekommen — сильне дієслово. Partizip II не має префікса ge-, оскільки дієслово невідокремлюване.",
-        matching_exercise: 7,
-        writing_exercise: 5,
+        matching_exercise: [7],
+        writing_exercise: [5],
       },
       {
         id: 1810,
@@ -23750,8 +23750,8 @@ module.exports = {
         answer: "gelesen",
         explanation:
           "lesen - сильне дієслово. Perfekt: haben + gelesen. Форму слід запам'ятати.",
-        matching_exercise: 9,
-        writing_exercise: 7,
+        matching_exercise: [9],
+        writing_exercise: [7],
       },
       {
         id: 1818,
@@ -23802,8 +23802,8 @@ module.exports = {
         answer: "gegangen",
         explanation:
           "gehen - дієслово руху. Perfekt: sein + gegangen. Форму слід запам'ятати.",
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 1822,
@@ -23828,8 +23828,8 @@ module.exports = {
         answer: "bewegt",
         explanation:
           "bewegen — слабке дієслово з невідокремлюваним префіксом. Partizip II: bewegt.",
-        matching_exercise: 5,
-        writing_exercise: 4,
+        matching_exercise: [5],
+        writing_exercise: [4],
       },
       {
         id: 1824,
@@ -23944,8 +23944,8 @@ module.exports = {
         options: ["hat", "ist", "haben", "sind"],
         answer: "hat",
         explanation: "Дієслово 'machen' утворює Perfekt з 'haben'.",
-        matching_exercise: 3,
-        writing_exercise: 6,
+        matching_exercise: [3],
+        writing_exercise: [6],
       },
       {
         id: 1833,
@@ -23995,8 +23995,8 @@ module.exports = {
         options: ["habe", "bin", "hast", "bist"],
         answer: "habe",
         explanation: "Дієслово 'sehen' утворює Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 4,
+        matching_exercise: [2],
+        writing_exercise: [4],
       },
       {
         id: 1837,
@@ -24047,8 +24047,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "Дієслово 'liegen' (лежати) утворює Perfekt з 'haben', оскільки не позначає зміну місця.",
-        matching_exercise: 3,
-        writing_exercise: 5,
+        matching_exercise: [3],
+        writing_exercise: [5],
       },
       {
         id: 1841,
@@ -24086,8 +24086,8 @@ module.exports = {
         answer: "gehört",
         explanation:
           "hören - слабке дієслово. Perfekt: haben + ge + hör + t = gehört.",
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 1844,
@@ -24241,8 +24241,8 @@ module.exports = {
         answer: "gekriegt",
         explanation:
           "kriegen - слабке дієслово (розмовне). Perfekt: haben + ge + krieg + t = gekriegt.",
-        matching_exercise: 5,
-        writing_exercise: 5,
+        matching_exercise: [5],
+        writing_exercise: [5],
       },
       {
         id: 1856,
@@ -24319,8 +24319,8 @@ module.exports = {
         answer: "gemacht",
         explanation:
           "machen — слабке дієслово. Partizip II утворюється за правилом: ge-mach-t.",
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 1862,
@@ -24331,8 +24331,8 @@ module.exports = {
         options: ["habe", "bin", "hast", "bist"],
         answer: "habe",
         explanation: "Дієслово 'duschen' утворює Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 5,
+        matching_exercise: [2],
+        writing_exercise: [5],
       },
       {
         id: 1863,
@@ -24356,8 +24356,8 @@ module.exports = {
         options: ["hat", "ist", "haben", "sind"],
         answer: "hat",
         explanation: "Дієслово 'machen' утворює Perfekt з 'haben'.",
-        matching_exercise: 3,
-        writing_exercise: 5,
+        matching_exercise: [3],
+        writing_exercise: [5],
       },
       {
         id: 1865,
@@ -24369,8 +24369,8 @@ module.exports = {
         answer: "gewohnt",
         explanation:
           "wohnen - слабке дієслово. Perfekt: haben + ge + wohn + t = gewohnt.",
-        matching_exercise: 7,
-        writing_exercise: 5,
+        matching_exercise: [7],
+        writing_exercise: [5],
       },
       {
         id: 1866,
@@ -24421,8 +24421,8 @@ module.exports = {
         answer: "gelernt",
         explanation:
           "lernen - слабке дієслово. Perfekt: haben + ge + lern + t = gelernt.",
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 1870,
@@ -24564,8 +24564,8 @@ module.exports = {
         answer: "haben",
         explanation:
           "Більшість дієслів, що не позначають рух чи зміну стану, утворюють Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 4,
+        matching_exercise: [2],
+        writing_exercise: [4],
       },
       {
         id: 1881,
@@ -24581,8 +24581,8 @@ module.exports = {
         ],
         answer: "buchstabiert",
         explanation: "Дієслова на -ieren утворюють Partizip II без ge-.",
-        matching_exercise: 6,
-        writing_exercise: 4,
+        matching_exercise: [6],
+        writing_exercise: [4],
       },
       {
         id: 1882,
@@ -24698,8 +24698,8 @@ module.exports = {
         answer: "habe",
         explanation:
           "Більшість дієслів, що не позначають рух чи зміну стану, утворюють Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 5,
+        matching_exercise: [2],
+        writing_exercise: [5],
       },
       {
         id: 1891,
@@ -24723,8 +24723,8 @@ module.exports = {
         options: ["haben", "sind", "hat", "ist"],
         answer: "haben",
         explanation: "Дієслово 'besetzen' (займати) утворює Perfekt з 'haben'.",
-        matching_exercise: 3,
-        writing_exercise: 7,
+        matching_exercise: [3],
+        writing_exercise: [7],
       },
       {
         id: 1893,
@@ -24840,8 +24840,8 @@ module.exports = {
         answer: "gesagt",
         explanation:
           "sagen - слабке дієслово. Perfekt: haben + ge + sag + t = gesagt.",
-        matching_exercise: 5,
-        writing_exercise: 4,
+        matching_exercise: [5],
+        writing_exercise: [4],
       },
       {
         id: 1902,
@@ -24982,8 +24982,8 @@ module.exports = {
         options: ["hat", "ist", "haben", "sind"],
         answer: "hat",
         explanation: "Дієслово 'leben' утворює Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 3,
+        matching_exercise: [2],
+        writing_exercise: [3],
       },
       {
         id: 1913,
@@ -25156,8 +25156,8 @@ module.exports = {
         answer: "geschmeckt",
         explanation:
           "schmecken — слабке дієслово. Partizip II утворюється за правилом: ge-schmeck-t.",
-        matching_exercise: 5,
-        writing_exercise: 4,
+        matching_exercise: [5],
+        writing_exercise: [4],
       },
       {
         id: 1926,
@@ -25182,8 +25182,8 @@ module.exports = {
         answer: "gegessen",
         explanation:
           "essen - сильне дієслово. Perfekt: haben + gegessen. Форму слід запам'ятати.",
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 1928,
@@ -25208,8 +25208,8 @@ module.exports = {
         answer: "gedankt",
         explanation:
           "danken - слабке дієслово. Perfekt: haben + ge + dank + t = gedankt.",
-        matching_exercise: 7,
-        writing_exercise: 2,
+        matching_exercise: [7],
+        writing_exercise: [2],
       },
       {
         id: 1930,
@@ -25324,8 +25324,8 @@ module.exports = {
         answer: "gelöst",
         explanation:
           "lösen — слабке дієслово. Partizip II утворюється за правилом: ge-lös-t.",
-        matching_exercise: 5,
-        writing_exercise: 3,
+        matching_exercise: [5],
+        writing_exercise: [3],
       },
       {
         id: 1939,
@@ -25388,8 +25388,8 @@ module.exports = {
         answer: "geschrieben",
         explanation:
           "schreiben — сильне дієслово, його 3-тя форма geschrieben. Її потрібно запам'ятати.",
-        matching_exercise: 5,
-        writing_exercise: 4,
+        matching_exercise: [5],
+        writing_exercise: [4],
       },
       {
         id: 1944,
@@ -25414,8 +25414,8 @@ module.exports = {
         answer: "gerochen",
         explanation:
           "riechen — сильне дієслово, його 3-тя форма gerochen. Її потрібно запам'ятати.",
-        matching_exercise: 5,
-        writing_exercise: 5,
+        matching_exercise: [5],
+        writing_exercise: [5],
       },
       {
         id: 1946,
@@ -25491,8 +25491,8 @@ module.exports = {
         answer: "eingeladen",
         explanation:
           "einladen — сильне дієслово з відокремлюваним префіксом ein-. Partizip II: ein-ge-lad-en.",
-        matching_exercise: 5,
-        writing_exercise: 4,
+        matching_exercise: [5],
+        writing_exercise: [4],
       },
       {
         id: 1952,
@@ -25503,8 +25503,8 @@ module.exports = {
         options: ["hat", "ist", "haben", "sind"],
         answer: "hat",
         explanation: "Дієслово 'fragen' утворює Perfekt з 'haben'.",
-        matching_exercise: 3,
-        writing_exercise: 5,
+        matching_exercise: [3],
+        writing_exercise: [5],
       },
       {
         id: 1953,
@@ -25658,8 +25658,8 @@ module.exports = {
         answer: "gebeten",
         explanation:
           "bitten — сильне дієслово, його 3-тя форма gebeten. Її потрібно запам'ятати.",
-        matching_exercise: 5,
-        writing_exercise: 4,
+        matching_exercise: [5],
+        writing_exercise: [4],
       },
       {
         id: 1965,
@@ -25760,8 +25760,8 @@ module.exports = {
         options: ["habe", "bin", "hast", "bist"],
         answer: "habe",
         explanation: "Дієслово 'finden' утворює Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 6,
+        matching_exercise: [2],
+        writing_exercise: [6],
       },
       {
         id: 1973,
@@ -25773,8 +25773,8 @@ module.exports = {
         answer: "ferngesehen",
         explanation:
           "fernsehen — сильне дієслово з відокремлюваним префіксом fern-. Partizip II: fern-ge-seh-en.",
-        matching_exercise: 5,
-        writing_exercise: 2,
+        matching_exercise: [5],
+        writing_exercise: [2],
       },
       {
         id: 1974,
@@ -25851,8 +25851,8 @@ module.exports = {
         answer: "geendet",
         explanation:
           "enden — слабке дієслово. Partizip II утворюється за правилом: ge-end-et.",
-        matching_exercise: 6,
-        writing_exercise: 6,
+        matching_exercise: [6],
+        writing_exercise: [6],
       },
       {
         id: 1980,
@@ -25889,8 +25889,8 @@ module.exports = {
         options: ["hat", "ist", "haben", "sind"],
         answer: "hat",
         explanation: "Дієслово 'schreiben' утворює Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 3,
+        matching_exercise: [2],
+        writing_exercise: [3],
       },
       {
         id: 1983,
@@ -25902,8 +25902,8 @@ module.exports = {
         answer: "angekreuzt",
         explanation:
           "ankreuzen — слабке дієслово з відокремлюваним префіксом an-. Partizip II: an-ge-kreuz-t.",
-        matching_exercise: 5,
-        writing_exercise: 4,
+        matching_exercise: [5],
+        writing_exercise: [4],
       },
       {
         id: 1984,
@@ -25914,8 +25914,8 @@ module.exports = {
         options: ["hat", "ist", "haben", "sind"],
         answer: "hat",
         explanation: "Дієслово 'aussehen' утворює Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 6,
+        matching_exercise: [2],
+        writing_exercise: [6],
       },
       {
         id: 1985,
@@ -25927,8 +25927,8 @@ module.exports = {
         answer: "gemacht",
         explanation:
           "machen - слабке дієслово. Perfekt: haben + ge + mach + t = gemacht.",
-        matching_exercise: 7,
-        writing_exercise: 6,
+        matching_exercise: [7],
+        writing_exercise: [6],
       },
       {
         id: 1986,
@@ -26010,8 +26010,8 @@ module.exports = {
         answer: "verbracht",
         explanation:
           "verbringen — неправильне дієслово. Partizip II: verbracht. Префікс ver- невідокремлюваний.",
-        matching_exercise: 6,
-        writing_exercise: 4,
+        matching_exercise: [6],
+        writing_exercise: [4],
       },
       {
         id: 1992,
@@ -26062,8 +26062,8 @@ module.exports = {
         answer: "gewaschen",
         explanation:
           "waschen — сильне дієслово, його 3-тя форма gewaschen. Її потрібно запам'ятати.",
-        matching_exercise: 5,
-        writing_exercise: 4,
+        matching_exercise: [5],
+        writing_exercise: [4],
       },
       {
         id: 1996,
@@ -26100,8 +26100,8 @@ module.exports = {
         options: ["hat", "ist", "haben", "sind"],
         answer: "hat",
         explanation: "Дієслово 'kosten' утворює Perfekt з 'haben'.",
-        matching_exercise: 3,
-        writing_exercise: 5,
+        matching_exercise: [3],
+        writing_exercise: [5],
       },
       {
         id: 1999,
@@ -26217,8 +26217,8 @@ module.exports = {
         answer: "angezogen",
         explanation:
           "anziehen — сильне дієслово з відокремлюваним префіксом an-. Partizip II: an-ge-zog-en.",
-        matching_exercise: 6,
-        writing_exercise: 6,
+        matching_exercise: [6],
+        writing_exercise: [6],
       },
       {
         id: 2008,
@@ -26269,8 +26269,8 @@ module.exports = {
         answer: "gekocht",
         explanation:
           "kochen - слабке дієслово. Perfekt: haben + ge + koch + t = gekocht.",
-        matching_exercise: 7,
-        writing_exercise: 5,
+        matching_exercise: [7],
+        writing_exercise: [5],
       },
       {
         id: 2012,
@@ -26295,8 +26295,8 @@ module.exports = {
         answer: "gelesen",
         explanation:
           "lesen - сильне дієслово. Perfekt: haben + gelesen. Форму слід запам'ятати.",
-        matching_exercise: 8,
-        writing_exercise: 4,
+        matching_exercise: [8],
+        writing_exercise: [4],
       },
       {
         id: 2014,
@@ -26308,8 +26308,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "Зворотне дієслово 'sich machen' утворює Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 7,
+        matching_exercise: [2],
+        writing_exercise: [7],
       },
       {
         id: 2015,
@@ -26425,8 +26425,8 @@ module.exports = {
         answer: "bekommen",
         explanation:
           "bekommen — сильне дієслово. Partizip II не має префікса ge-, оскільки дієслово невідокремлюване.",
-        matching_exercise: 7,
-        writing_exercise: 4,
+        matching_exercise: [7],
+        writing_exercise: [4],
       },
       {
         id: 2024,
@@ -26495,8 +26495,8 @@ module.exports = {
         answer: "haben",
         explanation:
           "Більшість дієслів, що не позначають рух чи зміну стану, утворюють Perfekt з 'haben'.",
-        matching_exercise: 3,
-        writing_exercise: 5,
+        matching_exercise: [3],
+        writing_exercise: [5],
       },
       {
         id: 2029,
@@ -26534,8 +26534,8 @@ module.exports = {
         answer: "gelernt",
         explanation:
           "lernen - слабке дієслово. Perfekt: haben + ge + lern + t = gelernt.",
-        matching_exercise: 8,
-        writing_exercise: 6,
+        matching_exercise: [8],
+        writing_exercise: [6],
       },
       {
         id: 2032,
@@ -26651,8 +26651,8 @@ module.exports = {
         answer: "ist",
         explanation:
           "Дієслово руху 'herkommen' (до мовця) утворює Perfekt з 'sein'.",
-        matching_exercise: 3,
-        writing_exercise: 8,
+        matching_exercise: [3],
+        writing_exercise: [8],
       },
       {
         id: 2041,
@@ -26676,8 +26676,8 @@ module.exports = {
         options: ["hat", "ist", "haben", "sind"],
         answer: "hat",
         explanation: "Дієслово 'machen' утворює Perfekt з 'haben'.",
-        matching_exercise: 3,
-        writing_exercise: 5,
+        matching_exercise: [3],
+        writing_exercise: [5],
       },
       {
         id: 2043,
@@ -26780,8 +26780,8 @@ module.exports = {
         answer: "haben",
         explanation:
           "Більшість дієслів, що не позначають рух чи зміну стану, утворюють Perfekt з 'haben'.",
-        matching_exercise: 3,
-        writing_exercise: 2,
+        matching_exercise: [3],
+        writing_exercise: [2],
       },
       {
         id: 2051,
@@ -26819,8 +26819,8 @@ module.exports = {
         answer: "gefunden",
         explanation:
           "finden — сильне дієслово, його 3-тя форма gefunden. Її потрібно запам'ятати.",
-        matching_exercise: 6,
-        writing_exercise: 4,
+        matching_exercise: [6],
+        writing_exercise: [4],
       },
       {
         id: 2054,
@@ -26845,8 +26845,8 @@ module.exports = {
         answer: "eröffnet",
         explanation:
           "Дієслова з невідокремлюваними префіксами (be-, er-, ver- і т.д.) утворюють Partizip II без ge-.",
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 2056,
@@ -26910,8 +26910,8 @@ module.exports = {
         answer: "sind",
         explanation:
           "Дієслова руху, як-от 'hochgehen', утворюють Perfekt із допоміжним дієсловом 'sein'.",
-        matching_exercise: 2,
-        writing_exercise: 4,
+        matching_exercise: [2],
+        writing_exercise: [4],
       },
       {
         id: 2061,
@@ -26923,8 +26923,8 @@ module.exports = {
         answer: "gewachsen",
         explanation:
           "wachsen - дієслово зміни стану. Perfekt: sein + gewachsen.",
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 2062,
@@ -26949,8 +26949,8 @@ module.exports = {
         answer: "gesprochen",
         explanation:
           "sprechen - сильне дієслово. Perfekt: haben + gesprochen. Форму слід запам'ятати.",
-        matching_exercise: 7,
-        writing_exercise: 6,
+        matching_exercise: [7],
+        writing_exercise: [6],
       },
       {
         id: 2064,
@@ -26962,8 +26962,8 @@ module.exports = {
         answer: "hast",
         explanation:
           "Більшість дієслів, що не позначають рух чи зміну стану, утворюють Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 6,
+        matching_exercise: [2],
+        writing_exercise: [6],
       },
       {
         id: 2065,
@@ -27053,8 +27053,8 @@ module.exports = {
         answer: "angekommen",
         explanation:
           "ankommen — дієслово руху з відокремлюваним префіксом. Partizip II: an-ge-komm-en. З дієсловом 'sein'.",
-        matching_exercise: 4,
-        writing_exercise: 3,
+        matching_exercise: [4],
+        writing_exercise: [3],
       },
       {
         id: 2072,
@@ -27079,8 +27079,8 @@ module.exports = {
         answer: "gegessen",
         explanation:
           "essen — сильне дієслово, його 3-тя форма gegessen. Її потрібно запам'ятати.",
-        matching_exercise: 6,
-        writing_exercise: 1,
+        matching_exercise: [6],
+        writing_exercise: [1],
       },
       {
         id: 2074,
@@ -27092,8 +27092,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "Зворотне дієслово 'sich selbständig machen' утворює Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 7,
+        matching_exercise: [2],
+        writing_exercise: [7],
       },
       {
         id: 2075,
@@ -27117,8 +27117,8 @@ module.exports = {
         options: ["habe", "bin", "hast", "bist"],
         answer: "habe",
         explanation: "Дієслово 'benutzen' утворює Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 5,
+        matching_exercise: [2],
+        writing_exercise: [5],
       },
       {
         id: 2077,
@@ -27182,8 +27182,8 @@ module.exports = {
         answer: "gearbeitet",
         explanation:
           "arbeiten - слабке дієслово. Perfekt: haben + ge + arbeit + et = gearbeitet.",
-        matching_exercise: 7,
-        writing_exercise: 6,
+        matching_exercise: [7],
+        writing_exercise: [6],
       },
       {
         id: 2082,
@@ -27234,8 +27234,8 @@ module.exports = {
         answer: "bezahlt",
         explanation:
           "Дієслова з невідокремлюваними префіксами (be-, er-, ver- і т.д.) утворюють Partizip II без ge-.",
-        matching_exercise: 5,
-        writing_exercise: 4,
+        matching_exercise: [5],
+        writing_exercise: [4],
       },
       {
         id: 2086,
@@ -27330,8 +27330,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "Більшість дієслів, що не позначають рух чи зміну стану, утворюють Perfekt з 'haben'.",
-        matching_exercise: 2,
-        writing_exercise: 5,
+        matching_exercise: [2],
+        writing_exercise: [5],
       },
       {
         id: 2093,
@@ -27465,8 +27465,8 @@ module.exports = {
         answer: "haben",
         explanation:
           "sehen - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 2,
-        writing_exercise: 5,
+        matching_exercise: [2],
+        writing_exercise: [5],
       },
       {
         id: 2103,
@@ -27504,8 +27504,8 @@ module.exports = {
         answer: "gemacht",
         explanation:
           "machen - слабке дієслово. Partizip II утворюється за простою схемою: ge-mach-t.",
-        matching_exercise: 6,
-        writing_exercise: 4,
+        matching_exercise: [6],
+        writing_exercise: [4],
       },
       {
         id: 2106,
@@ -27517,8 +27517,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "'sagen' утворює Perfekt з 'haben', оскільки не позначає рух чи зміну стану.",
-        matching_exercise: 3,
-        writing_exercise: 4,
+        matching_exercise: [3],
+        writing_exercise: [4],
       },
       {
         id: 2107,
@@ -27672,8 +27672,8 @@ module.exports = {
         answer: "haben",
         explanation:
           "essen - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 2,
-        writing_exercise: 5,
+        matching_exercise: [2],
+        writing_exercise: [5],
       },
       {
         id: 2119,
@@ -27711,8 +27711,8 @@ module.exports = {
         answer: "gespielt",
         explanation:
           '"spielen" — слабке дієслово. Partizip II утворюється за моделлю: ge- + корінь + -t.',
-        matching_exercise: 5,
-        writing_exercise: 2,
+        matching_exercise: [5],
+        writing_exercise: [2],
       },
       {
         id: 2122,
@@ -27750,8 +27750,8 @@ module.exports = {
         answer: "hat",
         explanation:
           "gewinnen - дія, що не означає рух чи зміну стану, тому Perfekt утворюється з haben.",
-        matching_exercise: 3,
-        writing_exercise: 7,
+        matching_exercise: [3],
+        writing_exercise: [7],
       },
       {
         id: 2125,
@@ -27815,8 +27815,8 @@ module.exports = {
         answer: "vermietet",
         explanation:
           "vermieten - дієслово з невідокремлюваним префіксом ver-. Partizip II утворюється без ge-.",
-        matching_exercise: 7,
-        writing_exercise: 7,
+        matching_exercise: [7],
+        writing_exercise: [7],
       },
       {
         id: 2130,
@@ -27841,8 +27841,8 @@ module.exports = {
         answer: "gewesen",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 6,
-        writing_exercise: 5,
+        matching_exercise: [6],
+        writing_exercise: [5],
       },
       {
         id: 2132,
@@ -27854,8 +27854,8 @@ module.exports = {
         answer: "ist",
         explanation:
           "werden - дієслово зміни стану (стати кимось), тому Perfekt утворюється з sein.",
-        matching_exercise: 3,
-        writing_exercise: 5,
+        matching_exercise: [3],
+        writing_exercise: [5],
       },
       {
         id: 2133,
@@ -27893,8 +27893,8 @@ module.exports = {
         answer: "gewesen",
         explanation:
           'Perfekt для "sein" = [форма sein] + gewesen. В розмовній мові: Австрія, Швейцарія — ця форма, Німеччина — Präteritum ("war").',
-        matching_exercise: 4,
-        writing_exercise: 3,
+        matching_exercise: [4],
+        writing_exercise: [3],
       },
       {
         id: 2136,
@@ -27919,8 +27919,8 @@ module.exports = {
         answer: "verstanden",
         explanation:
           "verstehen - дієслово з невідокремлюваним префіксом ver-. Partizip II утворюється без ge-.",
-        matching_exercise: 6],
-        writing_exercise: 1,
+        matching_exercise: [6],
+        writing_exercise: [1],
       },
       {
         id: 2138,
