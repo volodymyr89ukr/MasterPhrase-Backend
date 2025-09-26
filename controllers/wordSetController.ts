@@ -183,6 +183,7 @@ export const getExerciseDetailForWordSet = async (
       },
       attributes: [
         "id",
+        "word_id",
         "phrase",
         "options",
         "answer",
@@ -209,6 +210,7 @@ export const getExerciseDetailForWordSet = async (
     });
 
     const data = (phrases as any[]).map((p) => ({
+      word_id: p.word_id,
       phrase: p.phrase,
       translation:
         p.PhraseTranslation &&
