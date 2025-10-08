@@ -46676,6 +46676,7 @@ module.exports = {
         options: ["in den", "im", "ins", "in dem"],
         answer: "in den",
         explanation: "Dativ + чол. рід (der Bus) → in den.",
+        matching_exercise: [3, 4],
         writing_exercise: [6],
       },
       {
@@ -47350,9 +47351,10 @@ module.exports = {
         word_set_id: 13,
         exercise_id: 3,
         phrase: "Ich wünsche dir viel Glück für die Prüfung.",
-        options: ["das", "dem", "den", "des"],
+        options: ["das", "dem", "den", "die"],
         answer: "das",
-        explanation: "Akkusativ + сер. рід (das Glück) → das.",
+        explanation: "Akkusativ + жін. рід (das Prüfung) → die.",
+        matching_exercise: [7],
         writing_exercise: [5],
       },
       {
@@ -51433,10 +51435,11 @@ module.exports = {
         word_id: 717,
         word_set_id: 24,
         exercise_id: 3,
-        phrase: "Der Schlüssel passt nicht zu der Tür.",
+        phrase: "Der Schlüssel passt nicht zur Tür.",
         options: ["zu den", "zu dem", "zur", "zu die"],
         answer: "zur",
         explanation: "Прийменник 'zu' вимагає Dativ → zur (zu + der).",
+        matching_exercise: [5],
         writing_exercise: [3],
       },
       {
@@ -51746,6 +51749,7 @@ module.exports = {
         options: ["im", "ins", "in dem", "in den"],
         answer: "in den",
         explanation: "Напрямок (wohin?) з 'in' + Akkusativ → in den.",
+        matching_exercise: [4, 5],
         writing_exercise: [6],
       },
       {
