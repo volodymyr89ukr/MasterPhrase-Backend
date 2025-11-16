@@ -47,6 +47,14 @@ export default (sequelize: Sequelize, dataTypes: typeof DataTypes) => {
     });
     Word.hasMany(models.Phrase, { foreignKey: "word_id" });
     Word.hasMany(models.Mistake, { foreignKey: "word_id" });
+    Word.hasOne(models.NounDeutsch, {
+      foreignKey: "word_id",
+      as: "nounDeutsch",
+    });
+    Word.hasOne(models.StrongVerbDeutsch, {
+      foreignKey: "word_id",
+      as: "strongVerbDeutsch",
+    });
   };
   console.log("Word modelName:", Word.name);
 
