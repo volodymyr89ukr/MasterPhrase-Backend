@@ -19,7 +19,15 @@ export const getNounsByWordSet = async (req: Request, res: Response) => {
           model: NounDeutsch,
           as: "nounDeutsch",
           required: true, // тільки слова, які є іменниками
-          attributes: ["id", "article", "gender", "plural", "plural_alt"],
+          attributes: [
+            "id",
+            "article",
+            "gender",
+            "plural",
+            "plural_alt",
+            "artikel_explanation",
+            "plural_explanation",
+          ],
         },
         {
           model: WordTranslation,
@@ -43,6 +51,8 @@ export const getNounsByWordSet = async (req: Request, res: Response) => {
       gender: w.nounDeutsch?.gender || null,
       plural: w.nounDeutsch?.plural || null,
       plural_alt: w.nounDeutsch?.plural_alt || null,
+      artikel_explanation: w.nounDeutsch?.artikel_explanation || null,
+      plural_explanation: w.nounDeutsch?.plural_explanation || null,
     }));
 
     res.json({ success: true, data });

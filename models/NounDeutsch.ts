@@ -7,11 +7,13 @@ interface NounDeutschAttributes {
   gender: "m" | "n" | "f" | "pl";
   plural?: string;
   plural_alt?: string;
+  artikel_explanation?: string;
+  plural_explanation?: string;
 }
 
 type NounDeutschCreationAttributes = Optional<
   NounDeutschAttributes,
-  "id" | "plural" | "plural_alt"
+  "id" | "plural" | "plural_alt" | "artikel_explanation" | "plural_explanation"
 >;
 
 export default (sequelize: Sequelize, dataTypes: typeof DataTypes) => {
@@ -45,6 +47,14 @@ export default (sequelize: Sequelize, dataTypes: typeof DataTypes) => {
         allowNull: true,
       },
       plural_alt: {
+        type: dataTypes.STRING(255),
+        allowNull: true,
+      },
+      artikel_explanation: {
+        type: dataTypes.STRING(255),
+        allowNull: true,
+      },
+      plural_explanation: {
         type: dataTypes.STRING(255),
         allowNull: true,
       },
