@@ -16,7 +16,9 @@
     "./models/**/*",
     "./routes/**/*",
     "./middlewares/**/*",
-    "./config/**/*"
+    "./config/**/*",
+    "for_work/verbs/verbs.js",
+    "for_work/verbs/extract_verbs.js"
   ],
   "exclude": ["node_modules", "dist"]
 }
