@@ -4,7 +4,7 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert(
-      "noun_deutsch",
+      "strong_verb_deutsch",
       [
         {
           word_id: 25,
@@ -2248,6 +2248,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete("noun_deutsch", null, {});
+    await queryInterface.bulkDelete("strong_verb_deutsch", null, {});
   },
 };
