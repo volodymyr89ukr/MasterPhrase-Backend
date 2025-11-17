@@ -4,21 +4,35 @@ import db from "../models";
 const Word = db.Word;
 const NounDeutsch = db.NounDeutsch;
 const WordTranslation = db.WordTranslation;
+const WordSet = db.WordSet;
+const WordSetWord = db.WordSetWord; // ← Проміжна таблиця
 
 export const getNounsByWordSet = async (req: Request, res: Response) => {
   try {
     const { word_set_id } = req.params;
     const interfaceLanguage = (req.query.interface_language as string) || "uk";
 
-    // Знаходимо всі слова для word_set_id
-    const words = await Word.findAll({
+    // ✅ КРОК 1: Отримуємо ID слів через проміжну таблицю
+    const wordSetWords = await WordSetWord.findAll({
       where: { word_set_id: Number(word_set_id) },
+      attributes: ["word_id"],
+    });
+
+    const wordIds = wordSetWords.map((wsw: any) => wsw.word_id);
+
+    if (wordIds.length === 0) {
+      return res.json({ success: true, data: [] });
+    }
+
+    // ✅ КРОК 2: Знаходимо слова-іменники з цими ID
+    const words = await Word.findAll({
+      where: { id: wordIds },
       attributes: ["id", "word"],
       include: [
         {
           model: NounDeutsch,
           as: "nounDeutsch",
-          required: true, // тільки слова, які є іменниками
+          required: true, // Тільки іменники
           attributes: [
             "id",
             "article",
