@@ -4,35 +4,38 @@ import db from "../models";
 const Word = db.Word;
 const NounDeutsch = db.NounDeutsch;
 const WordTranslation = db.WordTranslation;
-const WordSet = db.WordSet;
-const WordSetWord = db.WordSetWord; // ← Проміжна таблиця
 
 export const getNounsByWordSet = async (req: Request, res: Response) => {
   try {
     const { word_set_id } = req.params;
     const interfaceLanguage = (req.query.interface_language as string) || "uk";
 
-    // ✅ КРОК 1: Отримуємо ID слів через проміжну таблицю
-    const wordSetWords = await WordSetWord.findAll({
-      where: { word_set_id: Number(word_set_id) },
-      attributes: ["word_id"],
-    });
+    const wordSetId = Number(word_set_id);
 
-    const wordIds = wordSetWords.map((wsw: any) => wsw.word_id);
+    // ✅ Обчислюємо ID слів: позиції 6-23 у word_set
+    // Якщо word_set_id = 1: слова з ID від 6 до 23 (30 * 0 + 6 = 6, 30 * 0 + 23 = 23)
+    // Якщо word_set_id = 2: слова з ID від 36 до 53 (30 * 1 + 6 = 36, 30 * 1 + 23 = 53)
+    const startId = (wordSetId - 1) * 30 + 6;
+    const endId = (wordSetId - 1) * 30 + 23;
 
-    if (wordIds.length === 0) {
-      return res.json({ success: true, data: [] });
+    // Генеруємо масив ID від startId до endId включно
+    const wordIds = [];
+    for (let i = startId; i <= endId; i++) {
+      wordIds.push(i);
     }
 
-    // ✅ КРОК 2: Знаходимо слова-іменники з цими ID
+    // ✅ Знаходимо слова-іменники з цими ID
     const words = await Word.findAll({
-      where: { id: wordIds },
+      where: {
+        id: wordIds,
+        word_set_id: wordSetId, // Додаткова перевірка належності до word_set
+      },
       attributes: ["id", "word"],
       include: [
         {
           model: NounDeutsch,
           as: "nounDeutsch",
-          required: true, // Тільки іменники
+          required: true, // Тільки слова, які є іменниками
           attributes: [
             "id",
             "article",
@@ -51,6 +54,7 @@ export const getNounsByWordSet = async (req: Request, res: Response) => {
           attributes: ["translated_text"],
         },
       ],
+      order: [["id", "ASC"]], // Сортування по ID для збереження порядку
     });
 
     const data = words.map((w: any) => ({
