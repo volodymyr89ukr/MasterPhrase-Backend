@@ -10,7 +10,7 @@ export const getVerbsByBlockNumber = async (req: Request, res: Response) => {
     const { block_number } = req.params;
     const interfaceLanguage = (req.query.interface_language as string) || "uk";
 
-    // ✅ Знаходимо дієслова за block_number
+    // Знаходимо всі дієслова за block_number
     const verbs = await StrongVerbDeutsch.findAll({
       where: { block_number: Number(block_number) },
       attributes: [
@@ -31,8 +31,6 @@ export const getVerbsByBlockNumber = async (req: Request, res: Response) => {
         {
           model: Word,
           attributes: ["id", "word"],
-          where: { part_of_speech: "verb" }, // ← додатковий фільтр
-          required: true,
           include: [
             {
               model: WordTranslation,
