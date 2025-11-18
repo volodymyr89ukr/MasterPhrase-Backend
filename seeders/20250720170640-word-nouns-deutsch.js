@@ -6,32 +6,154 @@ module.exports = {
     await queryInterface.bulkInsert(
       "noun_deutsch",
       [
-        { id: 1, word_id: 6, article: "der", gender: "m", plural: "Äpfel" },
-        { id: 2, word_id: 7, article: "der", gender: "m", plural: "Balkone" },
-        { id: 3, word_id: 8, article: "der", gender: "m", plural: "Brüder" },
-        { id: 4, word_id: 9, article: "der", gender: "m", plural: "Dienstage" },
+        {
+          id: 1,
+          word_id: 6,
+          article: "der",
+          gender: "m",
+          plural: "Äpfel",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der** на **-el** часто отримують Umlaut (¨) у множині.",
+        },
+        {
+          id: 2,
+          word_id: 7,
+          article: "der",
+          gender: "m",
+          plural: "Balkone",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 3,
+          word_id: 8,
+          article: "der",
+          gender: "m",
+          plural: "Brüder",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (родичів) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (*Bruder*) часто отримують Umlaut (¨) у множині.",
+        },
+        {
+          id: 4,
+          word_id: 9,
+          article: "der",
+          gender: "m",
+          plural: "Dienstage",
+          artikel_explanation: "Дні тижня завжди **der**.",
+          plural_explanation: null,
+        },
         {
           id: 5,
           word_id: 10,
           article: "das",
           gender: "n",
           plural: "Fahrräder",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Rad*).",
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er** та Umlaut (¨).",
         },
-        { id: 6, word_id: 11, article: "die", gender: "f", plural: "Fragen" },
-        { id: 7, word_id: 12, article: "das", gender: "n", plural: "Gläser" },
-        { id: 8, word_id: 13, article: "das", gender: "n", plural: "Hobbys" },
-        { id: 9, word_id: 14, article: "der", gender: "m", plural: "Jungen" },
-        { id: 10, word_id: 15, article: "der", gender: "m", plural: "Kunden" },
-        { id: 11, word_id: 16, article: "das", gender: "n", plural: "Meere" },
-        { id: 12, word_id: 17, article: "die", gender: "f", plural: "Mütter" },
-        { id: 13, word_id: 18, article: "das", gender: "n", plural: "Papiere" },
-        { id: 14, word_id: 19, article: "der", gender: "m", plural: "Säfte" },
+        {
+          id: 6,
+          word_id: 11,
+          article: "die",
+          gender: "f",
+          plural: "Fragen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
+        },
+        {
+          id: 7,
+          word_id: 12,
+          article: "das",
+          gender: "n",
+          plural: "Gläser",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er** та Umlaut (¨).",
+        },
+        {
+          id: 8,
+          word_id: 13,
+          article: "das",
+          gender: "n",
+          plural: "Hobbys",
+          artikel_explanation: "Запозичення з англ. мови часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
+        {
+          id: 9,
+          word_id: 14,
+          article: "der",
+          gender: "m",
+          plural: "Jungen",
+          artikel_explanation:
+            "Істоти чоловічої статі (n-Deklination) – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-n** у множині.",
+        },
+        {
+          id: 10,
+          word_id: 15,
+          article: "der",
+          gender: "m",
+          plural: "Kunden",
+          artikel_explanation:
+            "Істоти чоловічої статі (n-Deklination) – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-n** у множині.",
+        },
+        {
+          id: 11,
+          word_id: 16,
+          article: "das",
+          gender: "n",
+          plural: "Meere",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 12,
+          word_id: 17,
+          article: "die",
+          gender: "f",
+          plural: "Mütter",
+          artikel_explanation: null,
+          plural_explanation: "Множина для *Mutter* – *Mütter* (з Umlaut).",
+        },
+        {
+          id: 13,
+          word_id: 18,
+          article: "das",
+          gender: "n",
+          plural: "Papiere",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 14,
+          word_id: 19,
+          article: "der",
+          gender: "m",
+          plural: "Säfte",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 15,
           word_id: 20,
           article: "die",
           gender: "f",
           plural: "Sekunden",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 16,
@@ -39,17 +161,57 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Stockwerke",
+          artikel_explanation: null,
+          plural_explanation:
+            "У значенні 'поверх' множина – *Stockwerke* (від *das Stockwerk*).",
         },
-        { id: 17, word_id: 22, article: "das", gender: "n", plural: "Tickets" },
-        { id: 18, word_id: 23, article: "das", gender: "n", plural: null },
-        { id: 19, word_id: 36, article: "der", gender: "m", plural: "Aprile" },
-        { id: 20, word_id: 37, article: "die", gender: "f", plural: "Bananen" },
+        {
+          id: 17,
+          word_id: 22,
+          article: "das",
+          gender: "n",
+          plural: "Tickets",
+          artikel_explanation: "Запозичення з англ. мови часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
+        {
+          id: 18,
+          word_id: 23,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Погодні явища часто **das** (але *Wetter* – виняток, бо збірне).",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
+        {
+          id: 19,
+          word_id: 36,
+          article: "der",
+          gender: "m",
+          plural: "Aprile",
+          artikel_explanation: "Назви місяців завжди **der**.",
+          plural_explanation: null,
+        },
+        {
+          id: 20,
+          word_id: 37,
+          article: "die",
+          gender: "f",
+          plural: "Bananen",
+          artikel_explanation:
+            "Більшість назв фруктів – **die** (особливо на **-e**).",
+          plural_explanation: null,
+        },
         {
           id: 21,
           word_id: 38,
           article: "das",
           gender: "n",
           plural: "Brötchen",
+          artikel_explanation: "Зменшувальний суфікс **-chen** завжди **das**.",
+          plural_explanation: "Іменники на **-chen** не змінюються у множині.",
         },
         {
           id: 22,
@@ -57,6 +219,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Donnerstage",
+          artikel_explanation: "Дні тижня завжди **der**.",
+          plural_explanation: null,
         },
         {
           id: 23,
@@ -64,27 +228,143 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Familien",
+          artikel_explanation: "Іменники із суфіксом **-ie** – **die**.",
+          plural_explanation: "Слова на **-ie** утворюють множину на **-n**.",
         },
-        { id: 24, word_id: 41, article: "die", gender: "f", plural: "Frauen" },
-        { id: 25, word_id: 42, article: "der", gender: "m", plural: "Grade" },
-        { id: 26, word_id: 43, article: "das", gender: "n", plural: "Hotels" },
-        { id: 27, word_id: 44, article: "der", gender: "m", plural: "Kaffees" },
-        { id: 28, word_id: 45, article: "die", gender: "f", plural: "Küchen" },
+        {
+          id: 24,
+          word_id: 41,
+          article: "die",
+          gender: "f",
+          plural: "Frauen",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 25,
+          word_id: 42,
+          article: "der",
+          gender: "m",
+          plural: "Grade",
+          artikel_explanation: null,
+          plural_explanation: "Одиниці виміру часто не змінюються у множині.",
+        },
+        {
+          id: 26,
+          word_id: 43,
+          article: "das",
+          gender: "n",
+          plural: "Hotels",
+          artikel_explanation: "Запозичення (інтерн.) часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
+        {
+          id: 27,
+          word_id: 44,
+          article: "der",
+          gender: "m",
+          plural: "Kaffees",
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (напій).",
+        },
+        {
+          id: 28,
+          word_id: 45,
+          article: "die",
+          gender: "f",
+          plural: "Küchen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
+        },
         {
           id: 29,
           word_id: 46,
           article: "der",
           gender: "m",
           plural: "Menschen",
+          artikel_explanation: "Істоти чоловічої статі (n-Deklination).",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
-        { id: 30, word_id: 47, article: "das", gender: "n", plural: "Mädchen" },
-        { id: 31, word_id: 48, article: "die", gender: "f", plural: "Partys" },
-        { id: 32, word_id: 49, article: "der", gender: "m", plural: "Salate" },
-        { id: 33, word_id: 50, article: "der", gender: "m", plural: null },
-        { id: 34, word_id: 51, article: "die", gender: "f", plural: "Straßen" },
-        { id: 35, word_id: 52, article: "der", gender: "m", plural: "Tische" },
-        { id: 36, word_id: 53, article: "die", gender: "f", plural: "Wochen" },
-        { id: 37, word_id: 66, article: "der", gender: "m", plural: "Ärzte" },
+        {
+          id: 30,
+          word_id: 47,
+          article: "das",
+          gender: "n",
+          plural: "Mädchen",
+          artikel_explanation: "Зменшувальний суфікс **-chen** завжди **das**.",
+          plural_explanation: "Іменники на **-chen** не змінюються у множині.",
+        },
+        {
+          id: 31,
+          word_id: 48,
+          article: "die",
+          gender: "f",
+          plural: "Partys",
+          artikel_explanation: "Запозичення з англ. мови часто **die**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
+        {
+          id: 32,
+          word_id: 49,
+          article: "der",
+          gender: "m",
+          plural: "Salate",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 33,
+          word_id: 50,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: "Назви місяців завжди **der**.",
+          plural_explanation: "Назви місяців зазвичай вживаються в однині.",
+        },
+        {
+          id: 34,
+          word_id: 51,
+          article: "die",
+          gender: "f",
+          plural: "Straßen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
+        },
+        {
+          id: 35,
+          word_id: 52,
+          article: "der",
+          gender: "m",
+          plural: "Tische",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** у множині.",
+        },
+        {
+          id: 36,
+          word_id: 53,
+          article: "die",
+          gender: "f",
+          plural: "Wochen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
+        },
+        {
+          id: 37,
+          word_id: 66,
+          article: "der",
+          gender: "m",
+          plural: "Ärzte",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 38,
           word_id: 67,
@@ -92,15 +372,38 @@ module.exports = {
           gender: "f",
           plural: "Banken",
           plural_alt: "Bänke",
+          artikel_explanation: null,
+          plural_explanation:
+            "*Banken* (фін. установи) / *Bänke* (меблі, з Umlaut).",
         },
-        { id: 39, word_id: 68, article: "das", gender: "n", plural: "Bücher" },
-        { id: 40, word_id: 69, article: "das", gender: "n", plural: "Dörfer" },
+        {
+          id: 39,
+          word_id: 68,
+          article: "das",
+          gender: "n",
+          plural: "Bücher",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er** та Umlaut (¨).",
+        },
+        {
+          id: 40,
+          word_id: 69,
+          article: "das",
+          gender: "n",
+          plural: "Dörfer",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er** та Umlaut (¨).",
+        },
         {
           id: 41,
           word_id: 70,
           article: "der",
           gender: "m",
           plural: "Februare",
+          artikel_explanation: "Назви місяців завжди **der**.",
+          plural_explanation: null,
         },
         {
           id: 42,
@@ -108,6 +411,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Freitage",
+          artikel_explanation: "Дні тижня завжди **der**.",
+          plural_explanation: null,
         },
         {
           id: 43,
@@ -115,53 +420,177 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Großmütter",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Mutter*).",
+          plural_explanation: "Множина для *Mutter* – *Mütter* (з Umlaut).",
         },
-        { id: 44, word_id: 73, article: "der", gender: "m", plural: "Hunde" },
-        { id: 45, word_id: 74, article: "die", gender: "f", plural: "Karten" },
+        {
+          id: 44,
+          word_id: 73,
+          article: "der",
+          gender: "m",
+          plural: "Hunde",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** у множині.",
+        },
+        {
+          id: 45,
+          word_id: 74,
+          article: "die",
+          gender: "f",
+          plural: "Karten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
+        },
         {
           id: 46,
           word_id: 75,
           article: "der",
           gender: "m",
           plural: "Kühlschränke",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schrank*).",
+          plural_explanation: "Множина для *Schrank* – *Schränke* (з Umlaut).",
         },
-        { id: 47, word_id: 76, article: "der", gender: "m", plural: "Meter" },
-        { id: 48, word_id: 77, article: "der", gender: "m", plural: null },
-        { id: 49, word_id: 78, article: "der", gender: "m", plural: "Pässe" },
+        {
+          id: 47,
+          word_id: 76,
+          article: "der",
+          gender: "m",
+          plural: "Meter",
+          artikel_explanation: "Одиниці виміру на **-er** зазвичай **der**.",
+          plural_explanation: "Одиниці виміру часто не змінюються у множині.",
+        },
+        {
+          id: 48,
+          word_id: 77,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: "Назви місяців завжди **der**.",
+          plural_explanation: "Назви місяців зазвичай вживаються в однині.",
+        },
+        {
+          id: 49,
+          word_id: 78,
+          article: "der",
+          gender: "m",
+          plural: "Pässe",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 50,
           word_id: 79,
           article: "der",
           gender: "m",
           plural: "Samstage",
+          artikel_explanation: "Дні тижня завжди **der**.",
+          plural_explanation: null,
         },
-        { id: 51, word_id: 80, article: "das", gender: "n", plural: "Sofas" },
+        {
+          id: 51,
+          word_id: 80,
+          article: "das",
+          gender: "n",
+          plural: "Sofas",
+          artikel_explanation:
+            "Слова, що закінчуються на **-a**, часто **die**, але *Sofa* – **das**.",
+          plural_explanation:
+            "Слова, що закінчуються на **-a**, **-i**, **-o**, часто утворюють множину на **-s**.",
+        },
         {
           id: 52,
           word_id: 81,
           article: "der",
           gender: "m",
           plural: "Studenten",
+          artikel_explanation:
+            "Іменники із суфіксом **-ent** (особи) – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
-        { id: 53, word_id: 82, article: "die", gender: "f", plural: "Töchter" },
+        {
+          id: 53,
+          word_id: 82,
+          article: "die",
+          gender: "f",
+          plural: "Töchter",
+          artikel_explanation: null,
+          plural_explanation: "Множина для *Tochter* – *Töchter* (з Umlaut).",
+        },
         {
           id: 54,
           word_id: 83,
           article: "das",
           gender: "n",
           plural: "Wochenenden",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Ende*).",
+          plural_explanation: null,
         },
-        { id: 55, word_id: 96, article: "das", gender: "n", plural: "Augen" },
-        { id: 56, word_id: 97, article: "der", gender: "m", plural: "Bäuche" },
-        { id: 57, word_id: 98, article: "der", gender: "m", plural: "Busse" },
-        { id: 58, word_id: 99, article: "die", gender: "f", plural: "Duschen" },
-        { id: 59, word_id: 100, article: "der", gender: "m", plural: "Filme" },
+        {
+          id: 55,
+          word_id: 96,
+          article: "das",
+          gender: "n",
+          plural: "Augen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**, але *Auge* – **das**.",
+          plural_explanation:
+            "Виняток: іменник **das** на **-e** додає **-n** у множині.",
+        },
+        {
+          id: 56,
+          word_id: 97,
+          article: "der",
+          gender: "m",
+          plural: "Bäuche",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
+        {
+          id: 57,
+          word_id: 98,
+          article: "der",
+          gender: "m",
+          plural: "Busse",
+          artikel_explanation: "Запозичення (транспорт) часто **der**.",
+          plural_explanation: null,
+        },
+        {
+          id: 58,
+          word_id: 99,
+          article: "die",
+          gender: "f",
+          plural: "Duschen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
+        },
+        {
+          id: 59,
+          word_id: 100,
+          article: "der",
+          gender: "m",
+          plural: "Filme",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** у множині.",
+        },
         {
           id: 60,
           word_id: 101,
           article: "der",
           gender: "m",
           plural: "Freunde",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** у множині.",
         },
         {
           id: 61,
@@ -169,39 +598,97 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Großväter",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Vater*).",
+          plural_explanation: "Множина для *Vater* – *Väter* (з Umlaut).",
         },
-        { id: 62, word_id: 103, article: "der", gender: "m", plural: null },
+        {
+          id: 62,
+          word_id: 103,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: "Назви місяців завжди **der**.",
+          plural_explanation: "Назви місяців зазвичай вживаються в однині.",
+        },
         {
           id: 63,
           word_id: 104,
           article: "die",
           gender: "f",
           plural: "Kartoffeln",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 64, word_id: 105, article: "der", gender: "m", plural: "Läden" },
-        { id: 65, word_id: 106, article: "die", gender: "f", plural: null },
+        {
+          id: 64,
+          word_id: 105,
+          article: "der",
+          gender: "m",
+          plural: "Läden",
+          artikel_explanation: null,
+          plural_explanation: "Множина для *Laden* – *Läden* (з Umlaut).",
+        },
+        {
+          id: 65,
+          word_id: 106,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Назви місяців – **der**, але *Mai* – **der Mai**. Це *die*? (Перевірте дані).",
+          plural_explanation:
+            "Зазвичай *der Mai*. Якщо це не місяць, правило інше.",
+        },
         {
           id: 66,
           word_id: 107,
           article: "der",
           gender: "m",
           plural: "Nachmittage",
+          artikel_explanation: "Частини доби зазвичай **der**.",
+          plural_explanation: null,
         },
-        { id: 67, word_id: 108, article: "der", gender: "m", plural: "Plätze" },
+        {
+          id: 67,
+          word_id: 108,
+          article: "der",
+          gender: "m",
+          plural: "Plätze",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 68,
           word_id: 109,
           article: "der",
           gender: "m",
           plural: "Schlüssel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
-        { id: 69, word_id: 110, article: "der", gender: "m", plural: "Söhne" },
+        {
+          id: 69,
+          word_id: 110,
+          article: "der",
+          gender: "m",
+          plural: "Söhne",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 70,
           word_id: 111,
           article: "die",
           gender: "f",
           plural: "Stunden",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 71,
@@ -209,6 +696,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Toiletten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 72,
@@ -216,47 +706,176 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Wohnungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
-        { id: 73, word_id: 126, article: "der", gender: "m", plural: null },
-        { id: 74, word_id: 127, article: "das", gender: "n", plural: "Beine" },
-        { id: 75, word_id: 128, article: "die", gender: "f", plural: null },
-        { id: 76, word_id: 129, article: "der", gender: "m", plural: null },
-        { id: 77, word_id: 130, article: "der", gender: "m", plural: "Fische" },
+        {
+          id: 73,
+          word_id: 126,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: "Назви місяців завжди **der**.",
+          plural_explanation: "Назви місяців зазвичай вживаються в однині.",
+        },
+        {
+          id: 74,
+          word_id: 127,
+          article: "das",
+          gender: "n",
+          plural: "Beine",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** отримують **-e** у множині.",
+        },
+        {
+          id: 75,
+          word_id: 128,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Незлічуваний іменник (продукт), вживається в однині.",
+        },
+        {
+          id: 76,
+          word_id: 129,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Незлічуваний іменник (страва), вживається в однині.",
+        },
+        {
+          id: 77,
+          word_id: 130,
+          article: "der",
+          gender: "m",
+          plural: "Fische",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** у множині.",
+        },
         {
           id: 78,
           word_id: 131,
           article: "der",
           gender: "m",
           plural: "Frühlinge",
+          artikel_explanation: "Пори року завжди **der**.",
+          plural_explanation: null,
         },
-        { id: 79, word_id: 132, article: "das", gender: "n", plural: "Haare" },
-        { id: 80, word_id: 133, article: "die", gender: "f", plural: "Jacken" },
-        { id: 81, word_id: 134, article: "das", gender: "n", plural: "Kilos" },
-        { id: 82, word_id: 135, article: "das", gender: "n", plural: "Länder" },
+        {
+          id: 79,
+          word_id: 132,
+          article: "das",
+          gender: "n",
+          plural: "Haare",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** отримують **-e** у множині.",
+        },
+        {
+          id: 80,
+          word_id: 133,
+          article: "die",
+          gender: "f",
+          plural: "Jacken",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
+        },
+        {
+          id: 81,
+          word_id: 134,
+          article: "das",
+          gender: "n",
+          plural: "Kilos",
+          artikel_explanation: "Скорочення від *das Kilogramm*.",
+          plural_explanation:
+            "Слова, що закінчуються на **-o**, часто утворюють множину на **-s**.",
+        },
+        {
+          id: 82,
+          word_id: 135,
+          article: "das",
+          gender: "n",
+          plural: "Länder",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er** та Umlaut (¨).",
+        },
         {
           id: 83,
           word_id: 136,
           article: "die",
           gender: "f",
           plural: "Minuten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 84, word_id: 137, article: "der", gender: "m", plural: "Namen" },
-        { id: 85, word_id: 138, article: "die", gender: "f", plural: null },
+        {
+          id: 84,
+          word_id: 137,
+          article: "der",
+          gender: "m",
+          plural: "Namen",
+          artikel_explanation: "Виняток (n-Deklination).",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-n** у множині.",
+        },
+        {
+          id: 85,
+          word_id: 138,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "(Множина: *Pausen*). (Дані сидера = null).",
+        },
         {
           id: 86,
           word_id: 139,
           article: "der",
           gender: "m",
           plural: "Schränke",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
-        { id: 87, word_id: 140, article: "der", gender: "m", plural: "Sommer" },
-        { id: 88, word_id: 141, article: "der", gender: "m", plural: "Tage" },
+        {
+          id: 87,
+          word_id: 140,
+          article: "der",
+          gender: "m",
+          plural: "Sommer",
+          artikel_explanation: "Пори року завжди **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (пори року) не змінюються у множині.",
+        },
+        {
+          id: 88,
+          word_id: 141,
+          article: "der",
+          gender: "m",
+          plural: "Tage",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** у множині.",
+        },
         {
           id: 89,
           word_id: 142,
           article: "die",
           gender: "f",
           plural: "Tomaten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 90,
@@ -264,16 +883,47 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Zeitungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
-        { id: 91, word_id: 156, article: "das", gender: "n", plural: "Autos" },
-        { id: 92, word_id: 157, article: "das", gender: "n", plural: "Betten" },
-        { id: 93, word_id: 158, article: "das", gender: "n", plural: "Cafés" },
+        {
+          id: 91,
+          word_id: 156,
+          article: "das",
+          gender: "n",
+          plural: "Autos",
+          artikel_explanation: "Запозичення (техніка) часто **das**.",
+          plural_explanation:
+            "Слова, що закінчуються на **-o**, часто утворюють множину на **-s**.",
+        },
+        {
+          id: 92,
+          word_id: 157,
+          article: "das",
+          gender: "n",
+          plural: "Betten",
+          artikel_explanation: null,
+          plural_explanation:
+            "Виняток: іменник **das** додає **-en** у множині.",
+        },
+        {
+          id: 93,
+          word_id: 158,
+          article: "das",
+          gender: "n",
+          plural: "Cafés",
+          artikel_explanation: "Запозичення з французької мови часто **das**.",
+          plural_explanation: "Запозичення часто утворюють множину на **-s**.",
+        },
         {
           id: 94,
           word_id: 159,
           article: "die",
           gender: "f",
           plural: "E-Mails",
+          artikel_explanation: "Запозичення з англ. мови (аналог *die Post*).",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 95,
@@ -281,17 +931,60 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Flaschen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 96, word_id: 161, article: "der", gender: "m", plural: "Füße" },
-        { id: 97, word_id: 162, article: "die", gender: "f", plural: "Hände" },
-        { id: 98, word_id: 163, article: "das", gender: "n", plural: "Jahre" },
-        { id: 99, word_id: 164, article: "das", gender: "n", plural: "Kinder" },
+        {
+          id: 96,
+          word_id: 161,
+          article: "der",
+          gender: "m",
+          plural: "Füße",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
+        {
+          id: 97,
+          word_id: 162,
+          article: "die",
+          gender: "f",
+          plural: "Hände",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **die** отримують **-e** та Umlaut (¨) у множині.",
+        },
+        {
+          id: 98,
+          word_id: 163,
+          article: "das",
+          gender: "n",
+          plural: "Jahre",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** отримують **-e** у множині.",
+        },
+        {
+          id: 99,
+          word_id: 164,
+          article: "das",
+          gender: "n",
+          plural: "Kinder",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er**.",
+        },
         {
           id: 100,
           word_id: 165,
           article: "der",
           gender: "m",
           plural: "Lehrer",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (професій) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 101,
@@ -299,6 +992,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Mittage",
+          artikel_explanation:
+            "Частини доби (напр., *der Morgen*, *der Tag*) зазвичай **der**.",
+          plural_explanation: null,
         },
         {
           id: 102,
@@ -306,14 +1002,26 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Nummern",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 103, word_id: 168, article: "die", gender: "f", plural: null },
+        {
+          id: 103,
+          word_id: 168,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
         {
           id: 104,
           word_id: 169,
           article: "der",
           gender: "m",
           plural: "Schuhe",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 105,
@@ -321,6 +1029,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Sonnen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 106,
@@ -328,26 +1038,85 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Taschen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 107, word_id: 172, article: "die", gender: "f", plural: "Uhren" },
+        {
+          id: 107,
+          word_id: 172,
+          article: "die",
+          gender: "f",
+          plural: "Uhren",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 108,
           word_id: 173,
           article: "das",
           gender: "n",
           plural: "Zimmer",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники середнього роду на **-er** (як *das Fenster*) не змінюються у множині.",
         },
-        { id: 109, word_id: 186, article: "das", gender: "n", plural: "Babys" },
-        { id: 110, word_id: 187, article: "das", gender: "n", plural: "Biere" },
-        { id: 111, word_id: 188, article: "der", gender: "m", plural: "Cent" },
-        { id: 112, word_id: 189, article: "das", gender: "n", plural: "Eier" },
-        { id: 113, word_id: 190, article: "das", gender: "n", plural: null },
+        {
+          id: 109,
+          word_id: 186,
+          article: "das",
+          gender: "n",
+          plural: "Babys",
+          artikel_explanation:
+            "Запозичені слова (особливо з англ.) часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
+        {
+          id: 110,
+          word_id: 187,
+          article: "das",
+          gender: "n",
+          plural: "Biere",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 111,
+          word_id: 188,
+          article: "der",
+          gender: "m",
+          plural: "Cent",
+          artikel_explanation:
+            "Грошові одиниці (*der Dollar*, *der Euro*) зазвичай **der**.",
+          plural_explanation: null,
+        },
+        {
+          id: 112,
+          word_id: 189,
+          article: "das",
+          gender: "n",
+          plural: "Eier",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 113,
+          word_id: 190,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
         {
           id: 114,
           word_id: 191,
           article: "der",
           gender: "m",
           plural: "Gärten",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато слів **der** з кореневою голосною **-a-** отримують Umlaut (¨) у множині.",
         },
         {
           id: 115,
@@ -355,15 +1124,40 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Handys",
+          artikel_explanation:
+            "Запозичені слова (особливо з англ.) часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
-        { id: 116, word_id: 193, article: "der", gender: "m", plural: null },
-        { id: 117, word_id: 194, article: "das", gender: "n", plural: "Kinos" },
+        {
+          id: 116,
+          word_id: 193,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
+        {
+          id: 117,
+          word_id: 194,
+          article: "das",
+          gender: "n",
+          plural: "Kinos",
+          artikel_explanation:
+            "Слова, що закінчуються на **-o** (часто запозичені), зазвичай **das**.",
+          plural_explanation:
+            "Слова, що закінчуються на **-o**, часто утворюють множину на **-s**.",
+        },
         {
           id: 118,
           word_id: 195,
           article: "das",
           gender: "n",
           plural: "Lichter",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er**.",
         },
         {
           id: 119,
@@ -371,15 +1165,36 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Mittwoche",
+          artikel_explanation: "Дні тижня завжди **der**.",
+          plural_explanation: null,
         },
-        { id: 120, word_id: 197, article: "das", gender: "n", plural: null },
-        { id: 121, word_id: 198, article: "der", gender: "m", plural: null },
+        {
+          id: 120,
+          word_id: 197,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Збірні поняття (як *das Gemüse*) часто **das**.",
+          plural_explanation: "Збірне поняття, вживається в однині.",
+        },
+        {
+          id: 121,
+          word_id: 198,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
         {
           id: 122,
           word_id: 199,
           article: "die",
           gender: "f",
           plural: "Schulen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 123,
@@ -387,70 +1202,224 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Sonntage",
+          artikel_explanation: "Дні тижня завжди **der**.",
+          plural_explanation: null,
         },
-        { id: 124, word_id: 201, article: "das", gender: "n", plural: "Taxis" },
-        { id: 125, word_id: 202, article: "der", gender: "m", plural: null },
-        { id: 126, word_id: 203, article: "der", gender: "m", plural: "Züge" },
-        { id: 127, word_id: 216, article: "das", gender: "n", plural: "Bäder" },
+        {
+          id: 124,
+          word_id: 201,
+          article: "das",
+          gender: "n",
+          plural: "Taxis",
+          artikel_explanation: "Запозичені слова часто **das**.",
+          plural_explanation:
+            "Запозичення (особливо на **-i**) часто утворюють множину на **-s**.",
+        },
+        {
+          id: 125,
+          word_id: 202,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
+        {
+          id: 126,
+          word_id: 203,
+          article: "der",
+          gender: "m",
+          plural: "Züge",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
+        {
+          id: 127,
+          word_id: 216,
+          article: "das",
+          gender: "n",
+          plural: "Bäder",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** отримують **-er** та Umlaut (¨) у множині.",
+        },
         {
           id: 128,
           word_id: 217,
           article: "der",
           gender: "m",
           plural: "Bleistifte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Stift*).",
+          plural_explanation: null,
         },
-        { id: 129, word_id: 218, article: "der", gender: "m", plural: "Chefs" },
-        { id: 130, word_id: 219, article: "die", gender: "pl", plural: null },
+        {
+          id: 129,
+          word_id: 218,
+          article: "der",
+          gender: "m",
+          plural: "Chefs",
+          artikel_explanation: null,
+          plural_explanation:
+            "Запозичення з французької мови часто утворюють множину на **-s**.",
+        },
+        {
+          id: 130,
+          word_id: 219,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
         {
           id: 131,
           word_id: 220,
           article: "der",
           gender: "m",
           plural: "Flughäfen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Hafen*).",
+          plural_explanation: "Слово *Hafen* у множині отримує Umlaut (¨).",
         },
-        { id: 132, word_id: 221, article: "der", gender: "m", plural: "Gäste" },
+        {
+          id: 132,
+          word_id: 221,
+          article: "der",
+          gender: "m",
+          plural: "Gäste",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 133,
           word_id: 222,
           article: "das",
           gender: "n",
           plural: "Häuser",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** отримують **-er** та Umlaut (¨) у множині.",
         },
-        { id: 134, word_id: 223, article: "der", gender: "m", plural: "Jobs" },
+        {
+          id: 134,
+          word_id: 223,
+          article: "der",
+          gender: "m",
+          plural: "Jobs",
+          artikel_explanation: "Запозичення з англ. мови часто **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
         {
           id: 135,
           word_id: 224,
           article: "der",
           gender: "m",
           plural: "Kollegen",
+          artikel_explanation:
+            "Істоти чоловічої статі на **-e** (n-Deklination) – **der**.",
+          plural_explanation:
+            "Слова слабкої відміни (n-Deklination) отримують **-n** у множині.",
         },
-        { id: 136, word_id: 225, article: "der", gender: "m", plural: "Liter" },
+        {
+          id: 136,
+          word_id: 225,
+          article: "der",
+          gender: "m",
+          plural: "Liter",
+          artikel_explanation:
+            "Одиниці виміру (як *der Meter*) зазвичай **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (одиниці виміру) не змінюються у множині.",
+        },
         {
           id: 137,
           word_id: 226,
           article: "der",
           gender: "m",
           plural: "Montage",
+          artikel_explanation: "Дні тижня завжди **der**.",
+          plural_explanation: null,
         },
-        { id: 138, word_id: 227, article: "der", gender: "m", plural: null },
-        { id: 139, word_id: 228, article: "der", gender: "m", plural: null },
+        {
+          id: 138,
+          word_id: 227,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
+        {
+          id: 139,
+          word_id: 228,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation:
+            "Погодні явища (*der Schnee*, *der Wind*) зазвичай **der**.",
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
         {
           id: 140,
           word_id: 229,
           article: "die",
           gender: "f",
           plural: "Schwestern",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 141, word_id: 230, article: "der", gender: "m", plural: null },
-        { id: 142, word_id: 231, article: "der", gender: "m", plural: "Tees" },
-        { id: 143, word_id: 232, article: "der", gender: "m", plural: "Väter" },
-        { id: 144, word_id: 233, article: "das", gender: "n", plural: "Öle" },
+        {
+          id: 141,
+          word_id: 230,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Зазвичай вживається в однині (або *Sportarten* для 'видів спорту').",
+        },
+        {
+          id: 142,
+          word_id: 231,
+          article: "der",
+          gender: "m",
+          plural: "Tees",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 143,
+          word_id: 232,
+          article: "der",
+          gender: "m",
+          plural: "Väter",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der** на **-er** (*Vater*, *Bruder*) часто отримують Umlaut (¨) у множині.",
+        },
+        {
+          id: 144,
+          word_id: 233,
+          article: "das",
+          gender: "n",
+          plural: "Öle",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 145,
           word_id: 246,
           article: "die",
           gender: "f",
           plural: "Bahnen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 146,
@@ -458,6 +1427,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Blumen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 147,
@@ -465,40 +1436,107 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Computer",
+          artikel_explanation:
+            "Запозичені слова, що означають пристрої (як *der Drucker*), часто **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** часто не змінюються у множині.",
         },
-        { id: 148, word_id: 249, article: "das", gender: "n", plural: "Essen" },
+        {
+          id: 148,
+          word_id: 249,
+          article: "das",
+          gender: "n",
+          plural: "Essen",
+          artikel_explanation:
+            "Субстантивовані дієслова (від *essen*) завжди **das**.",
+          plural_explanation: null,
+        },
         {
           id: 149,
           word_id: 250,
           article: "das",
           gender: "n",
           plural: "Flugzeuge",
+          artikel_explanation: "Іменники із суфіксом **-zeug** завжди **das**.",
+          plural_explanation: null,
         },
-        { id: 150, word_id: 251, article: "das", gender: "n", plural: null },
+        {
+          id: 150,
+          word_id: 251,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Збірні поняття (як *das Obst*) часто **das**.",
+          plural_explanation: "Збірне поняття, вживається в однині.",
+        },
         {
           id: 151,
           word_id: 252,
           article: "der",
           gender: "m",
           plural: "Herbste",
+          artikel_explanation:
+            "Пори року (*der Sommer*, *der Winter*) завжди **der**.",
+          plural_explanation: null,
         },
-        { id: 152, word_id: 253, article: "der", gender: "m", plural: null },
-        { id: 153, word_id: 254, article: "der", gender: "m", plural: "Köpfe" },
-        { id: 154, word_id: 255, article: "der", gender: "m", plural: null },
+        {
+          id: 152,
+          word_id: 253,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
+        {
+          id: 153,
+          word_id: 254,
+          article: "der",
+          gender: "m",
+          plural: "Köpfe",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
+        {
+          id: 154,
+          word_id: 255,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
         {
           id: 155,
           word_id: 256,
           article: "der",
           gender: "m",
           plural: "Morgen",
+          artikel_explanation:
+            "Частини доби (напр., *der Mittag*, *der Abend*) зазвичай **der**.",
+          plural_explanation: null,
         },
-        { id: 156, word_id: 257, article: "die", gender: "f", plural: "Omas" },
+        {
+          id: 156,
+          word_id: 257,
+          article: "die",
+          gender: "f",
+          plural: "Omas",
+          artikel_explanation:
+            "Слова, що закінчуються на **-a** (часто скорочення), зазвичай **die**.",
+          plural_explanation:
+            "Слова, що закінчуються на **-a**, **-i**, **-o**, часто утворюють множину на **-s**.",
+        },
         {
           id: 157,
           word_id: 258,
           article: "das",
           gender: "n",
           plural: "Restaurants",
+          artikel_explanation: "Запозичення з французької мови часто **das**.",
+          plural_explanation:
+            "Запозичення з французької мови часто утворюють множину на **-s**.",
         },
         {
           id: 158,
@@ -506,6 +1544,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Schüler",
+          artikel_explanation:
+            "Суфікс **-er** для позначення людей або професій – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 159,
@@ -513,6 +1555,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Sprachen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 160,
@@ -520,35 +1564,115 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Telefone",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 161, word_id: 262, article: "das", gender: "n", plural: null },
-        { id: 162, word_id: 263, article: "der", gender: "m", plural: null },
+        {
+          id: 161,
+          word_id: 262,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
+        {
+          id: 162,
+          word_id: 263,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation:
+            "Погодні явища (*der Schnee*, *der Regen*) зазвичай **der**.",
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
         {
           id: 163,
           word_id: 276,
           article: "der",
           gender: "m",
           plural: "Bahnhöfe",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Hof*).",
+          plural_explanation:
+            "Слово *Hof* у множині отримує **-e** та Umlaut (¨).",
         },
-        { id: 164, word_id: 277, article: "das", gender: "n", plural: "Brote" },
-        { id: 165, word_id: 278, article: "der", gender: "m", plural: null },
-        { id: 166, word_id: 279, article: "der", gender: "m", plural: "Euro" },
-        { id: 167, word_id: 280, article: "das", gender: "n", plural: "Fotos" },
-        { id: 168, word_id: 281, article: "das", gender: "n", plural: null },
+        {
+          id: 164,
+          word_id: 277,
+          article: "das",
+          gender: "n",
+          plural: "Brote",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 165,
+          word_id: 278,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
+        {
+          id: 166,
+          word_id: 279,
+          article: "der",
+          gender: "m",
+          plural: "Euro",
+          artikel_explanation:
+            "Грошові одиниці (*der Dollar*, *der Cent*) зазвичай **der**.",
+          plural_explanation: null,
+        },
+        {
+          id: 167,
+          word_id: 280,
+          article: "das",
+          gender: "n",
+          plural: "Fotos",
+          artikel_explanation:
+            "Слова, що закінчуються на **-o** (часто скорочення), зазвичай **das**.",
+          plural_explanation:
+            "Слова, що закінчуються на **-o**, часто утворюють множину на **-s**.",
+        },
+        {
+          id: 168,
+          word_id: 281,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Абстрактні поняття часто **das**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 169,
           word_id: 282,
           article: "der",
           gender: "m",
           plural: "Herren",
+          artikel_explanation: "Істоти чоловічої статі (n-Deklination).",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
-        { id: 170, word_id: 283, article: "der", gender: "m", plural: null },
+        {
+          id: 170,
+          word_id: 283,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: "Іменники із суфіксом **-ig** зазвичай **der**.",
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
         {
           id: 171,
           word_id: 284,
           article: "der",
           gender: "m",
           plural: "Kuchen",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 172,
@@ -556,6 +1680,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Männer",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-er** та Umlaut (¨) у множині.",
         },
         {
           id: 173,
@@ -563,31 +1690,78 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Münder",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-er** та Umlaut (¨) у множині.",
         },
-        { id: 174, word_id: 287, article: "der", gender: "m", plural: "Opas" },
+        {
+          id: 174,
+          word_id: 287,
+          article: "der",
+          gender: "m",
+          plural: "Opas",
+          artikel_explanation:
+            "Слова на **-a**, що позначають осіб ч.р. (часто родичів), – **der**.",
+          plural_explanation:
+            "Слова, що закінчуються на **-a**, **-i**, **-o**, часто утворюють множину на **-s**.",
+        },
         {
           id: 175,
           word_id: 288,
           article: "die",
           gender: "f",
           plural: "S-Bahnen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Bahn*).",
+          plural_explanation: null,
         },
-        { id: 176, word_id: 289, article: "der", gender: "m", plural: "Seen" },
+        {
+          id: 176,
+          word_id: 289,
+          article: "der",
+          gender: "m",
+          plural: "Seen",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 177,
           word_id: 290,
           article: "die",
           gender: "f",
           plural: "Städte",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **die** отримують **-e** та Umlaut (¨) у множині.",
         },
-        { id: 178, word_id: 291, article: "der", gender: "m", plural: "Texte" },
-        { id: 179, word_id: 292, article: "der", gender: "m", plural: "Weine" },
+        {
+          id: 178,
+          word_id: 291,
+          article: "der",
+          gender: "m",
+          plural: "Texte",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 179,
+          word_id: 292,
+          article: "der",
+          gender: "m",
+          plural: "Weine",
+          artikel_explanation:
+            "Алкогольні напої (крім *das Bier*) зазвичай **der**.",
+          plural_explanation: null,
+        },
         {
           id: 180,
           word_id: 293,
           article: "der",
           gender: "m",
           plural: "Winter",
+          artikel_explanation:
+            "Пори року (*der Sommer*, *der Herbst*) завжди **der**.",
+          plural_explanation: null,
         },
         {
           id: 181,
@@ -595,6 +1769,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Abfahrten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Fahrt*).",
+          plural_explanation: null,
         },
         {
           id: 182,
@@ -602,6 +1779,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Anrufe",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Ruf*).",
+          plural_explanation: null,
         },
         {
           id: 183,
@@ -609,6 +1789,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Ausgänge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Gang*).",
+          plural_explanation:
+            "Слово *Gang* у множині отримує **-e** та Umlaut (¨).",
         },
         {
           id: 184,
@@ -617,6 +1801,9 @@ module.exports = {
           gender: "m",
           plural: "Bögen",
           plural_alt: "Bogen",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-en**, часто не змінюються (але тут з Umlaut).",
         },
         {
           id: 185,
@@ -624,14 +1811,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Drucker",
+          artikel_explanation:
+            "Суфікс **-er** для пристроїв або професій – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** часто не змінюються у множині.",
         },
-        { id: 186, word_id: 311, article: "das", gender: "n", plural: null },
+        {
+          id: 186,
+          word_id: 311,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
         {
           id: 187,
           word_id: 312,
           article: "das",
           gender: "n",
           plural: "Formulare",
+          artikel_explanation:
+            "Запозичені слова на **-ar** (як *das Formular*) часто **das**.",
+          plural_explanation: null,
         },
         {
           id: 188,
@@ -639,6 +1841,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Geschäfte",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 189,
@@ -646,6 +1850,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Haltestellen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Stelle*).",
+          plural_explanation: null,
         },
         {
           id: 190,
@@ -653,6 +1860,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kassen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 191,
@@ -660,6 +1869,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kugelschreiber",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schreiber*).",
+          plural_explanation:
+            "Іменники **der** на **-er** часто не змінюються у множині.",
         },
         {
           id: 192,
@@ -667,6 +1880,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Milliarden",
+          artikel_explanation:
+            "Числа (*die Million*, *die Milliarde*) зазвичай **die**.",
+          plural_explanation: null,
         },
         {
           id: 193,
@@ -674,6 +1890,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Pfunde",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 194,
@@ -681,6 +1899,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Reisebüros",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Büro*).",
+          plural_explanation:
+            "Слова, що закінчуються на **-o**, часто утворюють множину на **-s**.",
         },
         {
           id: 195,
@@ -688,6 +1910,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Sonnabende",
+          artikel_explanation: "Дні тижня (синонім *Samstag*) завжди **der**.",
+          plural_explanation: null,
         },
         {
           id: 196,
@@ -695,15 +1919,39 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Viertel",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-el**, не змінюються у множині.",
         },
-        { id: 197, word_id: 322, article: "der", gender: "m", plural: "Zölle" },
-        { id: 198, word_id: 323, article: "der", gender: "m", plural: "Arme" },
+        {
+          id: 197,
+          word_id: 322,
+          article: "der",
+          gender: "m",
+          plural: "Zölle",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
+        {
+          id: 198,
+          word_id: 323,
+          article: "der",
+          gender: "m",
+          plural: "Arme",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 199,
           word_id: 336,
           article: "der",
           gender: "m",
           plural: "Abflüge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Flug*).",
+          plural_explanation:
+            "Слово *Flug* у множині отримує **-e** та Umlaut (¨).",
         },
         {
           id: 200,
@@ -711,6 +1959,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Ansagen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 201,
@@ -718,6 +1968,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Ausweise",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 202,
@@ -725,22 +1977,48 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Briefmarken",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Marke*).",
+          plural_explanation: null,
         },
-        { id: 203, word_id: 340, article: "die", gender: "f", plural: "Ecken" },
+        {
+          id: 203,
+          word_id: 340,
+          article: "die",
+          gender: "f",
+          plural: "Ecken",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 204,
           word_id: 341,
           article: "der",
           gender: "m",
           plural: "Fahrer",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (професій) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
-        { id: 205, word_id: 342, article: "die", gender: "f", plural: null },
+        {
+          id: 205,
+          word_id: 342,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
         {
           id: 206,
           word_id: 343,
           article: "das",
           gender: "n",
           plural: "Gespräche",
+          artikel_explanation:
+            "Іменники з префіксом **Ge-** (особливо збірні) часто **das**.",
+          plural_explanation: null,
         },
         {
           id: 207,
@@ -748,6 +2026,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Hausaufgaben",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Aufgabe*).",
+          plural_explanation: null,
         },
         {
           id: 208,
@@ -756,6 +2037,10 @@ module.exports = {
           gender: "n",
           plural: "Kilogramm",
           plural_alt: "Kilogramme",
+          artikel_explanation:
+            "Одиниці виміру із суфіксом **-gramm** завжди **das**.",
+          plural_explanation:
+            "Для одиниць виміру форма множини часто збігається з одниною.",
         },
         {
           id: 209,
@@ -763,6 +2048,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kundinnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
         {
           id: 210,
@@ -770,14 +2059,30 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Millionen",
+          artikel_explanation:
+            "Числа (*die Million*, *die Milliarde*) зазвичай **die**.",
+          plural_explanation: null,
         },
-        { id: 211, word_id: 348, article: "der", gender: "m", plural: "Pläne" },
+        {
+          id: 211,
+          word_id: 348,
+          article: "der",
+          gender: "m",
+          plural: "Pläne",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 212,
           word_id: 349,
           article: "der",
           gender: "m",
           plural: "Reiseführer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Führer*).",
+          plural_explanation:
+            "Іменники **der** на **-er** часто не змінюються у множині.",
         },
         {
           id: 213,
@@ -785,6 +2090,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Speisekarten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Karte*).",
+          plural_explanation: null,
         },
         {
           id: 214,
@@ -792,6 +2100,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Vormittage",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Mittag*).",
+          plural_explanation: null,
         },
         {
           id: 215,
@@ -799,6 +2110,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Farben",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 216,
@@ -806,6 +2119,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Briefe",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 217,
@@ -813,6 +2128,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Absender",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (агентів) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 218,
@@ -820,6 +2139,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Anzeigen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 219,
@@ -827,6 +2148,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Autobahnen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Bahn*).",
+          plural_explanation: null,
         },
         {
           id: 220,
@@ -834,6 +2158,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Buchstaben",
+          artikel_explanation:
+            "Іменники слабкої відміни (n-Deklination) – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-n** у множині.",
         },
         {
           id: 221,
@@ -841,6 +2169,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Ehefrauen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Frau*).",
+          plural_explanation: null,
         },
         {
           id: 222,
@@ -848,6 +2179,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Fahrkarten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Karte*).",
+          plural_explanation: null,
         },
         {
           id: 223,
@@ -855,6 +2189,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Frühjahre",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Jahr*).",
+          plural_explanation: null,
         },
         {
           id: 224,
@@ -862,6 +2199,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Getränke",
+          artikel_explanation:
+            "Іменники з префіксом **Ge-** (особливо збірні) часто **das**.",
+          plural_explanation: null,
         },
         {
           id: 225,
@@ -869,6 +2209,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Hausfrauen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Frau*).",
+          plural_explanation: null,
         },
         {
           id: 226,
@@ -876,22 +2219,50 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kilometer",
+          artikel_explanation:
+            "Одиниці виміру на **-meter** (як *der Meter*) зазвичай **der**.",
+          plural_explanation:
+            "Для одиниць виміру форма множини часто збігається з одниною.",
         },
-        { id: 227, word_id: 376, article: "der", gender: "m", plural: "Kurse" },
+        {
+          id: 227,
+          word_id: 376,
+          article: "der",
+          gender: "m",
+          plural: "Kurse",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 228,
           word_id: 377,
           article: "der",
           gender: "m",
           plural: "Momente",
+          artikel_explanation:
+            "Іменники (часто запозичені) на **-ent** – **der**.",
+          plural_explanation: null,
         },
-        { id: 229, word_id: 378, article: "die", gender: "pl", plural: null },
+        {
+          id: 229,
+          word_id: 378,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
         {
           id: 230,
           word_id: 379,
           article: "die",
           gender: "f",
           plural: "Reparaturen",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ur** – **die**.",
+          plural_explanation: "Слова на **-ur** утворюють множину на **-en**.",
         },
         {
           id: 231,
@@ -899,6 +2270,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Speisekarten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Karte*).",
+          plural_explanation: null,
         },
         {
           id: 232,
@@ -906,15 +2280,37 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Vornamen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Name*).",
+          plural_explanation:
+            "Слово *Name* належить до слабкої відміни (n-Deklination).",
         },
-        { id: 233, word_id: 382, article: "das", gender: "n", plural: null },
-        { id: 234, word_id: 383, article: "der", gender: "m", plural: "Orte" },
+        {
+          id: 233,
+          word_id: 382,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Іменники із суфіксом **-zeug** завжди **das**.",
+          plural_explanation: "Зазвичай вживається в однині (збірне поняття).",
+        },
+        {
+          id: 234,
+          word_id: 383,
+          article: "der",
+          gender: "m",
+          plural: "Orte",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 235,
           word_id: 396,
           article: "die",
           gender: "f",
           plural: "Adressen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 236,
@@ -922,6 +2318,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Apartments",
+          artikel_explanation: "Запозичення (особливо з англ.) часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 237,
@@ -929,6 +2328,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Automaten",
+          artikel_explanation:
+            "Іменники (часто запозичені) на **-at** – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
         {
           id: 238,
@@ -936,6 +2339,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Bäckereien",
+          artikel_explanation:
+            "Іменники із суфіксом **-ei** (заклади, дії) – **die**.",
+          plural_explanation: "Слова на **-ei** утворюють множину на **-en**.",
         },
         {
           id: 239,
@@ -943,6 +2349,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Ehemänner",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Mann*).",
+          plural_explanation: "Множина для *Mann* – *Männer* (з Umlaut).",
         },
         {
           id: 240,
@@ -950,6 +2359,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Familiennamen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Name*).",
+          plural_explanation:
+            "Слово *Name* належить до слабкої відміни (n-Deklination).",
         },
         {
           id: 241,
@@ -957,6 +2370,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Frühstücke",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 242,
@@ -964,6 +2379,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Gleise",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 243,
@@ -971,6 +2388,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Hausmänner",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Mann*).",
+          plural_explanation: "Множина для *Mann* – *Männer* (з Umlaut).",
         },
         {
           id: 244,
@@ -978,15 +2398,41 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kindergärten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Garten*).",
+          plural_explanation: "Слово *Garten* у множині отримує Umlaut (¨).",
         },
-        { id: 245, word_id: 406, article: "die", gender: "pl", plural: null },
-        { id: 246, word_id: 407, article: "die", gender: "pl", plural: null },
+        {
+          id: 245,
+          word_id: 406,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
+        {
+          id: 246,
+          word_id: 407,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
         {
           id: 247,
           word_id: 408,
           article: "die",
           gender: "f",
           plural: "Praxen",
+          artikel_explanation: null,
+          plural_explanation:
+            "Нерегулярна множина для слів на **-is** (часто **-en** або **-ides**).",
         },
         {
           id: 248,
@@ -994,6 +2440,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Rezeptionen",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ion** – **die**.",
+          plural_explanation: "Слова на **-ion** утворюють множину на **-en**.",
         },
         {
           id: 249,
@@ -1001,6 +2450,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Stellen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 250,
@@ -1009,33 +2460,98 @@ module.exports = {
           gender: "m",
           plural: "Wagen",
           plural_alt: "Wägen",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-en**, часто не змінюються (або з Umlaut).",
         },
-        { id: 251, word_id: 412, article: "das", gender: "n", plural: "Leben" },
-        { id: 252, word_id: 413, article: "das", gender: "n", plural: null },
-        { id: 253, word_id: 426, article: "das", gender: "n", plural: "Alter" },
-        { id: 254, word_id: 427, article: "der", gender: "m", plural: null },
+        {
+          id: 251,
+          word_id: 412,
+          article: "das",
+          gender: "n",
+          plural: "Leben",
+          artikel_explanation:
+            "Субстантивовані дієслова (від *leben*) завжди **das**.",
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-en**, не змінюються у множині.",
+        },
+        {
+          id: 252,
+          word_id: 413,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
+        {
+          id: 253,
+          word_id: 426,
+          article: "das",
+          gender: "n",
+          plural: "Alter",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-er**, не змінюються у множині.",
+        },
+        {
+          id: 254,
+          word_id: 427,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 255,
           word_id: 428,
           article: "der",
           gender: "m",
           plural: "Bahnsteige",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Steig*).",
+          plural_explanation: null,
         },
-        { id: 256, word_id: 429, article: "der", gender: "m", plural: null },
+        {
+          id: 256,
+          word_id: 429,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 257,
           word_id: 430,
           article: "der",
           gender: "m",
           plural: "Eingänge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Gang*).",
+          plural_explanation:
+            "Слово *Gang* у множині отримує **-e** та Umlaut (¨).",
         },
-        { id: 258, word_id: 431, article: "das", gender: "n", plural: "Faxe" },
+        {
+          id: 258,
+          word_id: 431,
+          article: "das",
+          gender: "n",
+          plural: "Faxe",
+          artikel_explanation: "Скорочені та запозичені слова часто **das**.",
+          plural_explanation: null,
+        },
         {
           id: 259,
           word_id: 432,
           article: "der",
           gender: "m",
           plural: "Fußbälle",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Ball*).",
+          plural_explanation:
+            "Слово *Ball* у множині отримує **-e** та Umlaut (¨).",
         },
         {
           id: 260,
@@ -1044,30 +2560,68 @@ module.exports = {
           gender: "n",
           plural: "Gramm",
           plural_alt: "Gramme",
+          artikel_explanation:
+            "Одиниці виміру із суфіксом **-gramm** завжди **das**.",
+          plural_explanation:
+            "Для одиниць виміру форма множини часто збігається з одниною.",
         },
-        { id: 261, word_id: 434, article: "der", gender: "m", plural: "Herde" },
+        {
+          id: 261,
+          word_id: 434,
+          article: "der",
+          gender: "m",
+          plural: "Herde",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 262,
           word_id: 435,
           article: "der",
           gender: "m",
           plural: "Kioske",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 263, word_id: 436, article: "die", gender: "pl", plural: null },
+        {
+          id: 263,
+          word_id: 436,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
         {
           id: 264,
           word_id: 438,
           article: "das",
           gender: "n",
           plural: "Probleme",
+          artikel_explanation:
+            "Іменники грецького походження на **-em** (як *das System*) – **das**.",
+          plural_explanation: null,
         },
-        { id: 265, word_id: 439, article: "das", gender: "n", plural: "Salze" },
+        {
+          id: 265,
+          word_id: 439,
+          article: "das",
+          gender: "n",
+          plural: "Salze",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 266,
           word_id: 440,
           article: "die",
           gender: "f",
           plural: "Straßenbahnen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Bahn*).",
+          plural_explanation: null,
         },
         {
           id: 267,
@@ -1075,15 +2629,39 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Welten",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 268, word_id: 442, article: "der", gender: "m", plural: "Sätze" },
-        { id: 269, word_id: 443, article: "der", gender: "m", plural: "Tests" },
+        {
+          id: 268,
+          word_id: 442,
+          article: "der",
+          gender: "m",
+          plural: "Sätze",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
+        {
+          id: 269,
+          word_id: 443,
+          article: "der",
+          gender: "m",
+          plural: "Tests",
+          artikel_explanation:
+            "Запозичення з англ. мови (особливо односкладові) – **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
         {
           id: 270,
           word_id: 456,
           article: "der",
           gender: "m",
           plural: "Anfänge",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато слів **der** з кореневою голосною **-a-** отримують **-e** та Umlaut (¨).",
         },
         {
           id: 271,
@@ -1091,15 +2669,37 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Arbeiten",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 272, word_id: 458, article: "der", gender: "m", plural: "Bäume" },
-        { id: 273, word_id: 459, article: "das", gender: "n", plural: "Daten" },
+        {
+          id: 272,
+          word_id: 458,
+          article: "der",
+          gender: "m",
+          plural: "Bäume",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
+        {
+          id: 273,
+          word_id: 459,
+          article: "das",
+          gender: "n",
+          plural: "Daten",
+          artikel_explanation: "Запозичення з латини на **-um** – **das**.",
+          plural_explanation:
+            "Слова на **-um** (лат. походження) утворюють множину на **-en**.",
+        },
         {
           id: 274,
           word_id: 460,
           article: "die",
           gender: "f",
           plural: "Einladungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 275,
@@ -1107,6 +2707,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Fehler",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-er**, не змінюються у множині.",
         },
         {
           id: 276,
@@ -1114,14 +2717,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Geburtsorte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Ort*).",
+          plural_explanation: null,
         },
-        { id: 277, word_id: 463, article: "die", gender: "pl", plural: null },
+        {
+          id: 277,
+          word_id: 463,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
         {
           id: 278,
           word_id: 464,
           article: "die",
           gender: "f",
           plural: "Hilfen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 279,
@@ -1129,6 +2747,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Klassen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 280,
@@ -1136,14 +2756,27 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Lieder",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er**.",
         },
-        { id: 281, word_id: 467, article: "der", gender: "m", plural: null },
+        {
+          id: 281,
+          word_id: 467,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 282,
           word_id: 468,
           article: "der",
           gender: "m",
           plural: "Prospekte",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 283,
@@ -1151,15 +2784,36 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Schilder",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er**.",
         },
-        { id: 284, word_id: 470, article: "der", gender: "m", plural: null },
-        { id: 285, word_id: 471, article: "der", gender: "m", plural: null },
+        {
+          id: 284,
+          word_id: 470,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
+        {
+          id: 285,
+          word_id: 471,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 286,
           word_id: 472,
           article: "die",
           gender: "f",
           plural: "Zeiten",
+          artikel_explanation: "Іменники із суфіксом **-eit** – **die**.",
+          plural_explanation: "Слова на **-eit** утворюють множину на **-en**.",
         },
         {
           id: 287,
@@ -1167,6 +2821,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Abende",
+          artikel_explanation:
+            "Частини доби (напр., *der Morgen*, *der Tag*) зазвичай **der**.",
+          plural_explanation: null,
         },
         {
           id: 288,
@@ -1174,6 +2831,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Angebote",
+          artikel_explanation:
+            "Іменники з префіксом **Ge-** (як *das Gebot*) часто **das**.",
+          plural_explanation: null,
         },
         {
           id: 289,
@@ -1181,6 +2841,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Arbeitsplätze",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Platz*).",
+          plural_explanation:
+            "Слово *Platz* у множині отримує **-e** та Umlaut (¨).",
         },
         {
           id: 290,
@@ -1188,6 +2852,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Beispiele",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 291,
@@ -1195,6 +2861,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Deutschen",
+          artikel_explanation:
+            "Субстантивований прикметник (чол. рід) – **der**.",
+          plural_explanation: "Відмінюється як прикметник (n-Deklination).",
         },
         {
           id: 292,
@@ -1202,6 +2871,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Eintritte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Tritt*).",
+          plural_explanation: null,
         },
         {
           id: 293,
@@ -1209,6 +2881,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Feiertage",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Tag*).",
+          plural_explanation: null,
         },
         {
           id: 294,
@@ -1216,6 +2891,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Geburtstage",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Tag*).",
+          plural_explanation: null,
         },
         {
           id: 295,
@@ -1223,6 +2901,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Gruppen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 296,
@@ -1230,8 +2910,21 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Hochzeiten",
+          artikel_explanation:
+            "Іменники із суфіксом **-zeit** (як *die Zeit*) – **die**.",
+          plural_explanation:
+            "Слова на **-zeit** утворюють множину на **-en**.",
         },
-        { id: 297, word_id: 495, article: "die", gender: "f", plural: null },
+        {
+          id: 297,
+          word_id: 495,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники із суфіксом **-nis** можуть бути **die** або **das**.",
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 298,
           word_id: 496,
@@ -1239,14 +2932,28 @@ module.exports = {
           gender: "m",
           plural: "Lkw",
           plural_alt: "Lkws",
+          artikel_explanation:
+            "Абревіатура, артикль за головним словом (*der Lastkraftwagen*).",
+          plural_explanation:
+            "Абревіатури часто не змінюються у множині (або додають **-s**).",
         },
-        { id: 299, word_id: 497, article: "der", gender: "m", plural: null },
+        {
+          id: 299,
+          word_id: 497,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 300,
           word_id: 498,
           article: "das",
           gender: "n",
           plural: "Prozente",
+          artikel_explanation: "Одиниці виміру (запозичені) часто **das**.",
+          plural_explanation: null,
         },
         {
           id: 301,
@@ -1254,15 +2961,37 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Schinken",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-en**, не змінюються у множині.",
         },
-        { id: 302, word_id: 500, article: "der", gender: "m", plural: "Teile" },
-        { id: 303, word_id: 501, article: "der", gender: "m", plural: "Winde" },
+        {
+          id: 302,
+          word_id: 500,
+          article: "der",
+          gender: "m",
+          plural: "Teile",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 303,
+          word_id: 501,
+          article: "der",
+          gender: "m",
+          plural: "Winde",
+          artikel_explanation:
+            "Погодні явища (*der Regen*, *der Schnee*) зазвичай **der**.",
+          plural_explanation: null,
+        },
         {
           id: 304,
           word_id: 502,
           article: "die",
           gender: "f",
           plural: "Antworten",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 305,
@@ -1270,6 +2999,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Termine",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 306,
@@ -1277,6 +3008,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Ankünfte",
+          artikel_explanation:
+            "Іменники, утворені від дієслів, що означають процес, часто **die**.",
+          plural_explanation:
+            "Слова з кореневою **-u-** (як *Ankunft*) часто отримують Umlaut (¨) у множині.",
         },
         {
           id: 307,
@@ -1284,6 +3019,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Aufgaben",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 308,
@@ -1291,24 +3028,66 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Berufe",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 309, word_id: 519, article: "das", gender: "n", plural: null },
+        {
+          id: 309,
+          word_id: 519,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Матеріали та речовини (паливо, метали) часто **das**.",
+          plural_explanation: "Незлічуваний іменник, вживається в однині.",
+        },
         {
           id: 310,
           word_id: 520,
           article: "das",
           gender: "n",
           plural: "Einzelzimmer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Zimmer*).",
+          plural_explanation:
+            "Іменники **das** на **-er** (*das Zimmer*) не змінюються у множині.",
         },
-        { id: 311, word_id: 521, article: "das", gender: "n", plural: "Feuer" },
-        { id: 312, word_id: 522, article: "das", gender: "n", plural: null },
-        { id: 313, word_id: 523, article: "der", gender: "m", plural: "Grüße" },
+        {
+          id: 311,
+          word_id: 521,
+          article: "das",
+          gender: "n",
+          plural: "Feuer",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 312,
+          word_id: 522,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Назви хвороб (*das Fieber*) часто **das**.",
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
+        {
+          id: 313,
+          word_id: 523,
+          article: "der",
+          gender: "m",
+          plural: "Grüße",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 314,
           word_id: 524,
           article: "das",
           gender: "n",
           plural: "Hähnchen",
+          artikel_explanation: "Зменшувальний суфікс **-chen** завжди **das**.",
+          plural_explanation: "Іменники на **-chen** не змінюються у множині.",
         },
         {
           id: 315,
@@ -1316,6 +3095,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Koffer",
+          artikel_explanation:
+            "Іменники **der** на **-er** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-er**, не змінюються у множині.",
         },
         {
           id: 316,
@@ -1323,6 +3106,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Lokale",
+          artikel_explanation:
+            "Іменники (часто запозичені) на **-al** – **das**.",
+          plural_explanation: null,
         },
         {
           id: 317,
@@ -1330,6 +3116,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Partner",
+          artikel_explanation:
+            "Іменники **der** на **-er** (особливо люди) не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-er**, не змінюються у множині.",
         },
         {
           id: 318,
@@ -1337,6 +3127,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Prüfungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 319,
@@ -1344,6 +3136,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Schlüsse",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 320,
@@ -1351,6 +3146,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Themen",
+          artikel_explanation:
+            "Слова грецького походження на **-ma** – **das**.",
+          plural_explanation:
+            "Слова на **-ma** (грец. походження) утворюють множину на **-en**.",
         },
         {
           id: 321,
@@ -1358,6 +3157,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Wochentage",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Tag*).",
+          plural_explanation: null,
         },
         {
           id: 322,
@@ -1365,6 +3167,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Preise",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 323,
@@ -1372,6 +3176,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Praktika",
+          artikel_explanation:
+            "Запозичені слова з латини на **-um** – **das**.",
+          plural_explanation:
+            "Слова на **-um** (лат. походження) утворюють множину на **-a**.",
         },
         {
           id: 324,
@@ -1379,6 +3187,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Anmeldungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 325,
@@ -1386,6 +3196,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Aufzüge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Zug*).",
+          plural_explanation:
+            "Слово *Zug* у множині отримує **-e** та Umlaut (¨).",
         },
         {
           id: 326,
@@ -1393,6 +3207,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Birnen",
+          artikel_explanation:
+            "Більшість назв фруктів – **die** (виняток *der Apfel*).",
+          plural_explanation: null,
         },
         {
           id: 327,
@@ -1400,15 +3217,37 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Doktoren",
+          artikel_explanation:
+            "Іменники (титули, професії) на **-or** – **der**.",
+          plural_explanation: null,
         },
-        { id: 328, word_id: 550, article: "das", gender: "n", plural: "Enden" },
-        { id: 329, word_id: 551, article: "das", gender: "n", plural: null },
+        {
+          id: 328,
+          word_id: 550,
+          article: "das",
+          gender: "n",
+          plural: "Enden",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 329,
+          word_id: 551,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Geschoss*).",
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 330,
           word_id: 552,
           article: "das",
           gender: "n",
           plural: "Geschenke",
+          artikel_explanation: "Іменники з префіксом **Ge-** часто **das**.",
+          plural_explanation: null,
         },
         {
           id: 331,
@@ -1416,6 +3255,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Größen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 332,
@@ -1423,6 +3265,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Informationen",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ion** – **die**.",
+          plural_explanation: "Слова на **-ion** утворюють множину на **-en**.",
         },
         {
           id: 333,
@@ -1431,6 +3276,10 @@ module.exports = {
           gender: "n",
           plural: "Konten",
           plural_alt: "Kontos",
+          artikel_explanation:
+            "Слова, що закінчуються на **-o** (часто запозичені), зазвичай **das**.",
+          plural_explanation:
+            "Слова на **-o** мають варіанти множини: **-en** або **-s**.",
         },
         {
           id: 334,
@@ -1438,6 +3287,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Maschinen",
+          artikel_explanation:
+            "Іменники (часто запозичені) на **-ine** – **die**.",
+          plural_explanation: null,
         },
         {
           id: 335,
@@ -1445,14 +3297,30 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Partnerinnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
-        { id: 336, word_id: 558, article: "der", gender: "m", plural: "Räume" },
+        {
+          id: 336,
+          word_id: 558,
+          article: "der",
+          gender: "m",
+          plural: "Räume",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 337,
           word_id: 559,
           article: "das",
           gender: "n",
           plural: "Schwimmbäder",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Bad*).",
+          plural_explanation: "Множина для *Bad* – *Bäder* (з Umlaut).",
         },
         {
           id: 338,
@@ -1460,6 +3328,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Treppen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 339,
@@ -1467,6 +3338,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Zentimeter",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Meter*).",
+          plural_explanation:
+            "Одиниці виміру (як *der Meter*) часто не змінюються у множині.",
         },
         {
           id: 340,
@@ -1474,6 +3349,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Reisen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 341,
@@ -1481,6 +3359,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Gewichte",
+          artikel_explanation: "Іменники з префіксом **Ge-** часто **das**.",
+          plural_explanation: null,
         },
         {
           id: 342,
@@ -1488,6 +3368,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Anreden",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Rede*).",
+          plural_explanation: null,
         },
         {
           id: 343,
@@ -1495,6 +3378,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Ausflüge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Flug*).",
+          plural_explanation:
+            "Слово *Flug* у множині отримує **-e** та Umlaut (¨).",
         },
         {
           id: 344,
@@ -1502,6 +3389,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Bitten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 345,
@@ -1509,6 +3399,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Doppelzimmer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Zimmer*).",
+          plural_explanation:
+            "Іменники **das** на **-er** (*das Zimmer*) не змінюються у множині.",
         },
         {
           id: 346,
@@ -1516,6 +3410,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Entschuldigungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 347,
@@ -1523,14 +3419,29 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Firmen",
+          artikel_explanation: "Іменники (запозичені) на **-a** часто **die**.",
+          plural_explanation: "Множина для *Firma* – *Firmen*.",
         },
-        { id: 348, word_id: 582, article: "die", gender: "pl", plural: null },
+        {
+          id: 348,
+          word_id: 582,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
         {
           id: 349,
           word_id: 583,
           article: "die",
           gender: "f",
           plural: "Hallen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 350,
@@ -1538,6 +3449,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Internets",
+          artikel_explanation:
+            "Технічні та запозичені терміни (з англ.) часто **das**.",
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
         },
         {
           id: 351,
@@ -1545,6 +3459,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kreditkarten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Karte*).",
+          plural_explanation: null,
         },
         {
           id: 352,
@@ -1552,6 +3469,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Mieten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 353,
@@ -1559,6 +3479,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Pausen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 354,
@@ -1566,14 +3489,29 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Rechnungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
-        { id: 355, word_id: 589, article: "das", gender: "n", plural: null },
+        {
+          id: 355,
+          word_id: 589,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Fleisch*).",
+          plural_explanation: "Слово *Fleisch* (м'ясо) є незлічуваним.",
+        },
         {
           id: 356,
           word_id: 590,
           article: "der",
           gender: "m",
           plural: "Verkäufer",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (професій) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 357,
@@ -1581,6 +3519,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Zigaretten",
+          artikel_explanation: "Іменники (запозичені) на **-ette** – **die**.",
+          plural_explanation: null,
         },
         {
           id: 358,
@@ -1588,6 +3528,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Bilder",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er**.",
         },
         {
           id: 359,
@@ -1595,14 +3538,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Blicke",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 360, word_id: 606, article: "die", gender: "f", plural: null },
+        {
+          id: 360,
+          word_id: 606,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Sage*).",
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 361,
           word_id: 607,
           article: "das",
           gender: "n",
           plural: "Ergebnisse",
+          artikel_explanation:
+            "Іменники із суфіксом **-nis** (результат) – **das**.",
+          plural_explanation:
+            "Іменники на **-nis** у множині отримують **-nisse**.",
         },
         {
           id: 362,
@@ -1610,6 +3568,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Lösungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 363,
@@ -1617,23 +3577,58 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Vermieter",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Mieter*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
-        { id: 364, word_id: 610, article: "der", gender: "m", plural: "Bälle" },
-        { id: 365, word_id: 611, article: "das", gender: "n", plural: "Eis" },
+        {
+          id: 364,
+          word_id: 610,
+          article: "der",
+          gender: "m",
+          plural: "Bälle",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
+        {
+          id: 365,
+          word_id: 611,
+          article: "das",
+          gender: "n",
+          plural: "Eis",
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
         {
           id: 366,
           word_id: 612,
           article: "die",
           gender: "f",
           plural: "Garagen",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-age** – **die**.",
+          plural_explanation: null,
         },
-        { id: 367, word_id: 613, article: "die", gender: "f", plural: "Jeans" },
+        {
+          id: 367,
+          word_id: 613,
+          article: "die",
+          gender: "f",
+          plural: "Jeans",
+          artikel_explanation: "Запозичені слова (одяг з англ.) часто **die**.",
+          plural_explanation:
+            "Запозичення з англійської, форма множини збігається з одниною.",
+        },
         {
           id: 368,
           word_id: 614,
           article: "das",
           gender: "n",
           plural: "Konzerte",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 369,
@@ -1641,6 +3636,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Mäntel",
+          artikel_explanation: "Іменники **der**, що закінчуються на **-el**.",
+          plural_explanation:
+            "Іменники **der** на **-el** (*Mantel*) часто отримують Umlaut (¨) у множині.",
         },
         {
           id: 370,
@@ -1648,30 +3646,68 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Mützen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 371, word_id: 617, article: "der", gender: "m", plural: "PCs" },
+        {
+          id: 371,
+          word_id: 617,
+          article: "der",
+          gender: "m",
+          plural: "PCs",
+          artikel_explanation:
+            "Абревіатура, артикль за головним словом (*der Computer*).",
+          plural_explanation: "Абревіатури часто утворюють множину на **-s**.",
+        },
         {
           id: 372,
           word_id: 618,
           article: "das",
           gender: "n",
           plural: "Rinder",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er**.",
         },
-        { id: 373, word_id: 619, article: "der", gender: "m", plural: null },
+        {
+          id: 373,
+          word_id: 619,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: "Запозичення з англ. (*Rock music*).",
+          plural_explanation: "Незлічуваний іменник (музичний стиль).",
+        },
         {
           id: 374,
           word_id: 620,
           article: "der",
           gender: "m",
           plural: "Stifte",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 375, word_id: 621, article: "das", gender: "n", plural: "Teams" },
+        {
+          id: 375,
+          word_id: 621,
+          article: "das",
+          gender: "n",
+          plural: "Teams",
+          artikel_explanation: "Запозичення з англійської мови часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
         {
           id: 376,
           word_id: 622,
           article: "das",
           gender: "n",
           plural: "Trainings",
+          artikel_explanation:
+            "Запозичення з англ. мови (субstantivized gerund) – **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 377,
@@ -1679,6 +3715,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Zahlen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 378,
@@ -1686,6 +3724,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Anrufbeantworter",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Beantworter*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (пристрої) не змінюються у множині.",
         },
         {
           id: 379,
@@ -1693,6 +3735,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Erwachsenen",
+          artikel_explanation:
+            "Субстантивований прикметник (чол. рід) – **der**.",
+          plural_explanation: "Відмінюється як прикметник (n-Deklination).",
         },
         {
           id: 380,
@@ -1700,6 +3745,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Mitten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 381,
@@ -1707,15 +3755,37 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Verwandten",
+          artikel_explanation:
+            "Субстантивований прикметник (чол. рід) – **der**.",
+          plural_explanation: "Відмінюється як прикметник (n-Deklination).",
         },
-        { id: 382, word_id: 640, article: "der", gender: "m", plural: "Berge" },
-        { id: 383, word_id: 641, article: "der", gender: "m", plural: "Euro" },
+        {
+          id: 382,
+          word_id: 640,
+          article: "der",
+          gender: "m",
+          plural: "Berge",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 383,
+          word_id: 641,
+          article: "der",
+          gender: "m",
+          plural: "Euro",
+          artikel_explanation: "Назви валют (*der Dollar*) зазвичай **der**.",
+          plural_explanation: "Одиниці валюти часто не змінюються у множині.",
+        },
         {
           id: 384,
           word_id: 642,
           article: "das",
           gender: "n",
           plural: "Gesichter",
+          artikel_explanation: "Іменники з префіксом **Ge-** часто **das**.",
+          plural_explanation:
+            "Іменники на **-er** (як *das Fenster*) не змінюються, але *Gesicht* – виняток.",
         },
         {
           id: 385,
@@ -1723,6 +3793,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kalender",
+          artikel_explanation:
+            "Іменники **der** на **-er** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-er**, не змінюються у множині.",
         },
         {
           id: 386,
@@ -1730,6 +3804,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Krankenhäuser",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Haus*).",
+          plural_explanation: "Множина для *Haus* – *Häuser* (з Umlaut).",
         },
         {
           id: 387,
@@ -1737,6 +3814,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Märkte",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 388,
@@ -1744,6 +3824,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Nachbarn",
+          artikel_explanation:
+            "Істоти чоловічої статі (n-Deklination) – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-n** у множині.",
         },
         {
           id: 389,
@@ -1751,15 +3835,38 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Personen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 390, word_id: 648, article: "der", gender: "m", plural: "Ringe" },
-        { id: 391, word_id: 649, article: "die", gender: "f", plural: null },
+        {
+          id: 390,
+          word_id: 648,
+          article: "der",
+          gender: "m",
+          plural: "Ringe",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 391,
+          word_id: 649,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation:
+            "У цьому значенні ('шкарпетка') множина – *Socken*. (Дані сидера = null).",
+        },
         {
           id: 392,
           word_id: 650,
           article: "der",
           gender: "m",
           plural: "Strände",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 393,
@@ -1767,14 +3874,30 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Teller",
+          artikel_explanation:
+            "Іменники **der** на **-er** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-er**, не змінюються у множині.",
         },
-        { id: 394, word_id: 653, article: "der", gender: "m", plural: "Zähne" },
+        {
+          id: 394,
+          word_id: 653,
+          article: "der",
+          gender: "m",
+          plural: "Zähne",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 395,
           word_id: 666,
           article: "der",
           gender: "m",
           plural: "Anschlüsse",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schluss*).",
+          plural_explanation: "Множина для *Schluss* – *Schlüsse* (з Umlaut).",
         },
         {
           id: 396,
@@ -1782,32 +3905,91 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Europäer",
+          artikel_explanation:
+            "Суфікс **-er** для позначення мешканців країн/континентів – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
-        { id: 397, word_id: 668, article: "die", gender: "f", plural: null },
-        { id: 398, word_id: 669, article: "die", gender: "f", plural: null },
+        {
+          id: 397,
+          word_id: 668,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation:
+            "Абстрактне поняття, зазвичай вживається в однині.",
+        },
+        {
+          id: 398,
+          word_id: 669,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation:
+            "У значенні 'історія' (предмет) – незлічуване. (Множина: *Geschichten* - 'оповіді').",
+        },
         {
           id: 399,
           word_id: 670,
           article: "der",
           gender: "m",
           plural: "Besuche",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 400, word_id: 671, article: "der", gender: "m", plural: "Fans" },
-        { id: 401, word_id: 672, article: "das", gender: "n", plural: "Hefte" },
+        {
+          id: 400,
+          word_id: 671,
+          article: "der",
+          gender: "m",
+          plural: "Fans",
+          artikel_explanation:
+            "Запозичення з англійської мови (особа) часто **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
+        {
+          id: 401,
+          word_id: 672,
+          article: "das",
+          gender: "n",
+          plural: "Hefte",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 402,
           word_id: 673,
           article: "die",
           gender: "f",
           plural: "Kameras",
+          artikel_explanation:
+            "Запозичені слова, що закінчуються на **-a**, часто **die**.",
+          plural_explanation:
+            "Слова, що закінчуються на **-a**, **-i**, **-o**, часто утворюють множину на **-s**.",
         },
-        { id: 403, word_id: 674, article: "der", gender: "m", plural: null },
+        {
+          id: 403,
+          word_id: 674,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині (незлічуване).",
+        },
         {
           id: 404,
           word_id: 675,
           article: "das",
           gender: "n",
           plural: "Messer",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-er**, не змінюються у множині.",
         },
         {
           id: 405,
@@ -1815,6 +3997,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Nachbarinnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
         {
           id: 406,
@@ -1822,14 +4008,27 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Pferde",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 407, word_id: 678, article: "der", gender: "m", plural: "Röcke" },
+        {
+          id: 407,
+          word_id: 678,
+          article: "der",
+          gender: "m",
+          plural: "Röcke",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 408,
           word_id: 679,
           article: "das",
           gender: "n",
           plural: "Schweine",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 409,
@@ -1837,24 +4036,65 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Stühle",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
-        { id: 410, word_id: 681, article: "das", gender: "n", plural: null },
-        { id: 411, word_id: 682, article: "die", gender: "f", plural: "Türen" },
-        { id: 412, word_id: 683, article: "das", gender: "n", plural: "Zelte" },
+        {
+          id: 410,
+          word_id: 681,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Назви видів спорту (запозичені) часто **das**.",
+          plural_explanation: "Незлічуваний іменник.",
+        },
+        {
+          id: 411,
+          word_id: 682,
+          article: "die",
+          gender: "f",
+          plural: "Türen",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 412,
+          word_id: 683,
+          article: "das",
+          gender: "n",
+          plural: "Zelte",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 413,
           word_id: 696,
           article: "die",
           gender: "f",
           plural: "Aussagen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 414, word_id: 697, article: "der", gender: "m", plural: null },
+        {
+          id: 414,
+          word_id: 697,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 415,
           word_id: 698,
           article: "die",
           gender: "f",
           plural: "Postleitzahlen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Zahl*).",
+          plural_explanation: null,
         },
         {
           id: 416,
@@ -1862,6 +4102,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Vorwahlen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Wahl*).",
+          plural_explanation: null,
         },
         {
           id: 417,
@@ -1869,6 +4112,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Blusen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 418,
@@ -1876,6 +4122,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Fenster",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-er**, не змінюються у множині.",
         },
         {
           id: 419,
@@ -1883,6 +4132,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Heizungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 420,
@@ -1890,6 +4141,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Katzen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 421,
@@ -1897,6 +4150,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Körper",
+          artikel_explanation:
+            "Іменники **der** на **-er** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-er**, не змінюються у множині.",
         },
         {
           id: 422,
@@ -1904,6 +4161,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Mineralwässer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Wasser*).",
+          plural_explanation: "Множина для *Wasser* – *Wässer* (з Umlaut).",
         },
         {
           id: 423,
@@ -1911,6 +4171,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Naturen",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ur** – **die**.",
+          plural_explanation: "Слова на **-ur** утворюють множину на **-en**.",
         },
         {
           id: 424,
@@ -1918,14 +4181,30 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Pflanzen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 425, word_id: 708, article: "die", gender: "f", plural: "Rosen" },
+        {
+          id: 425,
+          word_id: 708,
+          article: "die",
+          gender: "f",
+          plural: "Rosen",
+          artikel_explanation:
+            "Назви квітів (*die Tulpe*) та іменники на **-e** – **die**.",
+          plural_explanation: null,
+        },
         {
           id: 426,
           word_id: 709,
           article: "die",
           gender: "f",
           plural: "Schülerinnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
         {
           id: 427,
@@ -1933,6 +4212,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Stücke",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 428,
@@ -1940,14 +4222,31 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Theater",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-er**, не змінюються у множині.",
         },
-        { id: 429, word_id: 712, article: "der", gender: "m", plural: "Vögel" },
+        {
+          id: 429,
+          word_id: 712,
+          article: "der",
+          gender: "m",
+          plural: "Vögel",
+          artikel_explanation:
+            "Іменники **der** на **-el** (*Vogel*, *Apfel*) часто отримують Umlaut (¨) у множині.",
+          plural_explanation:
+            "Іменники **der** на **-el** (*Vogel*, *Apfel*) часто отримують Umlaut (¨) у множині.",
+        },
         {
           id: 430,
           word_id: 713,
           article: "das",
           gender: "n",
           plural: "Zentren",
+          artikel_explanation:
+            "Запозичені слова з латини на **-um** – **das**.",
+          plural_explanation:
+            "Слова на **-um** (лат. походження) утворюють множину на **-en**.",
         },
         {
           id: 431,
@@ -1955,6 +4254,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Auskünfte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Ankunft*).",
+          plural_explanation:
+            "Слова з кореневою **-u-** (як *Auskunft*) часто отримують Umlaut (¨) у множині.",
         },
         {
           id: 432,
@@ -1962,6 +4265,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Feierabende",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Abend*).",
+          plural_explanation: null,
         },
         {
           id: 433,
@@ -1969,22 +4275,49 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Quadratmeter",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Meter*).",
+          plural_explanation:
+            "Одиниці виміру (як *der Meter*) часто не змінюються у множині.",
         },
-        { id: 434, word_id: 729, article: "das", gender: "n", plural: null },
+        {
+          id: 434,
+          word_id: 729,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Незлічуваний іменник, вживається в однині.",
+        },
         {
           id: 435,
           word_id: 730,
           article: "die",
           gender: "f",
           plural: "Brillen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 436, word_id: 731, article: "die", gender: "pl", plural: null },
+        {
+          id: 436,
+          word_id: 731,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
         {
           id: 437,
           word_id: 732,
           article: "das",
           gender: "n",
           plural: "Hemden",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 438,
@@ -1992,6 +4325,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Kaufhäuser",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Haus*).",
+          plural_explanation: "Множина для *Haus* – *Häuser* (з Umlaut).",
         },
         {
           id: 439,
@@ -1999,6 +4335,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Lampen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 440,
@@ -2006,6 +4345,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Mittagessen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Essen*).",
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 441,
@@ -2013,6 +4356,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Nudeln",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-el**, **-er**, **-en**.",
+          plural_explanation: null,
         },
         {
           id: 442,
@@ -2021,6 +4367,9 @@ module.exports = {
           gender: "f",
           plural: "Pizzen",
           plural_alt: "Pizzas",
+          artikel_explanation: "Запозичені слова (їжа) на **-a** – **die**.",
+          plural_explanation:
+            "Слова на **-a** (з італ.) утворюють множину на **-en** або **-s**.",
         },
         {
           id: 443,
@@ -2028,6 +4377,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Rucksäcke",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Sack*).",
+          plural_explanation: "Множина для *Sack* – *Säcke* (з Umlaut).",
         },
         {
           id: 444,
@@ -2035,6 +4387,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Seiten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 445,
@@ -2042,14 +4397,28 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Supermärkte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Markt*).",
+          plural_explanation: "Множина для *Markt* – *Märkte* (з Umlaut).",
         },
-        { id: 446, word_id: 741, article: "das", gender: "n", plural: "Tiere" },
+        {
+          id: 446,
+          word_id: 741,
+          article: "das",
+          gender: "n",
+          plural: "Tiere",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 447,
           word_id: 742,
           article: "der",
           gender: "m",
           plural: "Wälder",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** утворюють множину на **-er** та Umlaut (¨).",
         },
         {
           id: 448,
@@ -2057,6 +4426,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Zettel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 449,
@@ -2064,6 +4437,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Ausländer",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (національність) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 450,
@@ -2071,6 +4448,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Führungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 451,
@@ -2078,6 +4457,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Sehenswürdigkeiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (суфікс **-keit**).",
+          plural_explanation:
+            "Слова на **-keit** утворюють множину на **-en**.",
         },
         {
           id: 452,
@@ -2085,15 +4468,41 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Wiedersehen",
+          artikel_explanation:
+            "Субстантивовані дієслова (від *wiedersehen*) завжди **das**.",
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-en**, не змінюються у множині.",
         },
-        { id: 453, word_id: 760, article: "das", gender: "n", plural: "Büros" },
-        { id: 454, word_id: 761, article: "das", gender: "n", plural: "Feste" },
+        {
+          id: 453,
+          word_id: 760,
+          article: "das",
+          gender: "n",
+          plural: "Büros",
+          artikel_explanation:
+            "Слова, що закінчуються на **-o** (часто запозичені), зазвичай **das**.",
+          plural_explanation:
+            "Слова, що закінчуються на **-o**, часто утворюють множину на **-s**.",
+        },
+        {
+          id: 454,
+          word_id: 761,
+          article: "das",
+          gender: "n",
+          plural: "Feste",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 455,
           word_id: 762,
           article: "der",
           gender: "m",
           plural: "Himmel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 456,
@@ -2101,6 +4510,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Keller",
+          artikel_explanation:
+            "Іменники **der** на **-er** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-er**, не змінюються у множині.",
         },
         {
           id: 457,
@@ -2108,15 +4521,39 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Laptops",
+          artikel_explanation:
+            "Запозичення (техніка) з англ. мови часто **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
-        { id: 458, word_id: 765, article: "die", gender: "f", plural: "Moden" },
-        { id: 459, word_id: 766, article: "das", gender: "n", plural: "Ohren" },
+        {
+          id: 458,
+          word_id: 765,
+          article: "die",
+          gender: "f",
+          plural: "Moden",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
+        },
+        {
+          id: 459,
+          word_id: 766,
+          article: "das",
+          gender: "n",
+          plural: "Ohren",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 460,
           word_id: 767,
           article: "das",
           gender: "n",
           plural: "Poster",
+          artikel_explanation: "Запозичення з англ. мови часто **das**.",
+          plural_explanation:
+            "Іменники **das** на **-er** (запозичені) не змінюються у множині.",
         },
         {
           id: 461,
@@ -2124,6 +4561,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Rücken",
+          artikel_explanation:
+            "Іменники **der** на **-en** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 462,
@@ -2131,6 +4572,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Seifen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 463,
@@ -2138,15 +4582,40 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Suppen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 464, word_id: 771, article: "der", gender: "m", plural: "Tipps" },
-        { id: 465, word_id: 772, article: "die", gender: "f", plural: null },
+        {
+          id: 464,
+          word_id: 771,
+          article: "der",
+          gender: "m",
+          plural: "Tipps",
+          artikel_explanation:
+            "Запозичення з англ. мови (односкладові) – **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
+        {
+          id: 465,
+          word_id: 772,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "Збірне поняття, вживається в однині.",
+        },
         {
           id: 466,
           word_id: 773,
           article: "die",
           gender: "f",
           plural: "Zitronen",
+          artikel_explanation:
+            "Більшість назв фруктів – **die** (особливо на **-e**).",
+          plural_explanation: null,
         },
         {
           id: 467,
@@ -2154,6 +4623,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Beamten",
+          artikel_explanation:
+            "Субстантивований прикметник (чол. рід) – **der**.",
+          plural_explanation: "Відмінюється як прикметник (n-Deklination).",
         },
         {
           id: 468,
@@ -2161,6 +4633,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Glückwünsche",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Wunsch*).",
+          plural_explanation: "Множина для *Wunsch* – *Wünsche* (з Umlaut).",
         },
         {
           id: 469,
@@ -2168,6 +4643,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Studien",
+          artikel_explanation:
+            "Запозичені слова з латини на **-um** – **das**.",
+          plural_explanation:
+            "Слова на **-um** (лат. походження) утворюють множину на **-ien**.",
         },
         {
           id: 470,
@@ -2175,6 +4654,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Geburtsjahre",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Jahr*).",
+          plural_explanation: null,
         },
         {
           id: 471,
@@ -2182,23 +4664,59 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Chefinnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
-        { id: 472, word_id: 791, article: "der", gender: "m", plural: "Flüge" },
-        { id: 473, word_id: 792, article: "die", gender: "f", plural: "Hosen" },
+        {
+          id: 472,
+          word_id: 791,
+          article: "der",
+          gender: "m",
+          plural: "Flüge",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
+        {
+          id: 473,
+          word_id: 792,
+          article: "die",
+          gender: "f",
+          plural: "Hosen",
+          artikel_explanation: "Парні предмети одягу часто **die**.",
+          plural_explanation: null,
+        },
         {
           id: 474,
           word_id: 793,
           article: "die",
           gender: "f",
           plural: "Kirchen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 475, word_id: 794, article: "die", gender: "f", plural: null },
+        {
+          id: 475,
+          word_id: 794,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Абстрактне поняття, зазвичай вживається в однині.",
+        },
         {
           id: 476,
           word_id: 795,
           article: "der",
           gender: "m",
           plural: "Motoren",
+          artikel_explanation:
+            "Іменники (техніка, професії) на **-or** – **der**.",
+          plural_explanation: "Слова на **-or** утворюють множину на **-en**.",
         },
         {
           id: 477,
@@ -2206,6 +4724,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Orangen",
+          artikel_explanation:
+            "Більшість назв фруктів – **die** (особливо на **-e**).",
+          plural_explanation: null,
         },
         {
           id: 478,
@@ -2213,6 +4734,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Postkarten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Karte*).",
+          plural_explanation: null,
         },
         {
           id: 479,
@@ -2220,24 +4744,69 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Scheren",
+          artikel_explanation:
+            "Парні предмети (як *die Brille*) часто **die**.",
+          plural_explanation: null,
         },
-        { id: 480, word_id: 799, article: "der", gender: "m", plural: "Späße" },
+        {
+          id: 480,
+          word_id: 799,
+          article: "der",
+          gender: "m",
+          plural: "Späße",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 481,
           word_id: 800,
           article: "das",
           gender: "n",
           plural: "T-Shirts",
+          artikel_explanation: "Запозичення з англ. мови (одяг) часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
-        { id: 482, word_id: 801, article: "der", gender: "m", plural: "Töpfe" },
-        { id: 483, word_id: 802, article: "der", gender: "m", plural: "Wege" },
-        { id: 484, word_id: 803, article: "der", gender: "m", plural: "Zoos" },
+        {
+          id: 482,
+          word_id: 801,
+          article: "der",
+          gender: "m",
+          plural: "Töpfe",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
+        {
+          id: 483,
+          word_id: 802,
+          article: "der",
+          gender: "m",
+          plural: "Wege",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 484,
+          word_id: 803,
+          article: "der",
+          gender: "m",
+          plural: "Zoos",
+          artikel_explanation:
+            "Скорочення від *zoologischer Garten* (der Garten).",
+          plural_explanation:
+            "Слова, що закінчуються на **-o**, часто утворюють множину на **-s**.",
+        },
         {
           id: 485,
           word_id: 816,
           article: "der",
           gender: "m",
           plural: "Bekannten",
+          artikel_explanation:
+            "Субстантивований прикметник (чол. рід) – **der**.",
+          plural_explanation: "Відмінюється як прикметник (n-Deklination).",
         },
         {
           id: 486,
@@ -2245,6 +4814,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Halbpensionen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Pension*).",
+          plural_explanation: "Слова на **-ion** утворюють множину на **-en**.",
         },
         {
           id: 487,
@@ -2252,6 +4824,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Unterschriften",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Schrift*).",
+          plural_explanation: null,
         },
         {
           id: 488,
@@ -2259,6 +4834,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Ampeln",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 489,
@@ -2266,6 +4843,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Cremes",
+          artikel_explanation: "Запозичені слова (франц.) на **-e** – **die**.",
+          plural_explanation:
+            "Запозичення (франц.) часто утворюють множину на **-s**.",
         },
         {
           id: 490,
@@ -2273,14 +4853,28 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Flüsse",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
-        { id: 491, word_id: 822, article: "die", gender: "f", plural: "Ideen" },
+        {
+          id: 491,
+          word_id: 822,
+          article: "die",
+          gender: "f",
+          plural: "Ideen",
+          artikel_explanation: "Запозичені слова на **-ee** – **die**.",
+          plural_explanation: "Слова на **-ee** утворюють множину на **-n**.",
+        },
         {
           id: 492,
           word_id: 823,
           article: "das",
           gender: "n",
           plural: "Kleider",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er**.",
         },
         {
           id: 493,
@@ -2288,6 +4882,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Löffel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 494,
@@ -2295,6 +4893,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Museen",
+          artikel_explanation:
+            "Запозичені слова з латини на **-um** – **das**.",
+          plural_explanation:
+            "Слова на **-um** (лат. походження) утворюють множину на **-en**.",
         },
         {
           id: 495,
@@ -2302,6 +4904,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Pakete",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 496,
@@ -2309,6 +4913,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Pullover",
+          artikel_explanation: "Запозичення з англ. (одяг) часто **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (запозичені) не змінюються у множині.",
         },
         {
           id: 497,
@@ -2316,6 +4923,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Schiffe",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 498,
@@ -2323,6 +4932,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Spiele",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 499,
@@ -2330,6 +4941,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Tablets",
+          artikel_explanation: "Запозичення з англ. (техніка) часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 500,
@@ -2337,6 +4951,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Torten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 501,
@@ -2344,14 +4961,30 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Wohnzimmer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Zimmer*).",
+          plural_explanation:
+            "Іменники **das** на **-er** (*das Zimmer*) не змінюються у множині.",
         },
-        { id: 502, word_id: 833, article: "der", gender: "m", plural: null },
+        {
+          id: 502,
+          word_id: 833,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Незлічуваний іменник (продукт), вживається в однині.",
+        },
         {
           id: 503,
           word_id: 846,
           article: "die",
           gender: "f",
           plural: "Durchsagen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Sage*).",
+          plural_explanation: null,
         },
         {
           id: 504,
@@ -2359,35 +4992,121 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Heimaten",
+          artikel_explanation:
+            "Іменники із суфіксом **-at** (як *die Tat*) часто **die**.",
+          plural_explanation: null,
         },
-        { id: 505, word_id: 848, article: "der", gender: "m", plural: null },
+        {
+          id: 505,
+          word_id: 848,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Unterricht*).",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 506,
           word_id: 849,
           article: "der",
           gender: "m",
           plural: "Anzüge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Zug*).",
+          plural_explanation: "Множина для *Zug* – *Züge* (з Umlaut).",
         },
-        { id: 507, word_id: 850, article: "das", gender: "n", plural: "Dinge" },
+        {
+          id: 507,
+          word_id: 850,
+          article: "das",
+          gender: "n",
+          plural: "Dinge",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 508,
           word_id: 851,
           article: "die",
           gender: "f",
           plural: "Freundinnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
-        { id: 509, word_id: 852, article: "die", gender: "f", plural: "Infos" },
-        { id: 510, word_id: 853, article: "der", gender: "m", plural: "Klubs" },
-        { id: 511, word_id: 854, article: "der", gender: "m", plural: "Mägen" },
-        { id: 512, word_id: 855, article: "die", gender: "f", plural: null },
-        { id: 513, word_id: 856, article: "der", gender: "m", plural: "Parks" },
-        { id: 514, word_id: 857, article: "das", gender: "n", plural: "Räder" },
+        {
+          id: 509,
+          word_id: 852,
+          article: "die",
+          gender: "f",
+          plural: "Infos",
+          artikel_explanation:
+            "Скорочення від *die Information* (артикль зберігається).",
+          plural_explanation:
+            "Скорочення та слова на **-o** часто утворюють множину на **-s**.",
+        },
+        {
+          id: 510,
+          word_id: 853,
+          article: "der",
+          gender: "m",
+          plural: "Klubs",
+          artikel_explanation:
+            "Запозичення з англ. мови (односкладові) – **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
+        {
+          id: 511,
+          word_id: 854,
+          article: "der",
+          gender: "m",
+          plural: "Mägen",
+          artikel_explanation:
+            "Іменники **der** на **-en** (*der Magen*) не змінюються, але тут з Umlaut.",
+          plural_explanation:
+            "Іменники **der** на **-en** (*der Magen*) не змінюються, але тут з Umlaut.",
+        },
+        {
+          id: 512,
+          word_id: 855,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: "Іменники із суфіксом **-ik** – **die**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
+        {
+          id: 513,
+          word_id: 856,
+          article: "der",
+          gender: "m",
+          plural: "Parks",
+          artikel_explanation:
+            "Запозичення з англ. мови (односкладові) – **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
+        {
+          id: 514,
+          word_id: 857,
+          article: "das",
+          gender: "n",
+          plural: "Räder",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er** та Umlaut (¨).",
+        },
         {
           id: 515,
           word_id: 858,
           article: "der",
           gender: "m",
           plural: "Schirme",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 516,
@@ -2395,6 +5114,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Stadtpläne",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Plan*).",
+          plural_explanation: "Множина для *Plan* – *Pläne* (з Umlaut).",
         },
         {
           id: 517,
@@ -2402,6 +5124,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Tafeln",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 518,
@@ -2409,6 +5133,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Touren",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ur** – **die**.",
+          plural_explanation: "Слова на **-ur** утворюють множину на **-en**.",
         },
         {
           id: 519,
@@ -2416,14 +5143,30 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Wolken",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 520, word_id: 863, article: "der", gender: "m", plural: "Hälse" },
+        {
+          id: 520,
+          word_id: 863,
+          article: "der",
+          gender: "m",
+          plural: "Hälse",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 521,
           word_id: 876,
           article: "der",
           gender: "m",
           plural: "Empfänger",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб або пристроїв – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей/пристроїв) не змінюються у множині.",
         },
         {
           id: 522,
@@ -2431,6 +5174,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Jugendlichen",
+          artikel_explanation:
+            "Субстантивований прикметник (чол. рід) – **der**.",
+          plural_explanation: "Відмінюється як прикметник (n-Deklination).",
         },
         {
           id: 523,
@@ -2438,6 +5184,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Vereine",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 524,
@@ -2445,6 +5193,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Apotheken",
+          artikel_explanation: "Іменники із суфіксом **-thek** – **die**.",
+          plural_explanation:
+            "Слова на **-thek** утворюють множину на **-en**.",
         },
         {
           id: 525,
@@ -2452,6 +5203,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Discos",
+          artikel_explanation:
+            "Скорочення від *die Diskothek* (артикль зберігається).",
+          plural_explanation:
+            "Скорочення та слова на **-o** часто утворюють множину на **-s**.",
         },
         {
           id: 526,
@@ -2459,6 +5214,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Gabeln",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 527,
@@ -2466,6 +5223,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Inseln",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 528,
@@ -2473,15 +5232,40 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kolleginnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
-        { id: 529, word_id: 884, article: "die", gender: "f", plural: "Mails" },
-        { id: 530, word_id: 885, article: "der", gender: "m", plural: null },
+        {
+          id: 529,
+          word_id: 884,
+          article: "die",
+          gender: "f",
+          plural: "Mails",
+          artikel_explanation: "Скорочення від *die E-Mail*.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
+        {
+          id: 530,
+          word_id: 885,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Незлічуваний іменник (спеція), вживається в однині.",
+        },
         {
           id: 531,
           word_id: 886,
           article: "das",
           gender: "n",
           plural: "Passwörter",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Wort*).",
+          plural_explanation: "Множина для *Wort* – *Wörter* (з Umlaut).",
         },
         {
           id: 532,
@@ -2489,6 +5273,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Radios",
+          artikel_explanation:
+            "Слова, що закінчуються на **-o** (часто запозичені), зазвичай **das**.",
+          plural_explanation:
+            "Слова, що закінчуються на **-o**, часто утворюють множину на **-s**.",
         },
         {
           id: 533,
@@ -2496,6 +5284,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Schlafzimmer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Zimmer*).",
+          plural_explanation:
+            "Іменники **das** на **-er** (*das Zimmer*) не змінюються у множині.",
         },
         {
           id: 534,
@@ -2503,6 +5295,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Stiefel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 535,
@@ -2510,6 +5306,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Tassen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 536,
@@ -2517,6 +5316,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Touristen",
+          artikel_explanation:
+            "Іменники із суфіксом **-ist** (особи) – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
         {
           id: 537,
@@ -2524,6 +5327,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Würste",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **die** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 538,
@@ -2531,6 +5337,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Handtücher",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Tuch*).",
+          plural_explanation: "Множина для *Tuch* – *Tücher* (з Umlaut).",
         },
         {
           id: 539,
@@ -2538,6 +5347,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Apparate",
+          artikel_explanation:
+            "Іменники (часто запозичені) на **-at** – **der**.",
+          plural_explanation: null,
         },
         {
           id: 540,
@@ -2545,6 +5357,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Comics",
+          artikel_explanation: "Запозичення з англ. мови часто **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 541,
@@ -2552,6 +5367,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Gerichte",
+          artikel_explanation: "Іменники з префіксом **Ge-** часто **das**.",
+          plural_explanation: null,
         },
         {
           id: 542,
@@ -2559,6 +5376,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Interviews",
+          artikel_explanation: "Запозичення з англійської мови часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 543,
@@ -2566,6 +5386,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Mobiltelefone",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Telefon*).",
+          plural_explanation: null,
         },
         {
           id: 544,
@@ -2573,6 +5396,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Programme",
+          artikel_explanation:
+            "Слова грецького походження на **-mm** – **das**.",
+          plural_explanation: null,
         },
         {
           id: 545,
@@ -2580,6 +5406,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Rezepte",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 546,
@@ -2587,6 +5415,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Universitäten",
+          artikel_explanation: "Іменники із суфіксом **-tät** – **die**.",
+          plural_explanation: "Слова на **-tät** утворюють множину на **-en**.",
         },
         {
           id: 547,
@@ -2594,15 +5424,38 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Altstädte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Stadt*).",
+          plural_explanation: "Множина для *Stadt* – *Städte* (з Umlaut).",
         },
-        { id: 548, word_id: 915, article: "das", gender: "n", plural: null },
-        { id: 549, word_id: 916, article: "das", gender: "n", plural: null },
+        {
+          id: 548,
+          word_id: 915,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Land*).",
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
+        {
+          id: 549,
+          word_id: 916,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Абстрактні поняття часто **das**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 550,
           word_id: 917,
           article: "die",
           gender: "f",
           plural: "Möglichkeiten",
+          artikel_explanation: "Іменники із суфіксом **-keit** – **die**.",
+          plural_explanation:
+            "Слова на **-keit** утворюють множину на **-en**.",
         },
         {
           id: 551,
@@ -2610,6 +5463,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Gründe",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 552,
@@ -2617,6 +5473,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Bestecke",
+          artikel_explanation:
+            "Іменники з префіксом **Ge-** (збірні) часто **das**.",
+          plural_explanation: null,
         },
         {
           id: 553,
@@ -2624,6 +5483,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Geburtsdaten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Datum*).",
+          plural_explanation: "Множина для *Datum* (лат.) – *Daten*.",
         },
         {
           id: 554,
@@ -2631,6 +5493,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kumpel",
+          artikel_explanation:
+            "Іменники **der** на **-el** (особи) не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 555,
@@ -2638,6 +5504,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Schalter",
+          artikel_explanation:
+            "Суфікс **-er** для позначення пристроїв – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (пристрої) не змінюються у множині.",
         },
         {
           id: 556,
@@ -2645,6 +5515,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Stände",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 557,
@@ -2652,14 +5525,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Babysitter",
+          artikel_explanation:
+            "Запозичення з англ. (особа) на **-er** – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (запозичені) не змінюються у множині.",
         },
-        { id: 558, word_id: 937, article: "die", gender: "f", plural: "Damen" },
+        {
+          id: 558,
+          word_id: 937,
+          article: "die",
+          gender: "f",
+          plural: "Damen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
+        },
         {
           id: 559,
           word_id: 938,
           article: "das",
           gender: "n",
           plural: "Geräte",
+          artikel_explanation: "Іменники з префіксом **Ge-** часто **das**.",
+          plural_explanation: null,
         },
         {
           id: 560,
@@ -2667,6 +5555,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Ketten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 561,
@@ -2674,6 +5565,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Motorroller",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Roller*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (*der Roller*) не змінюються у множині.",
         },
         {
           id: 562,
@@ -2681,6 +5576,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Projekte",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 563,
@@ -2688,23 +5585,58 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Schlösser",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er** та Umlaut (¨).",
         },
-        { id: 564, word_id: 943, article: "der", gender: "m", plural: null },
+        {
+          id: 564,
+          word_id: 943,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Збірне поняття, вживається в однині.",
+        },
         {
           id: 565,
           word_id: 944,
           article: "die",
           gender: "f",
           plural: "Arenen",
+          artikel_explanation: "Запозичені слова (лат.) на **-a** – **die**.",
+          plural_explanation:
+            "Слова на **-a** (лат.) утворюють множину на **-en**.",
         },
-        { id: 566, word_id: 945, article: "das", gender: "n", plural: null },
-        { id: 567, word_id: 946, article: "das", gender: "n", plural: null },
+        {
+          id: 566,
+          word_id: 945,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Geld*).",
+          plural_explanation: "Слово *Geld* (гроші) є незлічуваним.",
+        },
+        {
+          id: 567,
+          word_id: 946,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Назви металів (*das Silber*) – **das**.",
+          plural_explanation:
+            "Незлічуваний іменник (матеріал), вживається в однині.",
+        },
         {
           id: 568,
           word_id: 948,
           article: "die",
           gender: "f",
           plural: "Tonnen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 569,
@@ -2712,6 +5644,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Beutel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 570,
@@ -2719,6 +5655,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Geldstücke",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Stück*).",
+          plural_explanation: "Множина для *Stück* – *Stücke* (з Umlaut).",
         },
         {
           id: 571,
@@ -2726,6 +5665,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Leinen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 572,
@@ -2733,23 +5675,60 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Schnitzel",
+          artikel_explanation:
+            "Іменники **das** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-el**, не змінюються у множині.",
         },
-        { id: 573, word_id: 953, article: "die", gender: "pl", plural: null },
-        { id: 574, word_id: 966, article: "die", gender: "f", plural: "Bands" },
+        {
+          id: 573,
+          word_id: 953,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Слово вживається переважно у множині (суфікс **-keit**).",
+          plural_explanation: "Слово вживається переважно у множині.",
+        },
+        {
+          id: 574,
+          word_id: 966,
+          article: "die",
+          gender: "f",
+          plural: "Bands",
+          artikel_explanation: "Запозичення з англ. мови *band*.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
         {
           id: 575,
           word_id: 967,
           article: "das",
           gender: "n",
           plural: "E-Books",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Book* / *das Buch*).",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
-        { id: 576, word_id: 968, article: "das", gender: "n", plural: null },
+        {
+          id: 576,
+          word_id: 968,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Субстантивовані дієслова (від *fernsehen*) завжди **das**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 577,
           word_id: 969,
           article: "das",
           gender: "n",
           plural: "Klaviere",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 578,
@@ -2757,6 +5736,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Nachrichten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Richt*).",
+          plural_explanation: null,
         },
         {
           id: 579,
@@ -2764,6 +5746,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Prinzen",
+          artikel_explanation:
+            "Істоти чоловічої статі (n-Deklination) – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
         {
           id: 580,
@@ -2771,6 +5757,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Schmerzen",
+          artikel_explanation: null,
+          plural_explanation: "Часто вживається у множині.",
         },
         {
           id: 581,
@@ -2778,22 +5766,50 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Webseiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Seite*).",
+          plural_explanation: null,
         },
-        { id: 582, word_id: 974, article: "das", gender: "n", plural: null },
+        {
+          id: 582,
+          word_id: 974,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Запозичені слова на **-a** (з Азії) часто **das**.",
+          plural_explanation: "Незлічуваний іменник (практика).",
+        },
         {
           id: 583,
           word_id: 975,
           article: "der",
           gender: "m",
           plural: "Fischer",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (професій) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
-        { id: 584, word_id: 976, article: "das", gender: "n", plural: null },
+        {
+          id: 584,
+          word_id: 976,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Land*).",
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 585,
           word_id: 977,
           article: "der",
           gender: "m",
           plural: "Nachteile",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Teil*).",
+          plural_explanation: null,
         },
         {
           id: 586,
@@ -2801,6 +5817,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Tricks",
+          artikel_explanation:
+            "Запозичення з англ. мови (односкладові) – **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 587,
@@ -2808,6 +5828,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Biergärten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Garten*).",
+          plural_explanation: "Множина для *Garten* – *Gärten* (з Umlaut).",
         },
         {
           id: 588,
@@ -2815,14 +5838,30 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Gürtel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
-        { id: 589, word_id: 981, article: "das", gender: "n", plural: "Logos" },
+        {
+          id: 589,
+          word_id: 981,
+          article: "das",
+          gender: "n",
+          plural: "Logos",
+          artikel_explanation:
+            "Слова, що закінчуються на **-o** (часто запозичені), зазвичай **das**.",
+          plural_explanation:
+            "Слова, що закінчуються на **-o**, часто утворюють множину на **-s**.",
+        },
         {
           id: 590,
           word_id: 982,
           article: "der",
           gender: "m",
           plural: "Schreie",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 591,
@@ -2830,14 +5869,30 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Tangos",
+          artikel_explanation: "Назви танців (запозичені) на **-o** – **der**.",
+          plural_explanation:
+            "Слова, що закінчуються на **-o**, часто утворюють множину на **-s**.",
         },
-        { id: 592, word_id: 996, article: "der", gender: "m", plural: null },
+        {
+          id: 592,
+          word_id: 996,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Saft*).",
+          plural_explanation:
+            "Незлічуваний іменник (рідина), вживається в однині.",
+        },
         {
           id: 593,
           word_id: 997,
           article: "das",
           gender: "n",
           plural: "Erdgeschosse",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Geschoss*).",
+          plural_explanation: null,
         },
         {
           id: 594,
@@ -2845,6 +5900,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Gitarren",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 595,
@@ -2852,6 +5910,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kontakte",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 596,
@@ -2859,6 +5919,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Notizen",
+          artikel_explanation: "Іменники із суфіксом **-iz** – **die**.",
+          plural_explanation: "Слова на **-iz** утворюють множину на **-en**.",
         },
         {
           id: 597,
@@ -2866,6 +5928,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Prinzessinnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
         {
           id: 598,
@@ -2873,6 +5939,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Services",
+          artikel_explanation: "Запозичення з англ./франц. мови.",
+          plural_explanation: "Запозичення часто утворюють множину на **-s**.",
         },
         {
           id: 599,
@@ -2880,6 +5948,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Witze",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 600,
@@ -2887,6 +5957,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Bäche",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 601,
@@ -2894,6 +5967,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Flammen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 602,
@@ -2901,6 +5977,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kugeln",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 603,
@@ -2908,14 +5986,30 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Parkplätze",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Platz*).",
+          plural_explanation: "Множина для *Platz* – *Plätze* (з Umlaut).",
         },
-        { id: 604, word_id: 1008, article: "das", gender: "n", plural: null },
+        {
+          id: 604,
+          word_id: 1008,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Абстрактне поняття, вживається в однині (незлічуване).",
+        },
         {
           id: 605,
           word_id: 1009,
           article: "der",
           gender: "m",
           plural: "Camper",
+          artikel_explanation:
+            "Суфікс **-er** (запозичений) для позначення осіб або пристроїв – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (запозичені) не змінюються у множині.",
         },
         {
           id: 606,
@@ -2923,6 +6017,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Gutscheine",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schein*).",
+          plural_explanation: null,
         },
         {
           id: 607,
@@ -2930,6 +6027,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Massagen",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-age** – **die**.",
+          plural_explanation: null,
         },
         {
           id: 608,
@@ -2937,6 +6037,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Schreibtische",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Tisch*).",
+          plural_explanation: null,
         },
         {
           id: 609,
@@ -2944,6 +6047,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Tänzer",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (професій) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 610,
@@ -2951,6 +6058,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Bibliotheken",
+          artikel_explanation: "Іменники із суфіксом **-thek** – **die**.",
+          plural_explanation:
+            "Слова на **-thek** утворюють множину на **-en**.",
         },
         {
           id: 611,
@@ -2958,6 +6068,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Fahrpläne",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Plan*).",
+          plural_explanation: "Множина для *Plan* – *Pläne* (з Umlaut).",
         },
         {
           id: 612,
@@ -2965,31 +6078,78 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Grippen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 613, word_id: 1029, article: "die", gender: "f", plural: null },
+        {
+          id: 613,
+          word_id: 1029,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 614,
           word_id: 1030,
           article: "der",
           gender: "m",
           plural: "Nächsten",
+          artikel_explanation:
+            "Субстантивований прикметник (чол. рід) – **der**.",
+          plural_explanation: "Відмінюється як прикметник (n-Deklination).",
         },
-        { id: 615, word_id: 1031, article: "das", gender: "n", plural: "Quiz" },
-        { id: 616, word_id: 1032, article: "das", gender: "n", plural: null },
+        {
+          id: 615,
+          word_id: 1031,
+          article: "das",
+          gender: "n",
+          plural: "Quiz",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
+        {
+          id: 616,
+          word_id: 1032,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Запозичення з англ. мови (субstantivized gerund) – **das**.",
+          plural_explanation: "Незлічуваний іменник.",
+        },
         {
           id: 617,
           word_id: 1033,
           article: "der",
           gender: "m",
           plural: "Workshops",
+          artikel_explanation: "Запозичення з англ. мови.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
-        { id: 618, word_id: 1034, article: "das", gender: "n", plural: null },
+        {
+          id: 618,
+          word_id: 1034,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Geld*).",
+          plural_explanation: "Слово *Geld* (гроші) є незлічуваним.",
+        },
         {
           id: 619,
           word_id: 1035,
           article: "die",
           gender: "f",
           plural: "Flaggen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 620,
@@ -2997,6 +6157,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Labors",
+          artikel_explanation: "Скорочення від *das Laboratorium*.",
+          plural_explanation:
+            "Запозичені слова (особливо на **-o**) часто утворюють множину на **-s**.",
         },
         {
           id: 621,
@@ -3004,6 +6167,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Piloten",
+          artikel_explanation:
+            "Іменники (особи, часто запозичені) на **-ot**, **-ent** – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
         {
           id: 622,
@@ -3011,6 +6178,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Tunnel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 623,
@@ -3018,6 +6189,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Daumen",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 624,
@@ -3025,6 +6199,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Hauptgerichte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Gericht*).",
+          plural_explanation: null,
         },
         {
           id: 625,
@@ -3032,6 +6209,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Matratzen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 626,
@@ -3039,6 +6219,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Schuhgrößen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Größe*).",
+          plural_explanation: null,
         },
         {
           id: 627,
@@ -3046,6 +6229,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Tanzkurse",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Kurs*).",
+          plural_explanation: null,
         },
         {
           id: 628,
@@ -3053,6 +6239,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Blätter",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er** та Umlaut (¨).",
         },
         {
           id: 629,
@@ -3060,6 +6249,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Feiern",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 630,
@@ -3067,6 +6258,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Hamburger",
+          artikel_explanation:
+            "Суфікс **-er** (запозичений) для позначення предметів – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (запозичені) не змінюються у множині.",
         },
         {
           id: 631,
@@ -3074,6 +6269,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kredite",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 632,
@@ -3081,6 +6278,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Paare",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 633,
@@ -3088,6 +6287,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Rathäuser",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Haus*).",
+          plural_explanation: "Множина для *Haus* – *Häuser* (з Umlaut).",
         },
         {
           id: 634,
@@ -3095,6 +6297,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Sportplätze",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Platz*).",
+          plural_explanation: "Множина для *Platz* – *Plätze* (з Umlaut).",
         },
         {
           id: 635,
@@ -3102,6 +6307,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Wünsche",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 636,
@@ -3109,6 +6317,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Blüten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 637,
@@ -3116,8 +6327,20 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Flügel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
-        { id: 638, word_id: 1066, article: "das", gender: "n", plural: "Lose" },
+        {
+          id: 638,
+          word_id: 1066,
+          article: "das",
+          gender: "n",
+          plural: "Lose",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 639,
           word_id: 1067,
@@ -3125,14 +6348,29 @@ module.exports = {
           gender: "m",
           plural: "Pkw",
           plural_alt: "Pkws",
+          artikel_explanation:
+            "Абревіатура, артикль за головним словом (*der Personenkraftwagen*).",
+          plural_explanation:
+            "Абревіатури часто не змінюються у множині (або додають **-s**).",
         },
-        { id: 640, word_id: 1068, article: "der", gender: "m", plural: "TVs" },
+        {
+          id: 640,
+          word_id: 1068,
+          article: "der",
+          gender: "m",
+          plural: "TVs",
+          artikel_explanation: "Абревіатура (від *der Fernseher*).",
+          plural_explanation: "Абревіатури часто утворюють множину на **-s**.",
+        },
         {
           id: 641,
           word_id: 1069,
           article: "das",
           gender: "n",
           plural: "Duschgele",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Gel*).",
+          plural_explanation: null,
         },
         {
           id: 642,
@@ -3140,6 +6378,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Haselnüsse",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Nuss*).",
+          plural_explanation: "Множина для *Nuss* – *Nüsse* (з Umlaut).",
         },
         {
           id: 643,
@@ -3147,14 +6388,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Pools",
+          artikel_explanation: "Запозичення з англ. мови.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
-        { id: 644, word_id: 1072, article: "das", gender: "n", plural: null },
+        {
+          id: 644,
+          word_id: 1072,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Запозичення з англ. мови (субstantivized gerund) – **das**.",
+          plural_explanation: "Незлічуваний іменник, вживається в однині.",
+        },
         {
           id: 645,
           word_id: 1073,
           article: "die",
           gender: "f",
           plural: "Taschenlampen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Lampe*).",
+          plural_explanation: null,
         },
         {
           id: 646,
@@ -3162,6 +6418,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Blogs",
+          artikel_explanation: "Запозичення з англ. мови (також *das Blog*).",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 647,
@@ -3169,6 +6428,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Festivals",
+          artikel_explanation:
+            "Іменники (часто запозичені) на **-al** – **das**.",
+          plural_explanation: null,
         },
         {
           id: 648,
@@ -3176,6 +6438,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Hauptstädte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Stadt*).",
+          plural_explanation: "Множина для *Stadt* – *Städte* (з Umlaut).",
         },
         {
           id: 649,
@@ -3183,6 +6448,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Links",
+          artikel_explanation: "Запозичення з англ. мови (техн.).",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 650,
@@ -3190,6 +6458,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Parfüms",
+          artikel_explanation: "Запозичення з французької мови часто **das**.",
+          plural_explanation: "Запозичення часто утворюють множину на **-s**.",
         },
         {
           id: 651,
@@ -3197,6 +6467,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Reifen",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 652,
@@ -3204,6 +6477,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Stars",
+          artikel_explanation:
+            "Запозичення з англ. мови (особа) часто **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 653,
@@ -3211,6 +6488,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Zeitschriften",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Schrift*).",
+          plural_explanation: null,
         },
         {
           id: 654,
@@ -3218,6 +6498,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Brunnen",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 655,
@@ -3225,14 +6508,31 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Füchse",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
-        { id: 656, word_id: 1096, article: "das", gender: "n", plural: null },
+        {
+          id: 656,
+          word_id: 1096,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Назви металів (*das Gold*) та слова на **-all** – **das**.",
+          plural_explanation:
+            "Незлічуваний іменник (матеріал), вживається в однині.",
+        },
         {
           id: 657,
           word_id: 1097,
           article: "der",
           gender: "m",
           plural: "Planeten",
+          artikel_explanation:
+            "Іменники (особи, запозичені) на **-et**, **-ent** – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
         {
           id: 658,
@@ -3240,6 +6540,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Vorteile",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Teil*).",
+          plural_explanation: null,
         },
         {
           id: 659,
@@ -3247,6 +6550,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Eiswürfel",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Würfel*).",
+          plural_explanation:
+            "Іменники **der** на **-el** (*der Würfel*) не змінюються у множині.",
         },
         {
           id: 660,
@@ -3254,6 +6561,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kinderwagen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Wagen*).",
+          plural_explanation:
+            "Іменники **der** на **-en** (*der Wagen*) не змінюються у множині.",
         },
         {
           id: 661,
@@ -3261,6 +6572,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Radtouren",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Tour*).",
+          plural_explanation: "Слова на **-ur** утворюють множину на **-en**.",
         },
         {
           id: 662,
@@ -3268,6 +6582,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Smartphones",
+          artikel_explanation:
+            "Запозичення (техніка) з англ. мови часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 663,
@@ -3275,6 +6593,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Taschenmesser",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Messer*).",
+          plural_explanation:
+            "Іменники **das** на **-er** (*das Messer*) не змінюються у множині.",
         },
         {
           id: 664,
@@ -3282,6 +6604,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Bohnen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 665,
@@ -3289,6 +6614,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Flohmärkte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Markt*).",
+          plural_explanation: "Множина для *Markt* – *Märkte* (з Umlaut).",
         },
         {
           id: 666,
@@ -3296,6 +6624,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Homepages",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Page*).",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 667,
@@ -3303,6 +6635,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Löwen",
+          artikel_explanation: null,
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
         {
           id: 668,
@@ -3310,6 +6645,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Plakate",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 669,
@@ -3317,14 +6654,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Rentner",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (професій) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
-        { id: 670, word_id: 1122, article: "der", gender: "m", plural: null },
+        {
+          id: 670,
+          word_id: 1122,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Rand*).",
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 671,
           word_id: 1123,
           article: "der",
           gender: "m",
           plural: "Zirkusse",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 672,
@@ -3332,6 +6684,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Dollar",
+          artikel_explanation: "Назви валют (*der Euro*) зазвичай **der**.",
+          plural_explanation: "Одиниці валюти часто не змінюються у множині.",
         },
         {
           id: 673,
@@ -3339,6 +6693,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Griffe",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 674,
@@ -3346,14 +6702,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Manager",
+          artikel_explanation:
+            "Суфікс **-er** (запозичений) для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (запозичені) не змінюються у множині.",
         },
-        { id: 675, word_id: 1127, article: "das", gender: "n", plural: "Plus" },
+        {
+          id: 675,
+          word_id: 1127,
+          article: "das",
+          gender: "n",
+          plural: "Plus",
+          artikel_explanation: null,
+          plural_explanation: null,
+        },
         {
           id: 676,
           word_id: 1128,
           article: "der",
           gender: "m",
           plural: "Wölfe",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 677,
@@ -3361,6 +6732,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Enkelkinder",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Kind*).",
+          plural_explanation: "Множина для *Kind* – *Kinder*.",
         },
         {
           id: 678,
@@ -3368,6 +6742,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kinokarten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Karte*).",
+          plural_explanation: null,
         },
         {
           id: 679,
@@ -3375,6 +6752,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Regenschirme",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schirm*).",
+          plural_explanation: null,
         },
         {
           id: 680,
@@ -3382,6 +6762,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Soldaten",
+          artikel_explanation:
+            "Іменники (особи, запозичені) на **-at**, **-ent** – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
         {
           id: 681,
@@ -3389,6 +6773,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Teenager",
+          artikel_explanation:
+            "Суфікс **-er** (запозичений) для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (запозичені) не змінюються у множині.",
         },
         {
           id: 682,
@@ -3396,6 +6784,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Brücken",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 683,
@@ -3403,6 +6794,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Fotoapparate",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Apparat*).",
+          plural_explanation: null,
         },
         {
           id: 684,
@@ -3410,6 +6804,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Taschentücher",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Tuch*).",
+          plural_explanation: "Множина для *Tuch* – *Tücher* (з Umlaut).",
         },
         {
           id: 685,
@@ -3417,6 +6814,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Mailboxen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Box*).",
+          plural_explanation: null,
         },
         {
           id: 686,
@@ -3424,6 +6824,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Portionen",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ion** – **die**.",
+          plural_explanation: "Слова на **-ion** утворюють множину на **-en**.",
         },
         {
           id: 687,
@@ -3431,6 +6834,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Rentnerinnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
         {
           id: 688,
@@ -3438,6 +6845,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Studentinnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
         {
           id: 689,
@@ -3445,14 +6856,30 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Alben",
+          artikel_explanation:
+            "Запозичені слова з латини на **-um** – **das**.",
+          plural_explanation:
+            "Слова на **-um** (лат. походження) утворюють множину на **-en**.",
         },
-        { id: 690, word_id: 1154, article: "das", gender: "n", plural: null },
+        {
+          id: 690,
+          word_id: 1154,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Land*).",
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 691,
           word_id: 1155,
           article: "der",
           gender: "m",
           plural: "Hähne",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 692,
@@ -3460,14 +6887,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Millimeter",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Meter*).",
+          plural_explanation:
+            "Одиниці виміру (як *der Meter*) часто не змінюються у множині.",
         },
-        { id: 693, word_id: 1157, article: "das", gender: "n", plural: null },
+        {
+          id: 693,
+          word_id: 1157,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Свята (як *das Weihnachten*) часто **das**.",
+          plural_explanation: "Назва свята, вживається в однині.",
+        },
         {
           id: 694,
           word_id: 1158,
           article: "die",
           gender: "f",
           plural: "Zungen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 695,
@@ -3475,8 +6917,20 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Events",
+          artikel_explanation: "Запозичення з англійської мови часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
-        { id: 696, word_id: 1160, article: "das", gender: "n", plural: null },
+        {
+          id: 696,
+          word_id: 1160,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ment** – **das**.",
+          plural_explanation: null,
+        },
         {
           id: 697,
           word_id: 1161,
@@ -3484,6 +6938,9 @@ module.exports = {
           gender: "f",
           plural: "Saunen",
           plural_alt: "Saunas",
+          artikel_explanation:
+            "Запозичені слова, що закінчуються на **-a**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 698,
@@ -3491,6 +6948,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Sonnenschirme",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schirm*).",
+          plural_explanation: null,
         },
         {
           id: 699,
@@ -3498,6 +6958,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Telefonnummern",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Nummer*).",
+          plural_explanation: null,
         },
         {
           id: 700,
@@ -3506,6 +6969,10 @@ module.exports = {
           gender: "f",
           plural: "Cafeterien",
           plural_alt: "Cafeterias",
+          artikel_explanation:
+            "Запозичені слова на **-ia** (з лат.) – **die**.",
+          plural_explanation:
+            "Запозичені слова на **-ia** утворюють множину на **-ien** або **-ias**.",
         },
         {
           id: 701,
@@ -3513,6 +6980,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Geldbörsen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Börse*).",
+          plural_explanation: null,
         },
         {
           id: 702,
@@ -3520,6 +6990,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Instrumente",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ment** – **das**.",
+          plural_explanation: null,
         },
         {
           id: 703,
@@ -3527,6 +7000,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Medikamente",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ment** – **das**.",
+          plural_explanation: null,
         },
         {
           id: 704,
@@ -3534,6 +7010,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Produkte",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 705,
@@ -3541,6 +7019,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Reste",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 706,
@@ -3548,14 +7028,32 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Touristinnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
-        { id: 707, word_id: 1183, article: "die", gender: "pl", plural: null },
+        {
+          id: 707,
+          word_id: 1183,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
         {
           id: 708,
           word_id: 1184,
           article: "der",
           gender: "m",
           plural: "Engel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 709,
@@ -3563,6 +7061,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Insekten",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 710,
@@ -3570,14 +7070,28 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Minus",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 711, word_id: 1187, article: "das", gender: "n", plural: null },
+        {
+          id: 711,
+          word_id: 1187,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Незлічуваний іменник (матеріал), вживається в однині.",
+        },
         {
           id: 712,
           word_id: 1188,
           article: "die",
           gender: "f",
           plural: "Bankkarten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Karte*).",
+          plural_explanation: null,
         },
         {
           id: 713,
@@ -3585,6 +7099,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Gates",
+          artikel_explanation:
+            "Запозичення з англ. мови (термін) часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 714,
@@ -3592,30 +7110,67 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Komödien",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ie** – **die**.",
+          plural_explanation: "Слова на **-ie** утворюють множину на **-n**.",
         },
-        { id: 715, word_id: 1191, article: "das", gender: "n", plural: null },
+        {
+          id: 715,
+          word_id: 1191,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Абстрактні поняття часто **das**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 716,
           word_id: 1192,
           article: "der",
           gender: "m",
           plural: "Spielfilme",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Film*).",
+          plural_explanation: null,
         },
-        { id: 717, word_id: 1193, article: "der", gender: "m", plural: "Töne" },
+        {
+          id: 717,
+          word_id: 1193,
+          article: "der",
+          gender: "m",
+          plural: "Töne",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
+        },
         {
           id: 718,
           word_id: 1206,
           article: "die",
           gender: "f",
           plural: "Allergien",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ie** – **die**.",
+          plural_explanation: "Слова на **-ie** утворюють множину на **-n**.",
         },
-        { id: 719, word_id: 1207, article: "das", gender: "n", plural: null },
+        {
+          id: 719,
+          word_id: 1207,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Назви континентів та країн (сер. рід) – **das**.",
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 720,
           word_id: 1209,
           article: "die",
           gender: "f",
           plural: "Dateien",
+          artikel_explanation: "Іменники із суфіксом **-ei** – **die**.",
+          plural_explanation: "Слова на **-ei** утворюють множину на **-en**.",
         },
         {
           id: 721,
@@ -3623,6 +7178,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Familienmitglieder",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Mitglied*).",
+          plural_explanation: "Множина для *Mitglied* – *Mitglieder*.",
         },
         {
           id: 722,
@@ -3630,6 +7188,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Führerscheine",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schein*).",
+          plural_explanation: null,
         },
         {
           id: 723,
@@ -3637,6 +7198,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Grünpflanzen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Pflanze*).",
+          plural_explanation: null,
         },
         {
           id: 724,
@@ -3644,6 +7208,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Innenstädte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Stadt*).",
+          plural_explanation: "Множина для *Stadt* – *Städte* (з Umlaut).",
         },
         {
           id: 725,
@@ -3651,6 +7218,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Knoten",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 726,
@@ -3658,6 +7228,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Laufschuhe",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schuh*).",
+          plural_explanation: null,
         },
         {
           id: 727,
@@ -3665,6 +7238,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Mannschaften",
+          artikel_explanation: "Іменники із суфіксом **-schaft** – **die**.",
+          plural_explanation:
+            "Слова на **-schaft** утворюють множину на **-en**.",
         },
         {
           id: 728,
@@ -3672,6 +7248,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Mitbewohner",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Bewohner*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 729,
@@ -3679,6 +7259,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Ohrringe",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Ring*).",
+          plural_explanation: null,
         },
         {
           id: 730,
@@ -3686,6 +7269,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Schläger",
+          artikel_explanation:
+            "Суфікс **-er** для позначення інструментів – **der**.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-er**, не змінюються у множині.",
         },
         {
           id: 731,
@@ -3693,6 +7280,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Sprünge",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 732,
@@ -3700,6 +7290,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Tabletten",
+          artikel_explanation: "Іменники (запозичені) на **-ette** – **die**.",
+          plural_explanation: null,
         },
         {
           id: 733,
@@ -3707,6 +7299,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Unfälle",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Fall*).",
+          plural_explanation: "Множина для *Fall* – *Fälle* (з Umlaut).",
         },
         {
           id: 734,
@@ -3714,6 +7309,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Warenkörbe",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Korb*).",
+          plural_explanation: "Множина для *Korb* – *Körbe* (з Umlaut).",
         },
         {
           id: 735,
@@ -3721,6 +7319,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Ängste",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **die** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 736,
@@ -3728,6 +7329,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Autohäuser",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Haus*).",
+          plural_explanation: "Множина для *Haus* – *Häuser* (з Umlaut).",
         },
         {
           id: 737,
@@ -3735,6 +7339,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Besucher",
+          artikel_explanation: "Суфікс **-er** для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 738,
@@ -3742,6 +7349,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Displays",
+          artikel_explanation:
+            "Запозичення з англ. мови (техніка) часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 739,
@@ -3749,6 +7360,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Fertiggerichte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Gericht*).",
+          plural_explanation: null,
         },
         {
           id: 740,
@@ -3756,6 +7370,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Gastgeber",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Geber*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 741,
@@ -3763,6 +7381,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Halbjahre",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Jahr*).",
+          plural_explanation: null,
         },
         {
           id: 742,
@@ -3770,15 +7391,39 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Interessen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 743, word_id: 1244, article: "die", gender: "f", plural: null },
-        { id: 744, word_id: 1245, article: "das", gender: "n", plural: null },
+        {
+          id: 743,
+          word_id: 1244,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
+        {
+          id: 744,
+          word_id: 1245,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Матеріали (*das Holz*) часто **das**.",
+          plural_explanation:
+            "Незлічуваний іменник (матеріал), вживається в однині.",
+        },
         {
           id: 745,
           word_id: 1246,
           article: "der",
           gender: "m",
           plural: "Marker",
+          artikel_explanation:
+            "Суфікс **-er** (запозичений) для позначення інструментів – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (запозичені) не змінюються у множині.",
         },
         {
           id: 746,
@@ -3786,6 +7431,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Modegeschäfte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Geschäft*).",
+          plural_explanation: null,
         },
         {
           id: 747,
@@ -3793,6 +7441,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Partien",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ie** – **die**.",
+          plural_explanation: "Слова на **-ie** утворюють множину на **-n**.",
         },
         {
           id: 748,
@@ -3800,6 +7451,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Schnäppchen",
+          artikel_explanation: "Зменшувальний суфікс **-chen** завжди **das**.",
+          plural_explanation: "Іменники на **-chen** не змінюються у множині.",
         },
         {
           id: 749,
@@ -3807,15 +7460,40 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Stadtteile",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Teil*).",
+          plural_explanation: null,
         },
-        { id: 750, word_id: 1251, article: "das", gender: "n", plural: null },
-        { id: 751, word_id: 1252, article: "die", gender: "f", plural: "Unis" },
+        {
+          id: 750,
+          word_id: 1251,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Запозичення з англ. мови (субstantivized gerund) – **das**.",
+          plural_explanation: "Незлічуваний іменник, вживається в однині.",
+        },
+        {
+          id: 751,
+          word_id: 1252,
+          article: "die",
+          gender: "f",
+          plural: "Unis",
+          artikel_explanation:
+            "Скорочення від *die Universität* (артикль зберігається).",
+          plural_explanation:
+            "Скорочення та слова на **-i** часто утворюють множину на **-s**.",
+        },
         {
           id: 752,
           word_id: 1253,
           article: "der",
           gender: "m",
           plural: "Wasserhähne",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Hahn*).",
+          plural_explanation: "Множина для *Hahn* – *Hähne* (з Umlaut).",
         },
         {
           id: 753,
@@ -3823,6 +7501,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Anfänger",
+          artikel_explanation: "Суфікс **-er** для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 754,
@@ -3830,6 +7511,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Automarken",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Marke*).",
+          plural_explanation: null,
         },
         {
           id: 755,
@@ -3837,6 +7521,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Bezirke",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 756,
@@ -3844,6 +7530,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Drittel",
+          artikel_explanation: "Дроби із суфіксом **-tel** – **das**.",
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 757,
@@ -3851,6 +7540,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Filialen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 758,
@@ -3858,6 +7550,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Gerüche",
+          artikel_explanation: "Іменники з префіксом **Ge-** (чол. рід).",
+          plural_explanation:
+            "Слова на **-uch** (як *Geruch*) утворюють множину на **-üche**.",
         },
         {
           id: 759,
@@ -3865,6 +7560,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Handgelenke",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Gelenk*).",
+          plural_explanation: null,
         },
         {
           id: 760,
@@ -3872,6 +7570,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Internetseiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Seite*).",
+          plural_explanation: null,
         },
         {
           id: 761,
@@ -3879,22 +7580,49 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Komplimente",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ment** – **das**.",
+          plural_explanation: null,
         },
-        { id: 762, word_id: 1275, article: "das", gender: "n", plural: null },
+        {
+          id: 762,
+          word_id: 1275,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Запозичення з англ. мови (косметика) часто **das**.",
+          plural_explanation: "Незлічуваний іменник, вживається в однині.",
+        },
         {
           id: 763,
           word_id: 1276,
           article: "der",
           gender: "m",
           plural: "Marktplätze",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Platz*).",
+          plural_explanation: "Множина для *Platz* – *Plätze* (з Umlaut).",
         },
-        { id: 764, word_id: 1277, article: "die", gender: "f", plural: null },
+        {
+          id: 764,
+          word_id: 1277,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 765,
           word_id: 1278,
           article: "die",
           gender: "f",
           plural: "Platten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 766,
@@ -3902,6 +7630,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Sendungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 767,
@@ -3909,6 +7639,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Stockwerke",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Werk*).",
+          plural_explanation: null,
         },
         {
           id: 768,
@@ -3916,15 +7649,40 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Tippfehler",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Fehler*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (*der Fehler*) не змінюються у множині.",
         },
-        { id: 769, word_id: 1282, article: "die", gender: "pl", plural: null },
-        { id: 770, word_id: 1283, article: "das", gender: "n", plural: null },
+        {
+          id: 769,
+          word_id: 1282,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
+        {
+          id: 770,
+          word_id: 1283,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Абстрактні поняття часто **das**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 771,
           word_id: 1296,
           article: "der",
           gender: "m",
           plural: "Anrufer",
+          artikel_explanation: "Суфікс **-er** для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 772,
@@ -3932,6 +7690,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Autorennen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Rennen*).",
+          plural_explanation:
+            "Іменники **das** на **-en** (*das Rennen*) не змінюються у множині.",
         },
         {
           id: 773,
@@ -3939,6 +7701,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Blöcke",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 774,
@@ -3946,14 +7711,28 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Elektrogeräte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Gerät*).",
+          plural_explanation: null,
         },
-        { id: 775, word_id: 1300, article: "die", gender: "f", plural: null },
+        {
+          id: 775,
+          word_id: 1300,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 776,
           word_id: 1301,
           article: "die",
           gender: "f",
           plural: "Geschichten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 777,
@@ -3961,6 +7740,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Handtaschen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Tasche*).",
+          plural_explanation: null,
         },
         {
           id: 778,
@@ -3968,6 +7750,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Jahrhunderte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Hundert*).",
+          plural_explanation: null,
         },
         {
           id: 779,
@@ -3975,6 +7760,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Krankheiten",
+          artikel_explanation: "Іменники із суфіксом **-heit** – **die**.",
+          plural_explanation:
+            "Слова на **-heit** утворюють множину на **-en**.",
         },
         {
           id: 780,
@@ -3982,6 +7770,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Lieferwagen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Wagen*).",
+          plural_explanation:
+            "Іменники **der** на **-en** (*der Wagen*) не змінюються у множині.",
         },
         {
           id: 781,
@@ -3989,6 +7781,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Medaillen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 782,
@@ -3996,6 +7790,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Neubauten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Bau*).",
+          plural_explanation: "Множина для *Bau* – *Bauten*.",
         },
         {
           id: 783,
@@ -4003,6 +7800,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Posten",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 784,
@@ -4010,6 +7810,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Signale",
+          artikel_explanation: "Запозичені слова на **-al** – **das**.",
+          plural_explanation: null,
         },
         {
           id: 785,
@@ -4017,6 +7819,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Straßenränder",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Rand*).",
+          plural_explanation: "Множина для *Rand* – *Ränder* (з Umlaut).",
         },
         {
           id: 786,
@@ -4024,6 +7829,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Titel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 787,
@@ -4031,6 +7840,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Urlaubstage",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Tag*).",
+          plural_explanation: null,
         },
         {
           id: 788,
@@ -4038,6 +7850,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Werktage",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Tag*).",
+          plural_explanation: null,
         },
         {
           id: 789,
@@ -4045,14 +7860,30 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Apfelschorlen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Schorle*).",
+          plural_explanation: null,
         },
-        { id: 790, word_id: 1327, article: "die", gender: "pl", plural: null },
+        {
+          id: 790,
+          word_id: 1327,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Запозичення з англ. мови (одяг), вживається у множині.",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
         {
           id: 791,
           word_id: 1328,
           article: "der",
           gender: "m",
           plural: "Brände",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 792,
@@ -4060,6 +7891,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Elternabende",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Abend*).",
+          plural_explanation: null,
         },
         {
           id: 793,
@@ -4067,14 +7901,31 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Flatrates",
+          artikel_explanation:
+            "Запозичення з англ. мови (техн.) часто **die**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
-        { id: 794, word_id: 1331, article: "die", gender: "f", plural: null },
+        {
+          id: 794,
+          word_id: 1331,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Абстрактні поняття на **-art** (як *die Gegenwart*) – **die**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 795,
           word_id: 1332,
           article: "das",
           gender: "n",
           plural: "Hauptmenüs",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Menü*).",
+          plural_explanation:
+            "Запозичення на **-ü** утворюють множину на **-s**.",
         },
         {
           id: 796,
@@ -4082,6 +7933,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Jahreszeiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Zeit*).",
+          plural_explanation: null,
         },
         {
           id: 797,
@@ -4089,6 +7943,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kratzer",
+          artikel_explanation: "Суфікс **-er** (результат дії) – **der**.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-er**, не змінюються у множині.",
         },
         {
           id: 798,
@@ -4096,6 +7953,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Lieblingsfächer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Fach*).",
+          plural_explanation: "Множина для *Fach* – *Fächer* (з Umlaut).",
         },
         {
           id: 799,
@@ -4103,15 +7963,40 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Meetings",
+          artikel_explanation:
+            "Запозичення з англ. мови (субstantivized gerund) – **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
-        { id: 800, word_id: 1337, article: "der", gender: "m", plural: null },
-        { id: 801, word_id: 1338, article: "der", gender: "m", plural: null },
+        {
+          id: 800,
+          word_id: 1337,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation:
+            "Погодні явища (*der Wind*, *der Schnee*) зазвичай **der**.",
+          plural_explanation: "Незлічуваний іменник, вживається в однині.",
+        },
+        {
+          id: 801,
+          word_id: 1338,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Незлічуваний іменник (спеція), вживається в однині.",
+        },
         {
           id: 802,
           word_id: 1339,
           article: "der",
           gender: "m",
           plural: "Sonnenuntergänge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Untergang*).",
+          plural_explanation: "Множина для *Gang* – *Gänge* (з Umlaut).",
         },
         {
           id: 803,
@@ -4119,6 +8004,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Streifen",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 804,
@@ -4126,6 +8014,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Träume",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 805,
@@ -4133,6 +8024,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Veganer",
+          artikel_explanation: "Суфікс **-er** для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 806,
@@ -4140,6 +8034,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Werkstätten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Statt*).",
+          plural_explanation: "Множина для *Statt* – *Stätten* (з Umlaut).",
         },
         {
           id: 807,
@@ -4147,14 +8044,28 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Artikel",
+          artikel_explanation: "Іменники на **-el** часто **der**.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
-        { id: 808, word_id: 1357, article: "die", gender: "f", plural: null },
+        {
+          id: 808,
+          word_id: 1357,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: "Іменники із суфіксом **-ik** – **die**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 809,
           word_id: 1358,
           article: "das",
           gender: "n",
           plural: "Bücherregale",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Regal*).",
+          plural_explanation: null,
         },
         {
           id: 810,
@@ -4162,6 +8073,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Englischlehrer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Lehrer*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 811,
@@ -4169,6 +8084,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Fluggäste",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Gast*).",
+          plural_explanation: "Множина для *Gast* – *Gäste* (з Umlaut).",
         },
         {
           id: 812,
@@ -4176,6 +8094,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Gewinner",
+          artikel_explanation: "Суфікс **-er** для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 813,
@@ -4183,6 +8104,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Hauptstraßen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Straße*).",
+          plural_explanation: null,
         },
         {
           id: 814,
@@ -4190,6 +8114,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Jahrzehnte",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 815,
@@ -4197,6 +8123,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kreuzungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 816,
@@ -4204,6 +8132,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Lieblingsfarben",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Farbe*).",
+          plural_explanation: null,
         },
         {
           id: 817,
@@ -4211,23 +8142,59 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Meinungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
-        { id: 818, word_id: 1367, article: "der", gender: "m", plural: null },
-        { id: 819, word_id: 1368, article: "der", gender: "m", plural: null },
+        {
+          id: 818,
+          word_id: 1367,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation:
+            "Напрямки світу (*der Süden*, *der Westen*) – **der**.",
+          plural_explanation: "Вживається лише в однині.",
+        },
+        {
+          id: 819,
+          word_id: 1368,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation:
+            "Напрямки світу (*der Süden*, *der Westen*) – **der**.",
+          plural_explanation: "Вживається лише в однині.",
+        },
         {
           id: 820,
           word_id: 1369,
           article: "der",
           gender: "m",
           plural: "Spaziergänge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Gang*).",
+          plural_explanation: "Множина для *Gang* – *Gänge* (з Umlaut).",
         },
-        { id: 821, word_id: 1370, article: "das", gender: "n", plural: null },
+        {
+          id: 821,
+          word_id: 1370,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Stück*).",
+          plural_explanation:
+            "(Множина: *Theaterstücke*). (Дані сидера = null).",
+        },
         {
           id: 822,
           word_id: 1371,
           article: "der",
           gender: "m",
           plural: "Treffs",
+          artikel_explanation: "Скорочення (від *der Treffpunkt*).",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 823,
@@ -4235,6 +8202,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Vegetarier",
+          artikel_explanation: "Суфікс **-er** для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 824,
@@ -4242,6 +8212,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Wärmflaschen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Flasche*).",
+          plural_explanation: null,
         },
         {
           id: 825,
@@ -4249,6 +8222,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Arztbesuche",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Besuch*).",
+          plural_explanation: null,
         },
         {
           id: 826,
@@ -4256,6 +8232,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Baustellen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Stelle*).",
+          plural_explanation: null,
         },
         {
           id: 827,
@@ -4263,6 +8242,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Chats",
+          artikel_explanation:
+            "Запозичення з англ. мови (техн.) часто **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 828,
@@ -4270,6 +8253,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Erwachsenen",
+          artikel_explanation:
+            "Субстантивований прикметник (чол. рід) – **der**.",
+          plural_explanation: "Відмінюється як прикметник (n-Deklination).",
         },
         {
           id: 829,
@@ -4277,6 +8263,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Fotoalben",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Album*).",
+          plural_explanation:
+            "Слова на **-um** (лат. походження) утворюють множину на **-en**.",
         },
         {
           id: 830,
@@ -4284,6 +8274,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Gewitter",
+          artikel_explanation:
+            "Іменники з префіксом **Ge-** (особливо збірні) часто **das**.",
+          plural_explanation:
+            "Іменники **das** на **-er** (*das Gewitter*) не змінюються у множині.",
         },
         {
           id: 831,
@@ -4291,6 +8285,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Hausarbeiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Arbeit*).",
+          plural_explanation: null,
         },
         {
           id: 832,
@@ -4298,6 +8295,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Jugendlichen",
+          artikel_explanation:
+            "Субстантивований прикметник (чол. рід) – **der**.",
+          plural_explanation: "Відмінюється як прикметник (n-Deklination).",
         },
         {
           id: 833,
@@ -4305,14 +8305,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Krimis",
+          artikel_explanation: "Скорочення (від *der Kriminalfilm*).",
+          plural_explanation:
+            "Скорочення та слова на **-i** часто утворюють множину на **-s**.",
         },
-        { id: 834, word_id: 1395, article: "das", gender: "n", plural: null },
+        {
+          id: 834,
+          word_id: 1395,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Fleisch*).",
+          plural_explanation: "Слово *Fleisch* (м'ясо) є незлічуваним.",
+        },
         {
           id: 835,
           word_id: 1396,
           article: "die",
           gender: "f",
           plural: "Mengen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 836,
@@ -4320,6 +8335,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Noten",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 837,
@@ -4327,23 +8345,59 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Reihen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 838, word_id: 1399, article: "die", gender: "pl", plural: null },
-        { id: 839, word_id: 1400, article: "das", gender: "n", plural: null },
+        {
+          id: 838,
+          word_id: 1399,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+          plural_explanation:
+            "Це слово вживається лише у множині (Pluraletantum).",
+        },
+        {
+          id: 839,
+          word_id: 1400,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Назви металів (*das Gold*) – **das**.",
+          plural_explanation:
+            "Незлічуваний іменник (матеріал), вживається в однині.",
+        },
         {
           id: 840,
           word_id: 1401,
           article: "der",
           gender: "m",
           plural: "Treffer",
+          artikel_explanation: "Суфікс **-er** (результат дії) – **der**.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-er**, не змінюються у множині.",
         },
-        { id: 841, word_id: 1402, article: "der", gender: "m", plural: null },
+        {
+          id: 841,
+          word_id: 1402,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation:
+            "Напрямки світу (*der Süden*, *der Norden*) – **der**.",
+          plural_explanation: "Вживається лише в однині.",
+        },
         {
           id: 842,
           word_id: 1403,
           article: "das",
           gender: "n",
           plural: "Würstchen",
+          artikel_explanation: "Зменшувальний суфікс **-chen** завжди **das**.",
+          plural_explanation: "Іменники на **-chen** не змінюються у множині.",
         },
         {
           id: 843,
@@ -4351,6 +8405,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Ausstellungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 844,
@@ -4358,6 +8414,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Beamer",
+          artikel_explanation:
+            "Запозичення з англ. (пристрій) на **-er** – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (запозичені) не змінюються у множині.",
         },
         {
           id: 845,
@@ -4365,6 +8425,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Coaches",
+          artikel_explanation: "Запозичення з англ. (особа) часто **der**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 846,
@@ -4372,6 +8435,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Erzieher",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (професій) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 847,
@@ -4379,14 +8446,28 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Freundeskreise",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Kreis*).",
+          plural_explanation: null,
         },
-        { id: 848, word_id: 1421, article: "das", gender: "n", plural: null },
+        {
+          id: 848,
+          word_id: 1421,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: "Іменники з префіксом **Ge-** часто **das**.",
+          plural_explanation: "(Множина: *Gefühle*). (Дані сидера = null).",
+        },
         {
           id: 849,
           word_id: 1422,
           article: "der",
           gender: "m",
           plural: "Haushalte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Halt*).",
+          plural_explanation: null,
         },
         {
           id: 850,
@@ -4394,6 +8475,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kartons",
+          artikel_explanation: "Запозичення (франц.) на **-on** – **der**.",
+          plural_explanation: "Запозичення часто утворюють множину на **-s**.",
         },
         {
           id: 851,
@@ -4401,14 +8484,29 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Künste",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **die** отримують **-e** та Umlaut (¨) у множині.",
         },
-        { id: 852, word_id: 1425, article: "die", gender: "f", plural: null },
+        {
+          id: 852,
+          word_id: 1425,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 853,
           word_id: 1426,
           article: "die",
           gender: "f",
           plural: "Mikrowellen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Welle*).",
+          plural_explanation: null,
         },
         {
           id: 854,
@@ -4416,23 +8514,57 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Nüsse",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **die** отримують **-e** та Umlaut (¨) у множині.",
         },
-        { id: 855, word_id: 1428, article: "die", gender: "f", plural: null },
+        {
+          id: 855,
+          word_id: 1428,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 856,
           word_id: 1429,
           article: "die",
           gender: "f",
           plural: "Spitzen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 857, word_id: 1430, article: "der", gender: "m", plural: null },
-        { id: 858, word_id: 1431, article: "die", gender: "f", plural: null },
+        {
+          id: 857,
+          word_id: 1430,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "(Множина: *Staus*). (Дані сидера = null).",
+        },
+        {
+          id: 858,
+          word_id: 1431,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Welt*).",
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 859,
           word_id: 1432,
           article: "die",
           gender: "f",
           plural: "Verpackungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 860,
@@ -4440,6 +8572,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Zeugnisse",
+          artikel_explanation:
+            "Іменники із суфіксом **-nis** (результат) – **das**.",
+          plural_explanation:
+            "Іменники на **-nis** у множині отримують **-nisse**.",
         },
         {
           id: 861,
@@ -4447,6 +8583,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Aussichten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Sicht*).",
+          plural_explanation: null,
         },
         {
           id: 862,
@@ -4454,6 +8593,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Bedienungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 863,
@@ -4461,6 +8602,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Dachböden",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Boden*).",
+          plural_explanation: "Множина для *Boden* – *Böden* (з Umlaut).",
         },
         {
           id: 864,
@@ -4468,6 +8612,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Fächer",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er** та Umlaut (¨).",
         },
         {
           id: 865,
@@ -4475,6 +8622,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Friedhöfe",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Hof*).",
+          plural_explanation: "Множина для *Hof* – *Höfe* (з Umlaut).",
         },
         {
           id: 866,
@@ -4482,6 +8632,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Grillplätze",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Platz*).",
+          plural_explanation: "Множина для *Platz* – *Plätze* (з Umlaut).",
         },
         {
           id: 867,
@@ -4489,6 +8642,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Heimatstädte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Stadt*).",
+          plural_explanation: "Множина для *Stadt* – *Städte* (з Umlaut).",
         },
         {
           id: 868,
@@ -4496,6 +8652,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kindersitze",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Sitz*).",
+          plural_explanation: null,
         },
         {
           id: 869,
@@ -4503,6 +8662,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Ladegeräte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Gerät*).",
+          plural_explanation: null,
         },
         {
           id: 870,
@@ -4510,6 +8672,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Lächeln",
+          artikel_explanation:
+            "Субстантивовані дієслова (від *lächeln*) завжди **das**.",
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 871,
@@ -4517,6 +8683,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Minijobs",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Job*).",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 872,
@@ -4524,6 +8694,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Nutzer",
+          artikel_explanation: "Суфікс **-er** для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 873,
@@ -4531,15 +8704,39 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Sachen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 874, word_id: 1459, article: "der", gender: "m", plural: null },
-        { id: 875, word_id: 1460, article: "der", gender: "m", plural: null },
+        {
+          id: 874,
+          word_id: 1459,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **der** на **-en** (*der Schatten*) не змінюються у множині.",
+        },
+        {
+          id: 875,
+          word_id: 1460,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation:
+            "Напрямки світу (*der Westen*, *der Norden*) – **der**.",
+          plural_explanation: "Вживається лише в однині.",
+        },
         {
           id: 876,
           word_id: 1461,
           article: "die",
           gender: "f",
           plural: "Umkleiden",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 877,
@@ -4547,6 +8744,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Verspätungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 878,
@@ -4554,6 +8753,8 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Ziele",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 879,
@@ -4561,6 +8762,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Autofahrer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Fahrer*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 880,
@@ -4568,14 +8773,27 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Beilagen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Lage*).",
+          plural_explanation: null,
         },
-        { id: 881, word_id: 1478, article: "der", gender: "m", plural: null },
+        {
+          id: 881,
+          word_id: 1478,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "(Множина: *Dome*). (Дані сидера = null).",
+        },
         {
           id: 882,
           word_id: 1479,
           article: "die",
           gender: "f",
           plural: "Fahrten",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 883,
@@ -4583,6 +8801,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Fußballclubs",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Club*).",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 884,
@@ -4590,6 +8812,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Grundschulen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Schule*).",
+          plural_explanation: null,
         },
         {
           id: 885,
@@ -4597,6 +8822,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Helfer",
+          artikel_explanation: "Суфікс **-er** для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 886,
@@ -4604,6 +8832,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kleinigkeiten",
+          artikel_explanation: "Іменники із суфіксом **-keit** – **die**.",
+          plural_explanation:
+            "Слова на **-keit** утворюють множину на **-en**.",
         },
         {
           id: 887,
@@ -4611,6 +8842,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Landschaften",
+          artikel_explanation: "Іменники із суфіксом **-schaft** – **die**.",
+          plural_explanation:
+            "Слова на **-schaft** утворюють множину на **-en**.",
         },
         {
           id: 888,
@@ -4618,6 +8852,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Magnete",
+          artikel_explanation:
+            "Іменники (особи, запозичені) на **-et**, **-ent** – **der**.",
+          plural_explanation: null,
         },
         {
           id: 889,
@@ -4625,6 +8862,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Mitarbeiter",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Arbeiter*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 890,
@@ -4632,6 +8873,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Nähmaschinen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Maschine*).",
+          plural_explanation: null,
         },
         {
           id: 891,
@@ -4639,6 +8883,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Schichten",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 892,
@@ -4646,6 +8892,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Sportvereine",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Verein*).",
+          plural_explanation: null,
         },
         {
           id: 893,
@@ -4653,6 +8902,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Süßigkeiten",
+          artikel_explanation: "Іменники із суфіксом **-keit** – **die**.",
+          plural_explanation:
+            "Слова на **-keit** утворюють множину на **-en**.",
         },
         {
           id: 894,
@@ -4660,6 +8912,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Umzüge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Zug*).",
+          plural_explanation: "Множина для *Zug* – *Züge* (з Umlaut).",
         },
         {
           id: 895,
@@ -4667,6 +8922,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Wanderer",
+          artikel_explanation: "Суфікс **-er** для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 896,
@@ -4674,6 +8932,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Öffnungszeiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Zeit*).",
+          plural_explanation:
+            "Слова на **-zeit** утворюють множину на **-en**.",
         },
         {
           id: 897,
@@ -4681,6 +8943,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Ahnungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 898,
@@ -4688,6 +8952,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kulturen",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ur** – **die**.",
+          plural_explanation: "Слова на **-ur** утворюють множину на **-en**.",
         },
         {
           id: 899,
@@ -4695,6 +8962,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Verträge",
+          artikel_explanation: null,
+          plural_explanation: "Множина для *Vertrag* – *Verträge* (з Umlaut).",
         },
         {
           id: 900,
@@ -4702,6 +8971,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Einzüge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Zug*).",
+          plural_explanation: "Множина для *Zug* – *Züge* (з Umlaut).",
         },
         {
           id: 901,
@@ -4709,6 +8981,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Ligen",
+          artikel_explanation: "Запозичені слова (лат.) на **-a** – **die**.",
+          plural_explanation:
+            "Слова на **-a** (лат.) утворюють множину на **-en**.",
         },
         {
           id: 902,
@@ -4716,14 +8991,29 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Anfahrten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Fahrt*).",
+          plural_explanation: null,
         },
-        { id: 903, word_id: 1512, article: "die", gender: "pl", plural: null },
+        {
+          id: 903,
+          word_id: 1512,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово (родичі) вживається переважно у множині.",
+          plural_explanation: "Це слово вживається переважно у множині.",
+        },
         {
           id: 904,
           word_id: 1513,
           article: "der",
           gender: "m",
           plural: "Spieltage",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Tag*).",
+          plural_explanation: null,
         },
         {
           id: 905,
@@ -4731,15 +9021,39 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Zeitungsartikel",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Artikel*).",
+          plural_explanation:
+            "Іменники **der** на **-el** (*der Artikel*) не змінюються у множині.",
         },
-        { id: 906, word_id: 1515, article: "der", gender: "m", plural: null },
-        { id: 907, word_id: 1516, article: "die", gender: "f", plural: null },
+        {
+          id: 906,
+          word_id: 1515,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: "Іменники із суфіксом **-ig** зазвичай **der**.",
+          plural_explanation: "(Множина: *Käfige*). (Дані сидера = null).",
+        },
+        {
+          id: 907,
+          word_id: 1516,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 908,
           word_id: 1517,
           article: "das",
           gender: "n",
           plural: "Notebooks",
+          artikel_explanation: "Запозичення з англ. (техніка) часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 909,
@@ -4747,6 +9061,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Schreiner",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (професій) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 910,
@@ -4754,6 +9072,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Sticker",
+          artikel_explanation:
+            "Запозичення з англ. (предмет) на **-er** – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (запозичені) не змінюються у множині.",
         },
         {
           id: 911,
@@ -4761,6 +9083,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Versprechen",
+          artikel_explanation:
+            "Субстантивовані дієслова (від *versprechen*) завжди **das**.",
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 912,
@@ -4768,6 +9094,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Arbeitsplatten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Platte*).",
+          plural_explanation: null,
         },
         {
           id: 913,
@@ -4775,6 +9104,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Küchenhilfen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Hilfe*).",
+          plural_explanation: null,
         },
         {
           id: 914,
@@ -4782,6 +9114,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Veranstaltungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 915,
@@ -4789,6 +9123,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Ausbildungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 916,
@@ -4796,6 +9132,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Lügen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 917,
@@ -4803,6 +9142,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Vorschläge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schlag*).",
+          plural_explanation: "Множина для *Schlag* – *Schläge* (з Umlaut).",
         },
         {
           id: 918,
@@ -4810,6 +9152,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Entspannungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 919,
@@ -4817,6 +9161,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Mischungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 920,
@@ -4824,6 +9170,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Anproben",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 921,
@@ -4831,6 +9180,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Hinfahrten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Fahrt*).",
+          plural_explanation: null,
         },
         {
           id: 922,
@@ -4838,6 +9190,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Spielzeiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Zeit*).",
+          plural_explanation:
+            "Слова на **-zeit** утворюють множину на **-en**.",
         },
         {
           id: 923,
@@ -4845,6 +9201,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Zweiten",
+          artikel_explanation:
+            "Субстантивований прикметник (жін. рід) – **die**.",
+          plural_explanation: "Відмінюється як прикметник.",
         },
         {
           id: 924,
@@ -4852,6 +9211,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Fahrersitze",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Sitz*).",
+          plural_explanation: null,
         },
         {
           id: 925,
@@ -4859,14 +9221,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kissenbezüge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Bezug*).",
+          plural_explanation: "Множина для *Bezug* – *Bezüge* (з Umlaut).",
         },
-        { id: 926, word_id: 1547, article: "das", gender: "n", plural: "PDFs" },
+        {
+          id: 926,
+          word_id: 1547,
+          article: "das",
+          gender: "n",
+          plural: "PDFs",
+          artikel_explanation:
+            "Абревіатура (від *das Portable Document Format*).",
+          plural_explanation: "Абревіатури часто утворюють множину на **-s**.",
+        },
         {
           id: 927,
           word_id: 1548,
           article: "die",
           gender: "f",
           plural: "Schürzen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 928,
@@ -4874,6 +9251,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Suchfelder",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Feld*).",
+          plural_explanation: "Множина для *Feld* – *Felder*.",
         },
         {
           id: 929,
@@ -4881,6 +9261,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Vorjahre",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Jahr*).",
+          plural_explanation: null,
         },
         {
           id: 930,
@@ -4888,6 +9271,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Arbeitszeiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Zeit*).",
+          plural_explanation:
+            "Слова на **-zeit** утворюють множину на **-en**.",
         },
         {
           id: 931,
@@ -4895,6 +9282,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Privatnummern",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Nummer*).",
+          plural_explanation: null,
         },
         {
           id: 932,
@@ -4902,6 +9292,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Verkehrsmittel",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Mittel*).",
+          plural_explanation:
+            "Іменники **das** на **-el** (*das Mittel*) не змінюються у множині.",
         },
         {
           id: 933,
@@ -4909,6 +9303,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Bescheide",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 934,
@@ -4916,6 +9312,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Messen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 935,
@@ -4923,6 +9322,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Übersetzungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 936,
@@ -4930,14 +9331,29 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Fassaden",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 937, word_id: 1570, article: "die", gender: "f", plural: null },
+        {
+          id: 937,
+          word_id: 1570,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "(Множина: *Launen*). (Дані сидера = null).",
+        },
         {
           id: 938,
           word_id: 1571,
           article: "der",
           gender: "m",
           plural: "Auszüge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Zug*).",
+          plural_explanation: "Множина для *Zug* – *Züge* (з Umlaut).",
         },
         {
           id: 939,
@@ -4945,6 +9361,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Idioten",
+          artikel_explanation:
+            "Іменники (особи, запозичені) на **-ot**, **-ent** – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
         {
           id: 940,
@@ -4952,6 +9372,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Stöße",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 941,
@@ -4959,6 +9382,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Arbeitsflächen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Fläche*).",
+          plural_explanation: null,
         },
         {
           id: 942,
@@ -4966,6 +9392,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Flipcharts",
+          artikel_explanation: "Запозичення з англ. (техніка) часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
         },
         {
           id: 943,
@@ -4973,6 +9402,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kopfverletzungen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Verletzung*).",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 944,
@@ -4980,6 +9412,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Pfeile",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 945,
@@ -4987,6 +9421,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Schwächen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 946,
@@ -4994,6 +9431,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Tagesmütter",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Mutter*).",
+          plural_explanation: "Множина для *Mutter* – *Mütter* (з Umlaut).",
         },
         {
           id: 947,
@@ -5001,6 +9441,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Wartezeiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Zeit*).",
+          plural_explanation:
+            "Слова на **-zeit** утворюють множину на **-en**.",
         },
         {
           id: 948,
@@ -5008,6 +9452,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Bestellungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 949,
@@ -5015,6 +9461,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Schmerztabletten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Tablette*).",
+          plural_explanation: null,
         },
         {
           id: 950,
@@ -5022,6 +9471,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Wettbewerbe",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 951,
@@ -5029,6 +9480,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Bewerbungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 952,
@@ -5036,6 +9489,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Mittel",
+          artikel_explanation: null,
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 953,
@@ -5043,6 +9499,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Behandlungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 954,
@@ -5050,6 +9508,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Gräber",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **das** утворюють множину на **-er** та Umlaut (¨).",
         },
         {
           id: 955,
@@ -5057,6 +9518,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Öffnungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 956,
@@ -5064,6 +9527,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Autounfälle",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Unfall*).",
+          plural_explanation: "Множина для *Unfall* – *Unfälle* (з Umlaut).",
         },
         {
           id: 957,
@@ -5071,6 +9537,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kursgebühren",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Gebühr*).",
+          plural_explanation: null,
         },
         {
           id: 958,
@@ -5078,22 +9547,49 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Stoßstangen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Stange*).",
+          plural_explanation: null,
         },
-        { id: 959, word_id: 1604, article: "die", gender: "f", plural: null },
+        {
+          id: 959,
+          word_id: 1604,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "(Множина: *Stimmungen*). (Дані сидера = null).",
+        },
         {
           id: 960,
           word_id: 1605,
           article: "der",
           gender: "m",
           plural: "Fluchtwege",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Weg*).",
+          plural_explanation: null,
         },
-        { id: 961, word_id: 1606, article: "die", gender: "f", plural: null },
+        {
+          id: 961,
+          word_id: 1606,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ion** – **die**.",
+          plural_explanation: "(Множина: *Rezeptionen*). (Дані сидера = null).",
+        },
         {
           id: 962,
           word_id: 1607,
           article: "das",
           gender: "n",
           plural: "Porträtfotos",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Foto*).",
+          plural_explanation:
+            "Слова, що закінчуються на **-o**, часто утворюють множину на **-s**.",
         },
         {
           id: 963,
@@ -5101,6 +9597,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Seifenspender",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Spender*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (пристрої) не змінюються у множині.",
         },
         {
           id: 964,
@@ -5108,6 +9608,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Tageszeiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Zeit*).",
+          plural_explanation:
+            "Слова на **-zeit** утворюють множину на **-en**.",
         },
         {
           id: 965,
@@ -5115,6 +9619,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Waschbecken",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Becken*).",
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-en**, не змінюються у множині.",
         },
         {
           id: 966,
@@ -5122,6 +9630,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Bürozeiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Zeit*).",
+          plural_explanation:
+            "Слова на **-zeit** утворюють множину на **-en**.",
         },
         {
           id: 967,
@@ -5129,6 +9641,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Sparschweine",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Schwein*).",
+          plural_explanation: null,
         },
         {
           id: 968,
@@ -5136,6 +9651,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Mittelpunkte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Punkt*).",
+          plural_explanation: null,
         },
         {
           id: 969,
@@ -5143,38 +9661,88 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Ehepartner",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Partner*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
-        { id: 970, word_id: 1627, article: "die", gender: "f", plural: null },
+        {
+          id: 970,
+          word_id: 1627,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "(Множина: *Fähren*). (Дані сидера = null).",
+        },
         {
           id: 971,
           word_id: 1628,
           article: "der",
           gender: "m",
           plural: "Benutzer",
+          artikel_explanation: "Суфікс **-er** для позначення осіб – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
-        { id: 972, word_id: 1629, article: "das", gender: "n", plural: null },
+        {
+          id: 972,
+          word_id: 1629,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "(Множина: *Löcher*). (Дані сидера = null).",
+        },
         {
           id: 973,
           word_id: 1630,
           article: "das",
           gender: "n",
           plural: "Paradiese",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 974, word_id: 1631, article: "die", gender: "f", plural: null },
+        {
+          id: 974,
+          word_id: 1631,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "(Множина: *Pflichten*). (Дані сидера = null).",
+        },
         {
           id: 975,
           word_id: 1632,
           article: "die",
           gender: "f",
           plural: "Retouren",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 976, word_id: 1633, article: "die", gender: "pl", plural: null },
+        {
+          id: 976,
+          word_id: 1633,
+          article: "die",
+          gender: "pl",
+          plural: null,
+          artikel_explanation:
+            "Це слово (заголовки) вживається переважно у множині.",
+          plural_explanation: "Це слово вживається переважно у множині.",
+        },
         {
           id: 977,
           word_id: 1634,
           article: "der",
           gender: "m",
           plural: "Arzthelfer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Helfer*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 978,
@@ -5182,6 +9750,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Fotokopierer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Kopierer*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (пристрої) не змінюються у множині.",
         },
         {
           id: 979,
@@ -5189,6 +9761,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Küchenzeilen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Zeile*).",
+          plural_explanation: null,
         },
         {
           id: 980,
@@ -5196,14 +9771,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Pulse",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 981, word_id: 1638, article: "das", gender: "n", plural: "Sets" },
+        {
+          id: 981,
+          word_id: 1638,
+          article: "das",
+          gender: "n",
+          plural: "Sets",
+          artikel_explanation:
+            "Запозичення з англ. мови (термін) часто **das**.",
+          plural_explanation:
+            "Запозичення з англійської мови часто утворюють множину на **-s**.",
+        },
         {
           id: 982,
           word_id: 1639,
           article: "das",
           gender: "n",
           plural: "Telefonate",
+          artikel_explanation:
+            "Іменники (часто запозичені) на **-at** – **das**.",
+          plural_explanation: null,
         },
         {
           id: 983,
@@ -5211,6 +9801,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Wasserrohre",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Rohr*).",
+          plural_explanation: null,
         },
         {
           id: 984,
@@ -5218,15 +9811,39 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Fahrerseiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Seite*).",
+          plural_explanation: null,
         },
-        { id: 985, word_id: 1642, article: "das", gender: "n", plural: null },
-        { id: 986, word_id: 1643, article: "der", gender: "m", plural: null },
+        {
+          id: 985,
+          word_id: 1642,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Абстрактне поняття ('невезіння'), вживається в однині.",
+        },
+        {
+          id: 986,
+          word_id: 1643,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "(Множина: *Schals*). (Дані сидера = null).",
+        },
         {
           id: 987,
           word_id: 1656,
           article: "das",
           gender: "n",
           plural: "Einkaufszentren",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Zentrum*).",
+          plural_explanation:
+            "Слова на **-um** (лат. походження) утворюють множину на **-en**.",
         },
         {
           id: 988,
@@ -5234,22 +9851,45 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Qualitäten",
+          artikel_explanation: "Іменники із суфіксом **-tät** – **die**.",
+          plural_explanation: "Слова на **-tät** утворюють множину на **-en**.",
         },
-        { id: 989, word_id: 1658, article: "die", gender: "f", plural: null },
+        {
+          id: 989,
+          word_id: 1658,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 990,
           word_id: 1659,
           article: "die",
           gender: "f",
           plural: "Jagden",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
-        { id: 991, word_id: 1660, article: "die", gender: "f", plural: null },
+        {
+          id: 991,
+          word_id: 1660,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: "Іменники із суфіксом **-ik** – **die**.",
+          plural_explanation: "(Множина: *Kritiken*). (Дані сидера = null).",
+        },
         {
           id: 992,
           word_id: 1661,
           article: "der",
           gender: "m",
           plural: "Düfte",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 993,
@@ -5257,6 +9897,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Rückfragen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Frage*).",
+          plural_explanation: null,
         },
         {
           id: 994,
@@ -5264,14 +9907,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Toten",
+          artikel_explanation:
+            "Субстантивований прикметник (чол. рід) – **der**.",
+          plural_explanation: "Відмінюється як прикметник (n-Deklination).",
         },
-        { id: 995, word_id: 1664, article: "der", gender: "m", plural: null },
+        {
+          id: 995,
+          word_id: 1664,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Абстрактне поняття ('потреба'), вживається в однині.",
+        },
         {
           id: 996,
           word_id: 1665,
           article: "die",
           gender: "f",
           plural: "Frühschichten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Schicht*).",
+          plural_explanation: null,
         },
         {
           id: 997,
@@ -5279,6 +9937,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Latzhosen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Hose*).",
+          plural_explanation: null,
         },
         {
           id: 998,
@@ -5286,6 +9947,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Routen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
         {
           id: 999,
@@ -5293,6 +9957,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Sparbücher",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Buch*).",
+          plural_explanation: "Множина для *Buch* – *Bücher* (з Umlaut).",
         },
         {
           id: 1000,
@@ -5300,14 +9967,29 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Thermen",
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: null,
         },
-        { id: 1001, word_id: 1670, article: "das", gender: "n", plural: null },
+        {
+          id: 1001,
+          word_id: 1670,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Незлічуваний іменник (матеріал), вживається в однині.",
+        },
         {
           id: 1002,
           word_id: 1671,
           article: "der",
           gender: "m",
           plural: "Fahrradhelme",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Helm*).",
+          plural_explanation: null,
         },
         {
           id: 1003,
@@ -5315,14 +9997,27 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Zeitungsberichte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Bericht*).",
+          plural_explanation: null,
         },
-        { id: 1004, word_id: 1673, article: "die", gender: "f", plural: null },
+        {
+          id: 1004,
+          word_id: 1673,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation: "Іменники із суфіксом **-heit** – **die**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 1005,
           word_id: 1686,
           article: "die",
           gender: "f",
           plural: "Erfahrungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 1006,
@@ -5330,6 +10025,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Reinigungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 1007,
@@ -5337,6 +10034,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Bibeln",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 1008,
@@ -5344,6 +10043,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Jahrgänge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Gang*).",
+          plural_explanation: "Множина для *Gang* – *Gänge* (з Umlaut).",
         },
         {
           id: 1009,
@@ -5351,6 +10053,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Präsidenten",
+          artikel_explanation:
+            "Іменники (особи, запозичені) на **-ent** – **der**.",
+          plural_explanation:
+            "Слово належить до слабкої відміни (n-Deklination), додає **-en** у множині.",
         },
         {
           id: 1010,
@@ -5358,14 +10064,31 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Esser",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (від *essen*) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
-        { id: 1011, word_id: 1692, article: "die", gender: "f", plural: null },
+        {
+          id: 1011,
+          word_id: 1692,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation:
+            "Незлічуваний іменник (матеріал), вживається в однині.",
+        },
         {
           id: 1012,
           word_id: 1693,
           article: "der",
           gender: "m",
           plural: "Umzugskartons",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Karton*).",
+          plural_explanation: "Запозичення часто утворюють множину на **-s**.",
         },
         {
           id: 1013,
@@ -5373,6 +10096,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Ausschnitte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schnitt*).",
+          plural_explanation: null,
         },
         {
           id: 1014,
@@ -5380,6 +10106,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Gesprächspartner",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Partner*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 1015,
@@ -5387,6 +10117,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Leseecken",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Ecke*).",
+          plural_explanation: null,
         },
         {
           id: 1016,
@@ -5394,6 +10127,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Routinen",
+          artikel_explanation:
+            "Запозичені слова (франц.) на **-ine** – **die**.",
+          plural_explanation: "Слова на **-ine** утворюють множину на **-n**.",
         },
         {
           id: 1017,
@@ -5401,6 +10137,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Spender",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб або пристроїв – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей/пристроїв) не змінюються у множині.",
         },
         {
           id: 1018,
@@ -5408,6 +10148,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Unfallorte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Ort*).",
+          plural_explanation: null,
         },
         {
           id: 1019,
@@ -5415,6 +10158,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Wurstplatten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Platte*).",
+          plural_explanation: null,
         },
         {
           id: 1020,
@@ -5423,6 +10169,10 @@ module.exports = {
           gender: "m",
           plural: "Gebrauchtwagen",
           plural_alt: "Gebrauchtwägen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Wagen*).",
+          plural_explanation:
+            "Іменники **der** на **-en** (*der Wagen*) не змінюються у множині (або з Umlaut).",
         },
         {
           id: 1021,
@@ -5430,6 +10180,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Vermieterinnen",
+          artikel_explanation:
+            "Суфікс **-in** для позначення осіб жіночої статі – **die**.",
+          plural_explanation:
+            "Іменники на **-in** утворюють множину додаванням **-nen**.",
         },
         {
           id: 1022,
@@ -5437,6 +10191,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Begrüßungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 1023,
@@ -5444,6 +10200,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Erlaubnisse",
+          artikel_explanation:
+            "Іменники із суфіксом **-nis** (абстрактні) – **die**.",
+          plural_explanation:
+            "Іменники на **-nis** у множині отримують **-nisse**.",
         },
         {
           id: 1024,
@@ -5451,6 +10211,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Situationen",
+          artikel_explanation:
+            "Запозичені слова із суфіксом **-ion** – **die**.",
+          plural_explanation: "Слова на **-ion** утворюють множину на **-en**.",
         },
         {
           id: 1025,
@@ -5458,6 +10221,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Buchungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 1026,
@@ -5465,6 +10230,10 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Jubiläen",
+          artikel_explanation:
+            "Запозичені слова з латини на **-um** – **das**.",
+          plural_explanation:
+            "Слова на **-um** (лат. походження) утворюють множину на **-en**.",
         },
         {
           id: 1027,
@@ -5472,6 +10241,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Schnitte",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 1028,
@@ -5479,6 +10250,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Feuerlöscher",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Löscher* / суфікс **-er**).",
+          plural_explanation:
+            "Іменники **der** на **-er** (пристрої) не змінюються у множині.",
         },
         {
           id: 1029,
@@ -5486,14 +10261,29 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Schaffner",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб (професій) – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
-        { id: 1030, word_id: 1723, article: "der", gender: "m", plural: null },
+        {
+          id: 1030,
+          word_id: 1723,
+          article: "der",
+          gender: "m",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Незлічуваний іменник (матеріал), вживається в однині.",
+        },
         {
           id: 1031,
           word_id: 1724,
           article: "die",
           gender: "f",
           plural: "Bemerkungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
         {
           id: 1032,
@@ -5501,6 +10291,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Installateure",
+          artikel_explanation:
+            "Запозичені (франц.) професії на **-eur** – **der**.",
+          plural_explanation: "Слова на **-eur** утворюють множину на **-e**.",
         },
         {
           id: 1033,
@@ -5508,6 +10301,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Nachtschichten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Schicht*).",
+          plural_explanation: null,
         },
         {
           id: 1034,
@@ -5515,6 +10311,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Rühreier",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Ei*).",
+          plural_explanation: "Множина для *Ei* – *Eier*.",
         },
         {
           id: 1035,
@@ -5522,6 +10321,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Spiegeleier",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Ei*).",
+          plural_explanation: "Множина для *Ei* – *Eier*.",
         },
         {
           id: 1036,
@@ -5529,6 +10331,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Unterschränke",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schrank*).",
+          plural_explanation: "Множина для *Schrank* – *Schränke* (з Umlaut).",
         },
         {
           id: 1037,
@@ -5536,6 +10341,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Zieladressen",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Adresse*).",
+          plural_explanation: null,
         },
         {
           id: 1038,
@@ -5543,6 +10351,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Geschäftszeiten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Zeit*).",
+          plural_explanation:
+            "Слова на **-zeit** утворюють множину на **-en**.",
         },
         {
           id: 1039,
@@ -5550,14 +10362,29 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Gegenteile",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Teil*).",
+          plural_explanation: null,
         },
-        { id: 1040, word_id: 1733, article: "das", gender: "n", plural: null },
+        {
+          id: 1040,
+          word_id: 1733,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Назви металів (*das Gold*, *das Silber*) – **das**.",
+          plural_explanation:
+            "Незлічуваний іменник (матеріал), вживається в однині.",
+        },
         {
           id: 1041,
           word_id: 1746,
           article: "das",
           gender: "n",
           plural: "Gehälter",
+          artikel_explanation: "Іменники з префіксом **Ge-** часто **das**.",
+          plural_explanation: null,
         },
         {
           id: 1042,
@@ -5565,6 +10392,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Unterkünfte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Ankunft*).",
+          plural_explanation:
+            "Слова з кореневою **-u-** (як *Unterkunft*) часто отримують Umlaut (¨) у множині.",
         },
         {
           id: 1043,
@@ -5572,6 +10403,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Bundesländer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Land*).",
+          plural_explanation: "Множина для *Land* – *Länder* (з Umlaut).",
         },
         {
           id: 1044,
@@ -5579,6 +10413,8 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Lasten",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 1045,
@@ -5586,14 +10422,29 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Unternehmen",
+          artikel_explanation:
+            "Субстантивовані дієслова (від *unternehmen*) часто **das**.",
+          plural_explanation:
+            "Іменники **das**, що закінчуються на **-en**, не змінюються у множині.",
         },
-        { id: 1046, word_id: 1751, article: "das", gender: "n", plural: null },
+        {
+          id: 1046,
+          word_id: 1751,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation:
+            "Назви континентів та країн (сер. рід) – **das**.",
+          plural_explanation: "Зазвичай вживається в однині.",
+        },
         {
           id: 1047,
           word_id: 1752,
           article: "die",
           gender: "f",
           plural: "Schauen",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 1048,
@@ -5601,6 +10452,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Wechsel",
+          artikel_explanation:
+            "Іменники **der** на **-el** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-el**, не змінюються у множині.",
         },
         {
           id: 1049,
@@ -5608,14 +10463,28 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Besorgungen",
+          artikel_explanation: "Іменники із суфіксом **-ung** – **die**.",
+          plural_explanation: "Слова на **-ung** утворюють множину на **-en**.",
         },
-        { id: 1050, word_id: 1755, article: "die", gender: "f", plural: null },
+        {
+          id: 1050,
+          word_id: 1755,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 1051,
           word_id: 1756,
           article: "der",
           gender: "m",
           plural: "Notärzte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Arzt*).",
+          plural_explanation: "Множина для *Arzt* – *Ärzte* (з Umlaut).",
         },
         {
           id: 1052,
@@ -5623,6 +10492,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Schlitze",
+          artikel_explanation: null,
+          plural_explanation: null,
         },
         {
           id: 1053,
@@ -5630,6 +10501,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Splitter",
+          artikel_explanation:
+            "Іменники **der** на **-er** часто не змінюються у множині.",
+          plural_explanation:
+            "Іменники **der**, що закінчуються на **-er**, не змінюються у множині.",
         },
         {
           id: 1054,
@@ -5637,14 +10512,30 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "USB-Anschlüsse",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Anschluss*).",
+          plural_explanation:
+            "Множина для *Anschluss* – *Anschlüsse* (з Umlaut).",
         },
-        { id: 1055, word_id: 1760, article: "das", gender: "n", plural: null },
+        {
+          id: 1055,
+          word_id: 1760,
+          article: "das",
+          gender: "n",
+          plural: null,
+          artikel_explanation: null,
+          plural_explanation:
+            "Абстрактне поняття ('існування'), вживається в однині.",
+        },
         {
           id: 1056,
           word_id: 1761,
           article: "der",
           gender: "m",
           plural: "Kontinente",
+          artikel_explanation:
+            "Іменники (особи, запозичені) на **-ent** – **der**.",
+          plural_explanation: null,
         },
         {
           id: 1057,
@@ -5652,6 +10543,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Rundgänge",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Gang*).",
+          plural_explanation: "Множина для *Gang* – *Gänge* (з Umlaut).",
         },
         {
           id: 1058,
@@ -5659,6 +10553,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Gemüsehändler",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Händler*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 1059,
@@ -5666,6 +10564,10 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Kenntnisse",
+          artikel_explanation:
+            "Іменники із суфіксом **-nis** (абстрактні) – **die**.",
+          plural_explanation:
+            "Іменники на **-nis** у множині отримують **-nisse**.",
         },
         {
           id: 1060,
@@ -5673,6 +10575,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Unterschiede",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Schied*).",
+          plural_explanation: null,
         },
         {
           id: 1061,
@@ -5680,6 +10585,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Bürgermeister",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Meister*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
         {
           id: 1062,
@@ -5687,6 +10596,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Läufe",
+          artikel_explanation: null,
+          plural_explanation:
+            "Багато односкладових слів **der** отримують **-e** та Umlaut (¨) у множині.",
         },
         {
           id: 1063,
@@ -5694,22 +10606,51 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Zähler",
+          artikel_explanation:
+            "Суфікс **-er** для позначення осіб або пристроїв – **der**.",
+          plural_explanation:
+            "Іменники **der** на **-er** (пристрої) не змінюються у множині.",
         },
-        { id: 1064, word_id: 1781, article: "die", gender: "f", plural: null },
+        {
+          id: 1064,
+          word_id: 1781,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Іменники, що закінчуються на **-e**, часто **die**.",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 1065,
           word_id: 1782,
           article: "der",
           gender: "m",
           plural: "Scheinwerfer",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Werfer*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (пристрої) не змінюються у множині.",
         },
-        { id: 1066, word_id: 1783, article: "die", gender: "f", plural: null },
+        {
+          id: 1066,
+          word_id: 1783,
+          article: "die",
+          gender: "f",
+          plural: null,
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Vertrauen*).",
+          plural_explanation: "Абстрактне поняття, вживається в однині.",
+        },
         {
           id: 1067,
           word_id: 1784,
           article: "die",
           gender: "f",
           plural: "Bestnoten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Note*).",
+          plural_explanation: null,
         },
         {
           id: 1068,
@@ -5717,6 +10658,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Kilometerstände",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Stand*).",
+          plural_explanation: "Множина для *Stand* – *Stände* (з Umlaut).",
         },
         {
           id: 1069,
@@ -5724,6 +10668,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Notfallnummern",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Nummer*).",
+          plural_explanation: null,
         },
         {
           id: 1070,
@@ -5731,6 +10678,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Schneidereien",
+          artikel_explanation:
+            "Іменники із суфіксом **-ei** (заклади) – **die**.",
+          plural_explanation: "Слова на **-ei** утворюють множину на **-en**.",
         },
         {
           id: 1071,
@@ -5738,6 +10688,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Spätschichten",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Schicht*).",
+          plural_explanation: null,
         },
         {
           id: 1072,
@@ -5745,6 +10698,9 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Verletzten",
+          artikel_explanation:
+            "Субстантивований прикметник (чол. рід) – **der**.",
+          plural_explanation: "Відмінюється як прикметник (n-Deklination).",
         },
         {
           id: 1073,
@@ -5752,6 +10708,8 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Zwillinge",
+          artikel_explanation: "Іменники із суфіксом **-ling** – **der**.",
+          plural_explanation: null,
         },
         {
           id: 1074,
@@ -5759,6 +10717,9 @@ module.exports = {
           article: "das",
           gender: "n",
           plural: "Küchengeräte",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*das Gerät*).",
+          plural_explanation: null,
         },
         {
           id: 1075,
@@ -5766,6 +10727,9 @@ module.exports = {
           article: "die",
           gender: "f",
           plural: "Sprechstunden",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*die Stunde*).",
+          plural_explanation: null,
         },
         {
           id: 1076,
@@ -5773,6 +10737,10 @@ module.exports = {
           article: "der",
           gender: "m",
           plural: "Hausbewohner",
+          artikel_explanation:
+            "Складне слово: артикль за останнім словом (*der Bewohner*).",
+          plural_explanation:
+            "Іменники **der** на **-er** (для позначення людей) не змінюються у множині.",
         },
       ],
       {}
