@@ -17,7 +17,7 @@ module.exports = {
           perfekt: "gehabt",
           help_perfekt: "haben",
           praeterium: "hatte",
-          block_number: null,
+          block_number: 1, // 1
         },
         {
           word_id: 26,
@@ -30,7 +30,7 @@ module.exports = {
           perfekt: "geschwommen",
           help_perfekt: "sein",
           praeterium: "schwamm",
-          block_number: null,
+          block_number: 1, // 2
         },
         {
           word_id: 29,
@@ -43,7 +43,7 @@ module.exports = {
           perfekt: "geholfen",
           help_perfekt: "haben",
           praeterium: "half",
-          block_number: null,
+          block_number: 1, // 3
         },
         {
           word_id: 57,
@@ -56,7 +56,7 @@ module.exports = {
           perfekt: "gesessen",
           help_perfekt: "haben",
           praeterium: "saß",
-          block_number: null,
+          block_number: 1, // 4
         },
         {
           word_id: 59,
@@ -69,7 +69,7 @@ module.exports = {
           perfekt: "gekannt",
           help_perfekt: "haben",
           praeterium: "kannte",
-          block_number: null,
+          block_number: 1, // 5
         },
         {
           word_id: 60,
@@ -82,7 +82,7 @@ module.exports = {
           perfekt: "gemocht",
           help_perfekt: "haben",
           praeterium: "mochte",
-          block_number: null,
+          block_number: 1, // 6
         },
         {
           word_id: 84,
@@ -95,7 +95,7 @@ module.exports = {
           perfekt: "gelesen",
           help_perfekt: "haben",
           praeterium: "las",
-          block_number: null,
+          block_number: 1, // 7
         },
         {
           word_id: 85,
@@ -108,7 +108,7 @@ module.exports = {
           perfekt: "gewesen",
           help_perfekt: "sein",
           praeterium: "war",
-          block_number: null,
+          block_number: 1, // 8
         },
         {
           word_id: 87,
@@ -121,7 +121,7 @@ module.exports = {
           perfekt: "gegeben",
           help_perfekt: "haben",
           praeterium: "gab",
-          block_number: null,
+          block_number: 1, // 9
         },
         {
           word_id: 89,
@@ -134,7 +134,7 @@ module.exports = {
           perfekt: "gelegen",
           help_perfekt: "haben",
           praeterium: "lag",
-          block_number: null,
+          block_number: 1, // 10
         },
         {
           word_id: 90,
@@ -147,7 +147,7 @@ module.exports = {
           perfekt: "geblieben",
           help_perfekt: "sein",
           praeterium: "blieb",
-          block_number: null,
+          block_number: 2, // 11
         },
         {
           word_id: 114,
@@ -160,7 +160,7 @@ module.exports = {
           perfekt: "gesehen",
           help_perfekt: "haben",
           praeterium: "sah",
-          block_number: null,
+          block_number: 2, // 12
         },
         {
           word_id: 116,
@@ -173,7 +173,7 @@ module.exports = {
           perfekt: "gefunden",
           help_perfekt: "haben",
           praeterium: "fand",
-          block_number: null,
+          block_number: 2, // 13
         },
         {
           word_id: 117,
@@ -186,7 +186,7 @@ module.exports = {
           perfekt: "genommen",
           help_perfekt: "haben",
           praeterium: "nahm",
-          block_number: null,
+          block_number: 2, // 14
         },
         {
           word_id: 118,
@@ -199,7 +199,7 @@ module.exports = {
           perfekt: "gewaschen",
           help_perfekt: "haben",
           praeterium: "wusch",
-          block_number: null,
+          block_number: 2, // 15
         },
         {
           word_id: 119,
@@ -212,7 +212,7 @@ module.exports = {
           perfekt: "gekommen",
           help_perfekt: "sein",
           praeterium: "kam",
-          block_number: null,
+          block_number: 2, // 16
         },
         {
           word_id: 120,
@@ -225,7 +225,7 @@ module.exports = {
           perfekt: "gewollt",
           help_perfekt: "haben",
           praeterium: "wollte",
-          block_number: null,
+          block_number: 2, // 17
         },
         {
           word_id: 144,
@@ -238,7 +238,7 @@ module.exports = {
           perfekt: "geheißen",
           help_perfekt: "haben",
           praeterium: "hieß",
-          block_number: null,
+          block_number: 2, // 18
         },
         {
           word_id: 147,
@@ -251,7 +251,7 @@ module.exports = {
           perfekt: "gebracht",
           help_perfekt: "haben",
           praeterium: "brachte",
-          block_number: null,
+          block_number: 2, // 19
         },
         {
           word_id: 149,
@@ -264,7 +264,7 @@ module.exports = {
           perfekt: "gestanden",
           help_perfekt: "haben",
           praeterium: "stand",
-          block_number: null,
+          block_number: 2, // 20
         },
         {
           word_id: 174,
@@ -277,7 +277,7 @@ module.exports = {
           perfekt: "geschrieben",
           help_perfekt: "haben",
           praeterium: "schrieb",
-          block_number: null,
+          block_number: 3, // 21
         },
         {
           word_id: 175,
@@ -290,7 +290,7 @@ module.exports = {
           perfekt: "geschlafen",
           help_perfekt: "haben",
           praeterium: "schlief",
-          block_number: null,
+          block_number: 3, // 22
         },
         {
           word_id: 176,
@@ -303,7 +303,7 @@ module.exports = {
           perfekt: "gelaufen",
           help_perfekt: "sein",
           praeterium: "lief",
-          block_number: null,
+          block_number: 3, // 23
         },
         {
           word_id: 178,
@@ -316,7 +316,7 @@ module.exports = {
           perfekt: "gemusst",
           help_perfekt: "haben",
           praeterium: "musste",
-          block_number: null,
+          block_number: 3, // 24
         },
         {
           word_id: 204,
@@ -329,7 +329,7 @@ module.exports = {
           perfekt: "gefahren",
           help_perfekt: "sein",
           praeterium: "fuhr",
-          block_number: null,
+          block_number: 3, // 25
         },
         {
           word_id: 205,
@@ -342,7 +342,7 @@ module.exports = {
           perfekt: "gegangen",
           help_perfekt: "sein",
           praeterium: "ging",
-          block_number: null,
+          block_number: 3, // 26
         },
         {
           word_id: 209,
@@ -355,7 +355,7 @@ module.exports = {
           perfekt: "gekonnt",
           help_perfekt: "haben",
           praeterium: "konnte",
-          block_number: null,
+          block_number: 3, // 27
         },
         {
           word_id: 210,
@@ -368,7 +368,7 @@ module.exports = {
           perfekt: "angerufen",
           help_perfekt: "haben",
           praeterium: "rief an",
-          block_number: null,
+          block_number: 3, // 28
         },
         {
           word_id: 235,
@@ -381,7 +381,7 @@ module.exports = {
           perfekt: "aufgestanden",
           help_perfekt: "sein",
           praeterium: "stand auf",
-          block_number: null,
+          block_number: 3, // 29
         },
         {
           word_id: 264,
@@ -394,7 +394,7 @@ module.exports = {
           perfekt: "gesprochen",
           help_perfekt: "haben",
           praeterium: "sprach",
-          block_number: null,
+          block_number: 3, // 30
         },
         {
           word_id: 265,
@@ -407,7 +407,7 @@ module.exports = {
           perfekt: "gegessen",
           help_perfekt: "haben",
           praeterium: "aß",
-          block_number: null,
+          block_number: 4, // 31
         },
         {
           word_id: 266,
@@ -420,7 +420,7 @@ module.exports = {
           perfekt: "getrunken",
           help_perfekt: "haben",
           praeterium: "trank",
-          block_number: null,
+          block_number: 4, // 32
         },
         {
           word_id: 267,
@@ -433,7 +433,7 @@ module.exports = {
           perfekt: "geflogen",
           help_perfekt: "sein",
           praeterium: "flog",
-          block_number: null,
+          block_number: 4, // 33
         },
         {
           word_id: 269,
@@ -446,7 +446,7 @@ module.exports = {
           perfekt: "mitgekommen",
           help_perfekt: "sein",
           praeterium: "kam mit",
-          block_number: null,
+          block_number: 4, // 34
         },
         {
           word_id: 295,
@@ -459,7 +459,7 @@ module.exports = {
           perfekt: "gedurft",
           help_perfekt: "haben",
           praeterium: "durfte",
-          block_number: null,
+          block_number: 4, // 35
         },
         {
           word_id: 296,
@@ -472,7 +472,7 @@ module.exports = {
           perfekt: "gesollt",
           help_perfekt: "haben",
           praeterium: "sollte",
-          block_number: null,
+          block_number: 4, // 36
         },
         {
           word_id: 299,
@@ -485,7 +485,7 @@ module.exports = {
           perfekt: "schlafengegangen",
           help_perfekt: "sein",
           praeterium: "ging schlafen",
-          block_number: null,
+          block_number: 4, // 37
         },
         {
           word_id: 300,
@@ -498,7 +498,7 @@ module.exports = {
           perfekt: "getan",
           help_perfekt: "haben",
           praeterium: "tat",
-          block_number: null,
+          block_number: 4, // 38
         },
         {
           word_id: 325,
@@ -511,7 +511,7 @@ module.exports = {
           perfekt: "abgefahren",
           help_perfekt: "sein",
           praeterium: "fuhr ab",
-          block_number: null,
+          block_number: 4, // 39
         },
         {
           word_id: 326,
@@ -524,7 +524,7 @@ module.exports = {
           perfekt: "eingestiegen",
           help_perfekt: "sein",
           praeterium: "stieg ein",
-          block_number: null,
+          block_number: 4, // 40
         },
         {
           word_id: 327,
@@ -537,7 +537,7 @@ module.exports = {
           perfekt: "gehalten",
           help_perfekt: "haben",
           praeterium: "hielt",
-          block_number: null,
+          block_number: 5, // 41
         },
         {
           word_id: 329,
@@ -550,7 +550,7 @@ module.exports = {
           perfekt: "ausgestiegen",
           help_perfekt: "sein",
           praeterium: "stieg aus",
-          block_number: null,
+          block_number: 5, // 42
         },
         {
           word_id: 354,
@@ -563,7 +563,7 @@ module.exports = {
           perfekt: "abgeflogen",
           help_perfekt: "sein",
           praeterium: "flog ab",
-          block_number: null,
+          block_number: 5, // 43
         },
         {
           word_id: 357,
@@ -576,7 +576,7 @@ module.exports = {
           perfekt: "verstanden",
           help_perfekt: "haben",
           praeterium: "verstand",
-          block_number: null,
+          block_number: 5, // 44
         },
         {
           word_id: 358,
@@ -589,7 +589,7 @@ module.exports = {
           perfekt: "abgegeben",
           help_perfekt: "haben",
           praeterium: "gab ab",
-          block_number: null,
+          block_number: 5, // 45
         },
         {
           word_id: 387,
@@ -602,7 +602,7 @@ module.exports = {
           perfekt: "hingefahren",
           help_perfekt: "sein",
           praeterium: "fuhr hin",
-          block_number: null,
+          block_number: 5, // 46
         },
         {
           word_id: 388,
@@ -615,7 +615,7 @@ module.exports = {
           perfekt: "weggefahren",
           help_perfekt: "sein",
           praeterium: "fuhr weg",
-          block_number: null,
+          block_number: 5, // 47
         },
         {
           word_id: 390,
@@ -628,7 +628,7 @@ module.exports = {
           perfekt: "gewusst",
           help_perfekt: "haben",
           praeterium: "wusste",
-          block_number: null,
+          block_number: 5, // 48
         },
         {
           word_id: 416,
@@ -641,7 +641,7 @@ module.exports = {
           perfekt: "umgezogen",
           help_perfekt: "sein",
           praeterium: "zog um",
-          block_number: null,
+          block_number: 5, // 49
         },
         {
           word_id: 418,
@@ -654,7 +654,7 @@ module.exports = {
           perfekt: "hingegangen",
           help_perfekt: "sein",
           praeterium: "ging hin",
-          block_number: null,
+          block_number: 5, // 50
         },
         {
           word_id: 419,
@@ -667,7 +667,7 @@ module.exports = {
           perfekt: "geworden",
           help_perfekt: "sein",
           praeterium: "wurde",
-          block_number: null,
+          block_number: 6, // 51
         },
         {
           word_id: 445,
@@ -680,7 +680,7 @@ module.exports = {
           perfekt: "gerochen",
           help_perfekt: "haben",
           praeterium: "roch",
-          block_number: null,
+          block_number: 6, // 52
         },
         {
           word_id: 448,
