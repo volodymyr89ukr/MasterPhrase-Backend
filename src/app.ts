@@ -70,27 +70,15 @@ const tenMinutesLimiter = rateLimit({
 });
 
 // Middleware
-const ALLOWED_ORIGINS = new Set(["https://master-phrase.vercel.app"]);
-
 app.use(
   cors({
-    origin: (origin, callback) => {
-      if (!origin) return callback(null, true);
-      if (ALLOWED_ORIGINS.has(origin)) return callback(null, true);
-      return callback(new Error(`CORS blocked for origin: ${origin}`));
-    },
+    origin: ["https://master-phrase.vercel.app"],
     credentials: true,
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
-
 app.use(express.json());
 
-// Preflight
-app.options("*", cors());
-
-// Rate limits
+// Вішаємо лімітери на всі API-роути
 app.use("/api/", perSecondLimiter, tenMinutesLimiter);
 
 // Роути
