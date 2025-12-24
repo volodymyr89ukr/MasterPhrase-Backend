@@ -15,6 +15,7 @@ import authRoutes from "../routes/authRoutes";
 import userRoutes from "../routes/userRoutes";
 import textRoutes from "../routes/textRoutes";
 import wordSetExerciseRoutes from "../routes/wordSetExerciseRoutes";
+import setContentRoutes from "../routes/setContentRoutes";
 import thousandRoutes from "../routes/thousandRoutes";
 import languageRoutes from "../routes/languageRoutes";
 import learningLanguageRoutes from "../routes/learningLanguageRoutes";
@@ -95,6 +96,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/texts", textRoutes);
 app.use("/api/word-set-exercises", wordSetExerciseRoutes);
+app.use("/api/sets", setContentRoutes);
 app.use("/api/thousands", thousandRoutes);
 
 app.get("/", (_req: Request, res: Response) => {
