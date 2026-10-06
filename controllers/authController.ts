@@ -5,6 +5,7 @@ import jwt from "jsonwebtoken";
 import crypto from "crypto";
 import nodemailer from "nodemailer";
 import db from "../models"; // або твій точний шлях до індексу моделей
+import { getJwtSecret } from "../config/jwt";
 
 const User = db.User;
 
@@ -57,7 +58,7 @@ export const login = async (req: Request, res: Response) => {
 
     const token = jwt.sign(
       { userId: user.id },
-      process.env.JWT_SECRET || "my_secret",
+      getJwtSecret(),
       { expiresIn: "7d" }
     );
     return res.json({
