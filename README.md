@@ -39,7 +39,14 @@ cp .env.example .env
 npm run dev
 ```
 
-Provide your own local values in `.env`. Never commit the real `.env` file.
+Provide your own local values in `.env`. Never commit the real `.env` file. The server refuses to start without `JWT_SECRET`.
+
+Production build:
+
+```bash
+npm run build
+npm start
+```
 
 ## Repository history
 
